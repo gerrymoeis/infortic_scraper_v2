@@ -1,11 +1,9 @@
 # Web scraping dependencies
-selenium
-beautifulsoup4==4.12.3
-google-api-python-client==2.135.0
-lxml
+beautifulsoup4
 requests
-aiohttp
 playwright
+lxml
+aiohttp
 
 # Database dependencies
 psycopg2-binary
@@ -14,9 +12,6 @@ retrying
 
 # Environment and configuration
 python-dotenv
-
-# Chrome WebDriver (if needed, can be managed via webdriver-manager)
-webdriver-manager
 
 # Data processing
 pandas

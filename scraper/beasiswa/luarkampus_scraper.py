@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 import re
 import os
-from googleapiclient.discovery import build
+from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
@@ -19,8 +19,7 @@ class LuarKampusBeasiswaScraper(BaseScraper):
     Scraper for Beasiswa (Scholarship) data from luarkampus.id.
     
     This scraper is designed to be lightweight and does not require a browser,
-    as the target page content is static. It also uses Google Custom Search API
-    to find additional details like image and registration URLs.
+    as the target page content is static. It uses Playwright to find additional details like image and registration URLs.
     """
 
     BASE_URL: str = "https://luarkampus.id/beasiswa"
@@ -32,20 +31,6 @@ class LuarKampusBeasiswaScraper(BaseScraper):
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         })
         self.logger.info("LuarKampusBeasiswaScraper initialized.")
-        
-        self.google_api_key = os.getenv("GOOGLE_API_KEY")
-        self.google_cse_id = os.getenv("GOOGLE_CSE_ID")
-        
-        if not self.google_api_key or not self.google_cse_id:
-            self.logger.warning("Google API Key or CSE ID not found in .env. Search functionality will be disabled.")
-            self.search_service = None
-        else:
-            try:
-                self.search_service = build("customsearch", "v1", developerKey=self.google_api_key)
-                self.logger.info("Google Custom Search service initialized.")
-            except Exception as e:
-                self.logger.error(f"Failed to initialize Google Custom Search service: {e}")
-                self.search_service = None
 
     def _parse_deadline(self, deadline_text: str) -> Optional[str]:
         """
@@ -70,52 +55,57 @@ class LuarKampusBeasiswaScraper(BaseScraper):
             self.logger.error(f"Could not parse deadline: '{deadline_text}'. Error: {e}")
             return None
 
-    def _get_google_search_results(self, title: str) -> (Optional[str], Optional[str]):
+    def _get_urls_with_playwright(self, title: str) -> (Optional[str], Optional[str]):
         """
-        Uses Google Custom Search to find an image URL and a registration URL.
+        Uses Playwright to perform Google searches for the image and registration URL,
+        mimicking a manual search process.
         """
-        self.logger.info(f"Searching for image and registration URL for: {title}")
-        
-        # Search for a relevant image
-        image_query = f'"{title}" logo OR icon'
-        image_url = self._search_google(image_query, searchType='image')
-        
-        # Search for the official registration page
-        registration_query = f'"{title}" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
-        registration_url = self._search_google(registration_query)
-        
-        return image_url, registration_url
+        image_url = None
+        registration_url = None
+        query = f'"{title}" registration link'
 
-    def _search_google(self, query: str, **kwargs) -> Optional[str]:
-        """
-        Performs a Google search and returns the first result URL.
-        """
-        if not self.search_service:
-            self.logger.warning("Google search skipped: service not initialized.")
-            return None
-        
-        try:
-            self.logger.info(f"Searching Google for: '{query}'")
-            request_params = {
-                'q': query,
-                'cx': self.google_cse_id,
-                'num': 1,
-                **kwargs
-            }
-            
-            result = self.search_service.cse().list(**request_params).execute()
-            
-            items = result.get('items')
-            if items:
-                url = items[0].get('link')
-                self.logger.info(f"Found URL: {url}")
-                return url
-            else:
-                self.logger.warning(f"No results found for query: '{query}'")
-                return None
-        except Exception as e:
-            self.logger.error(f"An error occurred during Google search for '{query}': {e}")
-            return None
+        with sync_playwright() as p:
+            try:
+                browser = p.chromium.launch(headless=True)
+                page = browser.new_page()
+
+                # --- Registration Link Search ---
+                self.logger.info(f"Searching for registration link: {query}")
+                page.goto(f"https://www.google.com/search?q={query}", timeout=60000)
+                # Wait for the first search result link to appear
+                first_result_selector = 'div.g a[jsname="UWckNb"]'
+                page.wait_for_selector(first_result_selector, timeout=15000)
+                registration_url = page.locator(first_result_selector).first.get_attribute('href')
+                self.logger.info(f"Found registration link: {registration_url}")
+
+                # --- Image Search ---
+                self.logger.info(f"Searching for image: {query}")
+                # Navigate to Google Images tab
+                page.get_by_role("link", name="Images").click()
+                page.wait_for_load_state('networkidle')
+                
+                # Click the first image thumbnail
+                first_image_selector = 'div.H8Rx8c'
+                page.wait_for_selector(first_image_selector, timeout=15000)
+                page.locator(first_image_selector).first.click()
+
+                # Wait for the preview pane and get the high-res image src
+                preview_image_selector = 'img.sFlh5c.pT0Scc.iPVvYb'
+                page.wait_for_selector(preview_image_selector, timeout=15000)
+                image_url = page.locator(preview_image_selector).get_attribute('src')
+                self.logger.info(f"Found image address: {image_url}")
+                
+                browser.close()
+            except PlaywrightTimeoutError as e:
+                self.logger.error(f"Playwright timed out for query '{query}': {e}")
+                if 'browser' in locals() and browser.is_connected():
+                    browser.close()
+            except Exception as e:
+                self.logger.error(f"An error occurred with Playwright for query '{query}': {e}")
+                if 'browser' in locals() and browser.is_connected():
+                    browser.close()
+
+        return image_url, registration_url
 
     def scrape(self) -> List[Dict[str, Any]]:
         """
@@ -131,55 +121,53 @@ class LuarKampusBeasiswaScraper(BaseScraper):
             
             soup = BeautifulSoup(response.content, 'html.parser')
 
-            # The scholarship cards are <a> tags with a `wire:id` attribute,
-            # which is specific to the Livewire framework used by the site.
             scholarship_cards = soup.select(r'a.block[wire\:id]')
             self.logger.info(f"Found {len(scholarship_cards)} scholarship cards.")
 
             for card in scholarship_cards:
                 try:
-                    # Verify it's a valid scholarship link before proceeding
                     href = card.get('href', '')
                     if not href or not re.search(r'/beasiswa/\d+', href):
                         continue
 
                     source_url = urljoin(self.BASE_URL, href)
-                    
                     title_element = card.find('h2', class_='font-bold')
                     title = title_element.text.strip() if title_element else 'No Title Provided'
 
-                    # Education levels are in green rounded spans
-                    degree_elements = card.select('span.bg-success')
-                    education_level = ', '.join(sorted([el.text.strip() for el in degree_elements])) or 'Not Specified'
-
-                    # Location is in a gray span
-                    location_element = card.select_one('span.text-sm.text-gray-600')
-                    location = location_element.text.strip() if location_element else 'No Location Provided'
-
-                    # Find deadline string from either mobile or desktop view for robustness
                     deadline_str = 'No Deadline Provided'
-                    # Mobile view uses a span with class 'text-error'
                     deadline_mobile = card.select_one('span.text-error')
                     if deadline_mobile:
                         deadline_str = deadline_mobile.text.replace('Deadline:', '').strip()
                     else:
-                        # Desktop view has a label and a value in separate spans
                         deadline_label = card.find(lambda tag: tag.name == 'span' and 'Deadline:' in tag.text.strip())
                         if deadline_label:
                             deadline_value = deadline_label.find_next_sibling('span')
                             if deadline_value:
                                 deadline_str = deadline_value.text.strip()
 
-                    deadline = self._parse_deadline(deadline_str)
+                    deadline_date = self._parse_deadline(deadline_str)
+                    if not deadline_date or datetime.strptime(deadline_date, '%Y-%m-%d').date() <= datetime.now().date():
+                        self.logger.info(f"Skipping expired scholarship: '{title}' (Deadline: {deadline_date or 'N/A'})")
+                        continue
 
-                    # Fetch image and registration URL from Google Search
-                    image_url, registration_url = self._get_google_search_results(title)
+                    degree_elements = card.select('span.bg-success')
+                    education_level = ', '.join(sorted([el.text.strip() for el in degree_elements])) or 'Not Specified'
+
+                    location_element = card.select_one('span.text-sm.text-gray-600')
+                    location = location_element.text.strip() if location_element else 'No Location Provided'
+
+                    image_url, registration_url = self._get_urls_with_playwright(title)
+
+                    # Enforce non-null URLs to maintain data quality
+                    if not image_url or not registration_url:
+                        self.logger.warning(f"Skipping '{title}' due to missing image or registration URL.")
+                        continue
                     
                     scholarship_data = {
                         'title': title,
                         'education_level': education_level,
                         'location': location,
-                        'deadline_date': deadline,
+                        'deadline_date': deadline_date,
                         'source_url': source_url,
                         'image_url': image_url,
                         'registration_url': registration_url

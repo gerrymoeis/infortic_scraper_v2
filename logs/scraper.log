@@ -4947,3 +4947,645 @@ AttributeError: 'NoneType' object has no attribute 'get'
 2025-06-30 14:05:19 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
 2025-06-30 14:05:19 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa S3 MSCA Europe PhD Scholarships 2025
 2025-06-30 14:05:19 | INFO     | infortic_scraper | info:99 | Scraping finished. Total scholarships scraped: 10
+2025-06-30 14:17:06 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 14:17:06 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 14:17:06 | INFO     | infortic_scraper | info:99 | LuarKampusBeasiswaScraper initialized.
+2025-06-30 14:17:06 | INFO     | infortic_scraper | info:99 | Google Custom Search service initialized.
+2025-06-30 14:17:06 | INFO     | infortic_scraper | info:99 | Starting scrape for LuarKampusBeasiswaScraper at https://luarkampus.id/beasiswa
+2025-06-30 14:17:06 | INFO     | infortic_scraper | info:99 | Found 10 scholarship cards.
+2025-06-30 14:17:06 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Sinarmas - ITSB 2025
+2025-06-30 14:17:06 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Sinarmas - ITSB 2025" logo OR icon'
+2025-06-30 14:17:07 | INFO     | infortic_scraper | info:99 | Found URL: https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3516292685311755754
+2025-06-30 14:17:07 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Sinarmas - ITSB 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:17:07 | INFO     | infortic_scraper | info:99 | Found URL: https://fahum.umsu.ac.id/info/cek-pilihan-dan-syaratnya-beasiswa-dalam-negeri-2025-masih-buka-pendaftaran-hingga-juli/
+2025-06-30 14:17:07 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa Sinarmas - ITSB 2025
+2025-06-30 14:17:07 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 14:17:07 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Yale Emerging Climate Leaders Fellowship 2026" logo OR icon'
+2025-06-30 14:17:08 | INFO     | infortic_scraper | info:99 | Found URL: https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1730162594550170
+2025-06-30 14:17:08 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Yale Emerging Climate Leaders Fellowship 2026" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:17:08 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Yale Emerging Climate Leaders Fellowship 2026" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:17:08 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 14:17:08 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Singapore South-East Asia Fellowship (SASEAF) 2025
+2025-06-30 14:17:08 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Singapore South-East Asia Fellowship (SASEAF) 2025" logo OR icon'
+2025-06-30 14:17:08 | INFO     | infortic_scraper | info:99 | Found URL: https://luarkampus.id/assets/brand/opengraph-cover.jpg
+2025-06-30 14:17:08 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Singapore South-East Asia Fellowship (SASEAF) 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:17:09 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Singapore South-East Asia Fellowship (SASEAF) 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:17:09 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Singapore South-East Asia Fellowship (SASEAF) 2025
+2025-06-30 14:17:09 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 14:17:09 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Cahaya Pintar Mahasiswa 2025" logo OR icon'
+2025-06-30 14:17:09 | INFO     | infortic_scraper | info:99 | Found URL: https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3544359161208733517
+2025-06-30 14:17:09 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Cahaya Pintar Mahasiswa 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:17:09 | INFO     | infortic_scraper | info:99 | Found URL: https://ipai.upi.edu/beasiswa-mahasiswa-ipai-raih-beasiswa-rubin/2/
+2025-06-30 14:17:09 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 14:17:09 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Excellent Brains Austria Neuroscience PhD Fellowships 2025
+2025-06-30 14:17:09 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" logo OR icon'
+2025-06-30 14:17:10 | INFO     | infortic_scraper | info:99 | Found URL: https://glorno.com/wp-content/uploads/2024/02/GLORNO-icon-LOGO.png
+2025-06-30 14:17:10 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:17:10 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:17:10 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Excellent Brains Austria Neuroscience PhD Fellowships 2025
+2025-06-30 14:17:10 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)
+2025-06-30 14:17:10 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" logo OR icon'
+2025-06-30 14:17:10 | INFO     | infortic_scraper | info:99 | Found URL: https://rumahamal.usk.ac.id/api/wp-content/uploads/2025/06/BPRA-UKT-5-1024x576.jpg
+2025-06-30 14:17:10 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:17:10 | INFO     | infortic_scraper | info:99 | Found URL: https://rumahamal.usk.ac.id/pengumuman/beasiswa-pendidikan-rumah-amal-uang-kuliah-tunggal-bpra-ukt-semester-genap-tahun-2024-2025-rumah-amal-masjid-jamik-universitas-syiah-kuala
+2025-06-30 14:17:10 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)
+2025-06-30 14:17:10 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)
+2025-06-30 14:17:10 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" logo OR icon'
+2025-06-30 14:17:11 | INFO     | infortic_scraper | info:99 | Found URL: https://luarkampus.id/storage/course/nDcgWV6HiMEQccyfLiWFcPlTbeF0PC-metaQlUucG5n-.png
+2025-06-30 14:17:11 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:17:11 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:17:11 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)
+2025-06-30 14:17:11 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Hyundai JUMP School Indonesia Batch 2
+2025-06-30 14:17:11 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Hyundai JUMP School Indonesia Batch 2" logo OR icon'
+2025-06-30 14:17:11 | INFO     | infortic_scraper | info:99 | Found URL: https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3664644410899686243
+2025-06-30 14:17:11 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Hyundai JUMP School Indonesia Batch 2" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:17:11 | INFO     | infortic_scraper | info:99 | Found URL: https://myvolunteer.wahanavisi.org/id/ayo-terlibat/relawan/program/volunteer-kincir-lapangan
+2025-06-30 14:17:11 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Hyundai JUMP School Indonesia Batch 2
+2025-06-30 14:17:11 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa S3 DESY Hamburg PhD Scholarship 2025
+2025-06-30 14:17:11 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa S3 DESY Hamburg PhD Scholarship 2025" logo OR icon'
+2025-06-30 14:17:11 | INFO     | infortic_scraper | info:99 | Found URL: https://luarkampus.id/assets/brand/opengraph-cover.jpg
+2025-06-30 14:17:11 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa S3 DESY Hamburg PhD Scholarship 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:17:11 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Beasiswa S3 DESY Hamburg PhD Scholarship 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:17:11 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa S3 DESY Hamburg PhD Scholarship 2025
+2025-06-30 14:17:11 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa S3 MSCA Europe PhD Scholarships 2025
+2025-06-30 14:17:11 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" logo OR icon'
+2025-06-30 14:17:11 | INFO     | infortic_scraper | info:99 | Found URL: https://luarkampus.id/storage/course/nDcgWV6HiMEQccyfLiWFcPlTbeF0PC-metaQlUucG5n-.png
+2025-06-30 14:17:11 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:17:12 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:17:12 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa S3 MSCA Europe PhD Scholarships 2025
+2025-06-30 14:17:12 | INFO     | infortic_scraper | info:99 | Scraping finished. Total scholarships scraped: 10
+2025-06-30 14:32:34 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 14:32:34 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 14:32:34 | INFO     | infortic_scraper | info:99 | LuarKampusBeasiswaScraper initialized.
+2025-06-30 14:32:34 | INFO     | infortic_scraper | info:99 | Google Custom Search service initialized.
+2025-06-30 14:32:34 | INFO     | infortic_scraper | info:99 | Starting scrape for LuarKampusBeasiswaScraper at https://luarkampus.id/beasiswa
+2025-06-30 14:32:34 | INFO     | infortic_scraper | info:99 | Found 10 scholarship cards.
+2025-06-30 14:32:34 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Sinarmas - ITSB 2025
+2025-06-30 14:32:34 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Sinarmas - ITSB 2025" registration link'
+2025-06-30 14:32:35 | INFO     | infortic_scraper | info:99 | Found URL: https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3516292685311755754
+2025-06-30 14:32:37 | WARNING  | infortic_scraper | warning:104 | og:image not found on https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3516292685311755754. Returning original URL as fallback.
+2025-06-30 14:32:37 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Sinarmas - ITSB 2025" registration link'
+2025-06-30 14:32:37 | INFO     | infortic_scraper | info:99 | Found URL: https://www.instagram.com/itsbofficial/?hl=en
+2025-06-30 14:32:37 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa Sinarmas - ITSB 2025
+2025-06-30 14:32:37 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 14:32:37 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Yale Emerging Climate Leaders Fellowship 2026" registration link'
+2025-06-30 14:32:37 | INFO     | infortic_scraper | info:99 | Found URL: https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3660586448453778128
+2025-06-30 14:32:38 | WARNING  | infortic_scraper | warning:104 | og:image not found on https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3660586448453778128. Returning original URL as fallback.
+2025-06-30 14:32:38 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Yale Emerging Climate Leaders Fellowship 2026" registration link'
+2025-06-30 14:32:39 | INFO     | infortic_scraper | info:99 | Found URL: https://www.instagram.com/p/DLNA_rxsjrQ/
+2025-06-30 14:32:39 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 14:32:39 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Singapore South-East Asia Fellowship (SASEAF) 2025
+2025-06-30 14:32:39 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Singapore South-East Asia Fellowship (SASEAF) 2025" registration link'
+2025-06-30 14:32:39 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Singapore South-East Asia Fellowship (SASEAF) 2025" registration link'
+2025-06-30 14:32:39 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Singapore South-East Asia Fellowship (SASEAF) 2025" registration link'
+2025-06-30 14:32:40 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Singapore South-East Asia Fellowship (SASEAF) 2025" registration link'
+2025-06-30 14:32:40 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Singapore South-East Asia Fellowship (SASEAF) 2025
+2025-06-30 14:32:40 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 14:32:40 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Cahaya Pintar Mahasiswa 2025" registration link'
+2025-06-30 14:32:40 | INFO     | infortic_scraper | info:99 | Found URL: https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3664095096896719847
+2025-06-30 14:32:41 | WARNING  | infortic_scraper | warning:104 | og:image not found on https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3664095096896719847. Returning original URL as fallback.
+2025-06-30 14:32:41 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Cahaya Pintar Mahasiswa 2025" registration link'
+2025-06-30 14:32:41 | INFO     | infortic_scraper | info:99 | Found URL: https://www.instagram.com/p/CwH6tTsvfMu/
+2025-06-30 14:32:41 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 14:32:41 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Excellent Brains Austria Neuroscience PhD Fellowships 2025
+2025-06-30 14:32:41 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" registration link'
+2025-06-30 14:32:42 | INFO     | infortic_scraper | info:99 | Found URL: https://glorno.com/wp-content/uploads/2024/02/GLORNO-icon-LOGO.png
+2025-06-30 14:32:42 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://glorno.com/wp-content/uploads/2024/02/GLORNO-icon-LOGO.png
+2025-06-30 14:32:42 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" registration link'
+2025-06-30 14:32:42 | INFO     | infortic_scraper | info:99 | Found URL: https://glorno.com/
+2025-06-30 14:32:42 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Excellent Brains Austria Neuroscience PhD Fellowships 2025
+2025-06-30 14:32:42 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)
+2025-06-30 14:32:42 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" registration link'
+2025-06-30 14:32:43 | INFO     | infortic_scraper | info:99 | Found URL: https://rumahamal.usk.ac.id/api/wp-content/uploads/2025/06/BPRA-UKT-5-1024x576.jpg
+2025-06-30 14:32:43 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://rumahamal.usk.ac.id/api/wp-content/uploads/2025/06/BPRA-UKT-5-1024x576.jpg
+2025-06-30 14:32:43 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" registration link'
+2025-06-30 14:32:43 | INFO     | infortic_scraper | info:99 | Found URL: https://rumahamal.usk.ac.id/program/program-bpra-ukt
+2025-06-30 14:32:43 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)
+2025-06-30 14:32:43 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)
+2025-06-30 14:32:43 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" registration link'
+2025-06-30 14:32:43 | INFO     | infortic_scraper | info:99 | Found URL: https://luarkampus.id/storage/course/01JYZR6WWM5XW7YHJE9QDHRPN4.png
+2025-06-30 14:32:43 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://luarkampus.id/storage/course/01JYZR6WWM5XW7YHJE9QDHRPN4.png
+2025-06-30 14:32:43 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" registration link'
+2025-06-30 14:32:44 | INFO     | infortic_scraper | info:99 | Found URL: https://luarkampus.id/beasiswa
+2025-06-30 14:32:44 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)
+2025-06-30 14:32:44 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Hyundai JUMP School Indonesia Batch 2
+2025-06-30 14:32:44 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Hyundai JUMP School Indonesia Batch 2" registration link'
+2025-06-30 14:32:44 | INFO     | infortic_scraper | info:99 | Found URL: https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3664644410899686243
+2025-06-30 14:32:45 | WARNING  | infortic_scraper | warning:104 | og:image not found on https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3664644410899686243. Returning original URL as fallback.
+2025-06-30 14:32:45 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Hyundai JUMP School Indonesia Batch 2" registration link'
+2025-06-30 14:32:46 | INFO     | infortic_scraper | info:99 | Found URL: https://www.instagram.com/p/C6wFZLny5Cw/
+2025-06-30 14:32:46 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Hyundai JUMP School Indonesia Batch 2
+2025-06-30 14:32:46 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa S3 DESY Hamburg PhD Scholarship 2025
+2025-06-30 14:32:46 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa S3 DESY Hamburg PhD Scholarship 2025" registration link'
+2025-06-30 14:32:46 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Beasiswa S3 DESY Hamburg PhD Scholarship 2025" registration link'
+2025-06-30 14:32:46 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa S3 DESY Hamburg PhD Scholarship 2025" registration link'
+2025-06-30 14:32:46 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Beasiswa S3 DESY Hamburg PhD Scholarship 2025" registration link'
+2025-06-30 14:32:46 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa S3 DESY Hamburg PhD Scholarship 2025
+2025-06-30 14:32:46 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa S3 MSCA Europe PhD Scholarships 2025
+2025-06-30 14:32:46 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" registration link'
+2025-06-30 14:32:47 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" registration link'
+2025-06-30 14:32:47 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" registration link'
+2025-06-30 14:32:47 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" registration link'
+2025-06-30 14:32:47 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa S3 MSCA Europe PhD Scholarships 2025
+2025-06-30 14:32:47 | INFO     | infortic_scraper | info:99 | Scraping finished. Total scholarships scraped: 10
+2025-06-30 14:45:10 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 14:45:10 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 14:45:10 | INFO     | infortic_scraper | info:99 | LuarKampusBeasiswaScraper initialized.
+2025-06-30 14:45:10 | INFO     | infortic_scraper | info:99 | Google Custom Search service initialized.
+2025-06-30 14:45:10 | INFO     | infortic_scraper | info:99 | Starting scrape for LuarKampusBeasiswaScraper at https://luarkampus.id/beasiswa
+2025-06-30 14:45:10 | INFO     | infortic_scraper | info:99 | Found 10 scholarship cards.
+2025-06-30 14:45:10 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Sinarmas - ITSB 2025
+2025-06-30 14:45:10 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Sinarmas - ITSB 2025" logo OR icon -site:instagram.com -site:facebook.com -site:twitter.com'
+2025-06-30 14:45:11 | INFO     | infortic_scraper | info:99 | Found URL: https://bisik.b-cdn.net/1732398612760-2575b32452a98d44.webp?blur=0
+2025-06-30 14:45:13 | WARNING  | infortic_scraper | warning:104 | og:image not found on https://bisik.b-cdn.net/1732398612760-2575b32452a98d44.webp?blur=0. Returning original URL as fallback.
+2025-06-30 14:45:13 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Sinarmas - ITSB 2025" official registration link site:.ac.id OR site:.edu OR site:.org OR site:.gov'
+2025-06-30 14:45:13 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Beasiswa Sinarmas - ITSB 2025" official registration link site:.ac.id OR site:.edu OR site:.org OR site:.gov'
+2025-06-30 14:45:13 | WARNING  | infortic_scraper | warning:104 | Skipping 'Beasiswa Sinarmas - ITSB 2025' due to missing image or registration URL.
+2025-06-30 14:45:13 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 14:45:13 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Yale Emerging Climate Leaders Fellowship 2026" logo OR icon -site:instagram.com -site:facebook.com -site:twitter.com'
+2025-06-30 14:45:14 | INFO     | infortic_scraper | info:99 | Found URL: https://www.opportunitiesforafricans.com/wp-content/uploads/2022/06/yale-jackson-institte-of-global-affairs.jpg
+2025-06-30 14:45:14 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://www.opportunitiesforafricans.com/wp-content/uploads/2022/06/yale-jackson-institte-of-global-affairs.jpg
+2025-06-30 14:45:14 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Yale Emerging Climate Leaders Fellowship 2026" official registration link site:.ac.id OR site:.edu OR site:.org OR site:.gov'
+2025-06-30 14:45:14 | INFO     | infortic_scraper | info:99 | Found URL: https://opportunitydesk.org/2019/12/12/coro-fellowship-in-public-affairs-2020-2021/
+2025-06-30 14:45:14 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 14:45:14 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Singapore South-East Asia Fellowship (SASEAF) 2025
+2025-06-30 14:45:14 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Singapore South-East Asia Fellowship (SASEAF) 2025" logo OR icon -site:instagram.com -site:facebook.com -site:twitter.com'
+2025-06-30 14:45:15 | INFO     | infortic_scraper | info:99 | Found URL: https://luarkampus.id/storage/course/01JYZR6WWM5XW7YHJE9QDHRPN4.png
+2025-06-30 14:45:15 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://luarkampus.id/storage/course/01JYZR6WWM5XW7YHJE9QDHRPN4.png
+2025-06-30 14:45:15 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Singapore South-East Asia Fellowship (SASEAF) 2025" official registration link site:.ac.id OR site:.edu OR site:.org OR site:.gov'
+2025-06-30 14:45:15 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Singapore South-East Asia Fellowship (SASEAF) 2025" official registration link site:.ac.id OR site:.edu OR site:.org OR site:.gov'
+2025-06-30 14:45:15 | WARNING  | infortic_scraper | warning:104 | Skipping 'Singapore South-East Asia Fellowship (SASEAF) 2025' due to missing image or registration URL.
+2025-06-30 14:45:15 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 14:45:15 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Cahaya Pintar Mahasiswa 2025" logo OR icon -site:instagram.com -site:facebook.com -site:twitter.com'
+2025-06-30 14:45:15 | INFO     | infortic_scraper | info:99 | Found URL: https://indbeasiswa.com/wp-content/uploads/2024/11/beasiswa-djitu-untuk-pelajar-sma-mahasiswa-d3-d4-s1.png
+2025-06-30 14:45:15 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://indbeasiswa.com/wp-content/uploads/2024/11/beasiswa-djitu-untuk-pelajar-sma-mahasiswa-d3-d4-s1.png
+2025-06-30 14:45:15 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Cahaya Pintar Mahasiswa 2025" official registration link site:.ac.id OR site:.edu OR site:.org OR site:.gov'
+2025-06-30 14:45:16 | INFO     | infortic_scraper | info:99 | Found URL: https://himsiunsri.org/akademik
+2025-06-30 14:45:16 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 14:45:16 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Excellent Brains Austria Neuroscience PhD Fellowships 2025
+2025-06-30 14:45:16 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" logo OR icon -site:instagram.com -site:facebook.com -site:twitter.com'
+2025-06-30 14:45:16 | INFO     | infortic_scraper | info:99 | Found URL: https://glorno.com/wp-content/uploads/2024/02/GLORNO-icon-LOGO.png
+2025-06-30 14:45:16 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://glorno.com/wp-content/uploads/2024/02/GLORNO-icon-LOGO.png
+2025-06-30 14:45:16 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" official registration link site:.ac.id OR site:.edu OR site:.org OR site:.gov'
+2025-06-30 14:45:16 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" official registration link site:.ac.id OR site:.edu OR site:.org OR site:.gov'
+2025-06-30 14:45:16 | WARNING  | infortic_scraper | warning:104 | Skipping 'Excellent Brains Austria Neuroscience PhD Fellowships 2025' due to missing image or registration URL.
+2025-06-30 14:45:16 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)
+2025-06-30 14:45:16 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" logo OR icon -site:instagram.com -site:facebook.com -site:twitter.com'
+2025-06-30 14:45:16 | INFO     | infortic_scraper | info:99 | Found URL: https://rumahamal.usk.ac.id/api/wp-content/uploads/2025/06/BPRA-UKT-5-1024x576.jpg
+2025-06-30 14:45:16 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://rumahamal.usk.ac.id/api/wp-content/uploads/2025/06/BPRA-UKT-5-1024x576.jpg
+2025-06-30 14:45:16 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" official registration link site:.ac.id OR site:.edu OR site:.org OR site:.gov'
+2025-06-30 14:45:17 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" official registration link site:.ac.id OR site:.edu OR site:.org OR site:.gov'
+2025-06-30 14:45:17 | WARNING  | infortic_scraper | warning:104 | Skipping 'Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)' due to missing image or registration URL.
+2025-06-30 14:45:17 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)
+2025-06-30 14:45:17 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" logo OR icon -site:instagram.com -site:facebook.com -site:twitter.com'
+2025-06-30 14:45:17 | INFO     | infortic_scraper | info:99 | Found URL: https://luarkampus.id/storage/course/nDcgWV6HiMEQccyfLiWFcPlTbeF0PC-metaQlUucG5n-.png
+2025-06-30 14:45:17 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://luarkampus.id/storage/course/nDcgWV6HiMEQccyfLiWFcPlTbeF0PC-metaQlUucG5n-.png
+2025-06-30 14:45:17 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" official registration link site:.ac.id OR site:.edu OR site:.org OR site:.gov'
+2025-06-30 14:45:18 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" official registration link site:.ac.id OR site:.edu OR site:.org OR site:.gov'
+2025-06-30 14:45:18 | WARNING  | infortic_scraper | warning:104 | Skipping 'Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)' due to missing image or registration URL.
+2025-06-30 14:45:18 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Hyundai JUMP School Indonesia Batch 2
+2025-06-30 14:45:18 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Hyundai JUMP School Indonesia Batch 2" logo OR icon -site:instagram.com -site:facebook.com -site:twitter.com'
+2025-06-30 14:45:18 | INFO     | infortic_scraper | info:99 | Found URL: https://luarkampus.id/storage/course/01JXHV9B2M41X5W0VQWRWYXBEJ.png
+2025-06-30 14:45:18 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://luarkampus.id/storage/course/01JXHV9B2M41X5W0VQWRWYXBEJ.png
+2025-06-30 14:45:18 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Hyundai JUMP School Indonesia Batch 2" official registration link site:.ac.id OR site:.edu OR site:.org OR site:.gov'
+2025-06-30 14:45:18 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Hyundai JUMP School Indonesia Batch 2" official registration link site:.ac.id OR site:.edu OR site:.org OR site:.gov'
+2025-06-30 14:45:18 | WARNING  | infortic_scraper | warning:104 | Skipping 'Hyundai JUMP School Indonesia Batch 2' due to missing image or registration URL.
+2025-06-30 14:45:18 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship: 'Beasiswa S3 DESY Hamburg PhD Scholarship 2025' (Deadline: 2025-06-30)
+2025-06-30 14:45:18 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa S3 MSCA Europe PhD Scholarships 2025
+2025-06-30 14:45:18 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" logo OR icon -site:instagram.com -site:facebook.com -site:twitter.com'
+2025-06-30 14:45:18 | INFO     | infortic_scraper | info:99 | Found URL: https://luarkampus.id/storage/course/nDcgWV6HiMEQccyfLiWFcPlTbeF0PC-metaQlUucG5n-.png
+2025-06-30 14:45:18 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://luarkampus.id/storage/course/nDcgWV6HiMEQccyfLiWFcPlTbeF0PC-metaQlUucG5n-.png
+2025-06-30 14:45:18 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" official registration link site:.ac.id OR site:.edu OR site:.org OR site:.gov'
+2025-06-30 14:45:19 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" official registration link site:.ac.id OR site:.edu OR site:.org OR site:.gov'
+2025-06-30 14:45:19 | WARNING  | infortic_scraper | warning:104 | Skipping 'Beasiswa S3 MSCA Europe PhD Scholarships 2025' due to missing image or registration URL.
+2025-06-30 14:45:19 | INFO     | infortic_scraper | info:99 | Scraping finished. Total scholarships scraped: 2
+2025-06-30 14:46:30 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 14:46:30 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 14:46:30 | INFO     | infortic_scraper | info:99 | LuarKampusBeasiswaScraper initialized.
+2025-06-30 14:46:30 | INFO     | infortic_scraper | info:99 | Google Custom Search service initialized.
+2025-06-30 14:46:30 | INFO     | infortic_scraper | info:99 | Starting scrape for LuarKampusBeasiswaScraper at https://luarkampus.id/beasiswa
+2025-06-30 14:46:30 | INFO     | infortic_scraper | info:99 | Found 10 scholarship cards.
+2025-06-30 14:46:30 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Sinarmas - ITSB 2025
+2025-06-30 14:46:30 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Sinarmas - ITSB 2025" logo OR icon' (asking for 3 results)
+2025-06-30 14:46:31 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Beasiswa Sinarmas - ITSB 2025" logo OR icon'
+2025-06-30 14:46:32 | WARNING  | infortic_scraper | warning:104 | og:image not found on https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3516292685311755754. Returning original URL as fallback.
+2025-06-30 14:46:32 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Sinarmas - ITSB 2025" scholarship registration apply' (asking for 5 results)
+2025-06-30 14:46:32 | INFO     | infortic_scraper | info:99 | Found 4 URLs for query: '"Beasiswa Sinarmas - ITSB 2025" scholarship registration apply'
+2025-06-30 14:46:33 | INFO     | infortic_scraper | info:99 | URL 'https://www.instagram.com/p/DJbcz9vBvy4/' scored 0
+2025-06-30 14:46:33 | INFO     | infortic_scraper | info:99 | URL 'https://luarkampus.id/beasiswa' scored 4
+2025-06-30 14:46:33 | INFO     | infortic_scraper | info:99 | URL 'https://www.tiktok.com/tag/beasiswakampus' scored 0
+2025-06-30 14:46:34 | INFO     | infortic_scraper | info:99 | URL 'https://www.tiktok.com/discover/biasiswa-yayasan-terengganu' scored 0
+2025-06-30 14:46:34 | INFO     | infortic_scraper | info:99 | Selected best URL: 'https://luarkampus.id/beasiswa' with score 4
+2025-06-30 14:46:34 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa Sinarmas - ITSB 2025
+2025-06-30 14:46:34 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 14:46:34 | INFO     | infortic_scraper | info:99 | Searching Google for '"Yale Emerging Climate Leaders Fellowship 2026" logo OR icon' (asking for 3 results)
+2025-06-30 14:46:34 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Yale Emerging Climate Leaders Fellowship 2026" logo OR icon'
+2025-06-30 14:46:35 | WARNING  | infortic_scraper | warning:104 | og:image not found on https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1730162594550170. Returning original URL as fallback.
+2025-06-30 14:46:35 | INFO     | infortic_scraper | info:99 | Searching Google for '"Yale Emerging Climate Leaders Fellowship 2026" scholarship registration apply' (asking for 5 results)
+2025-06-30 14:46:36 | INFO     | infortic_scraper | info:99 | Found 5 URLs for query: '"Yale Emerging Climate Leaders Fellowship 2026" scholarship registration apply'
+2025-06-30 14:46:37 | INFO     | infortic_scraper | info:99 | URL 'https://opportunitiescorners.com/yale-emerging-climate-leaders-fellowship-2026/' scored 7
+2025-06-30 14:46:37 | INFO     | infortic_scraper | info:99 | URL 'https://www.opportunitiescircle.com/yale-emerging-climate-leaders-fellowship/' scored 7
+2025-06-30 14:46:38 | WARNING  | infortic_scraper | warning:104 | Could not analyze candidate URL 'https://www.facebook.com/groups/742415256445565/posts/yale-emerging-climate-leaders-fellowship-2026-in-usa-france-fully-fundedapply-ht/1615035695850179/': 400 Client Error: Bad Request for url: https://www.facebook.com/groups/742415256445565/posts/yale-emerging-climate-leaders-fellowship-2026-in-usa-france-fully-fundedapply-ht/1615035695850179/
+2025-06-30 14:46:39 | INFO     | infortic_scraper | info:99 | URL 'https://www.linkedin.com/pulse/applications-open-yale-emerging-climate-8spve' scored 7
+2025-06-30 14:46:39 | WARNING  | infortic_scraper | warning:104 | Could not analyze candidate URL 'https://www.facebook.com/oppradar/posts/yale-emerging-climate-leaders-fellowship-2026-in-europe-usa-fully-fundedvisit-ht/122178165140296244/': 400 Client Error: Bad Request for url: https://www.facebook.com/oppradar/posts/yale-emerging-climate-leaders-fellowship-2026-in-europe-usa-fully-fundedvisit-ht/122178165140296244/
+2025-06-30 14:46:39 | INFO     | infortic_scraper | info:99 | Selected best URL: 'https://opportunitiescorners.com/yale-emerging-climate-leaders-fellowship-2026/' with score 7
+2025-06-30 14:46:39 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 14:46:39 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Singapore South-East Asia Fellowship (SASEAF) 2025
+2025-06-30 14:46:39 | INFO     | infortic_scraper | info:99 | Searching Google for '"Singapore South-East Asia Fellowship (SASEAF) 2025" logo OR icon' (asking for 3 results)
+2025-06-30 14:46:39 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Singapore South-East Asia Fellowship (SASEAF) 2025" logo OR icon'
+2025-06-30 14:46:39 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://luarkampus.id/storage/course/01JYZR6WWM5XW7YHJE9QDHRPN4.png
+2025-06-30 14:46:39 | INFO     | infortic_scraper | info:99 | Searching Google for '"Singapore South-East Asia Fellowship (SASEAF) 2025" scholarship registration apply' (asking for 5 results)
+2025-06-30 14:46:39 | INFO     | infortic_scraper | info:99 | Found 1 URLs for query: '"Singapore South-East Asia Fellowship (SASEAF) 2025" scholarship registration apply'
+2025-06-30 14:46:40 | INFO     | infortic_scraper | info:99 | URL 'https://luarkampus.id/beasiswa' scored 6
+2025-06-30 14:46:40 | INFO     | infortic_scraper | info:99 | Selected best URL: 'https://luarkampus.id/beasiswa' with score 6
+2025-06-30 14:46:40 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Singapore South-East Asia Fellowship (SASEAF) 2025
+2025-06-30 14:46:40 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 14:46:40 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Cahaya Pintar Mahasiswa 2025" logo OR icon' (asking for 3 results)
+2025-06-30 14:46:40 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Beasiswa Cahaya Pintar Mahasiswa 2025" logo OR icon'
+2025-06-30 14:46:41 | WARNING  | infortic_scraper | warning:104 | og:image not found on https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3544359161208733517. Returning original URL as fallback.
+2025-06-30 14:46:41 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Cahaya Pintar Mahasiswa 2025" scholarship registration apply' (asking for 5 results)
+2025-06-30 14:46:42 | INFO     | infortic_scraper | info:99 | Found 5 URLs for query: '"Beasiswa Cahaya Pintar Mahasiswa 2025" scholarship registration apply'
+2025-06-30 14:46:42 | INFO     | infortic_scraper | info:99 | URL 'https://www.instagram.com/p/DFMgYsxz5sY/' scored 0
+2025-06-30 14:46:45 | INFO     | infortic_scraper | info:99 | URL 'https://luarkampus.id/' scored 7
+2025-06-30 14:46:45 | INFO     | infortic_scraper | info:99 | URL 'https://www.instagram.com/p/C1mV5QdBSme/' scored 0
+2025-06-30 14:46:47 | INFO     | infortic_scraper | info:99 | URL 'https://indbeasiswa.com/beasiswa-brunei-darussalam-bdgs/' scored 6
+2025-06-30 14:46:47 | INFO     | infortic_scraper | info:99 | URL 'https://luarkampus.id/beasiswa' scored 5
+2025-06-30 14:46:47 | INFO     | infortic_scraper | info:99 | Selected best URL: 'https://luarkampus.id/' with score 7
+2025-06-30 14:46:47 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 14:46:47 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Excellent Brains Austria Neuroscience PhD Fellowships 2025
+2025-06-30 14:46:47 | INFO     | infortic_scraper | info:99 | Searching Google for '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" logo OR icon' (asking for 3 results)
+2025-06-30 14:46:47 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" logo OR icon'
+2025-06-30 14:46:47 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://glorno.com/wp-content/uploads/2024/02/GLORNO-icon-LOGO.png
+2025-06-30 14:46:47 | INFO     | infortic_scraper | info:99 | Searching Google for '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" scholarship registration apply' (asking for 5 results)
+2025-06-30 14:46:48 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" scholarship registration apply'
+2025-06-30 14:46:50 | INFO     | infortic_scraper | info:99 | URL 'https://glorno.com/' scored 8
+2025-06-30 14:46:54 | INFO     | infortic_scraper | info:99 | URL 'https://luarkampus.id/' scored 8
+2025-06-30 14:46:54 | INFO     | infortic_scraper | info:99 | URL 'https://luarkampus.id/beasiswa' scored 6
+2025-06-30 14:46:54 | INFO     | infortic_scraper | info:99 | Selected best URL: 'https://glorno.com/' with score 8
+2025-06-30 14:46:54 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Excellent Brains Austria Neuroscience PhD Fellowships 2025
+2025-06-30 14:46:54 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)
+2025-06-30 14:46:54 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" logo OR icon' (asking for 3 results)
+2025-06-30 14:46:54 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" logo OR icon'
+2025-06-30 14:46:54 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://rumahamal.usk.ac.id/api/wp-content/uploads/2025/06/BPRA-UKT-5-1024x576.jpg
+2025-06-30 14:46:54 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" scholarship registration apply' (asking for 5 results)
+2025-06-30 14:46:54 | INFO     | infortic_scraper | info:99 | Found 4 URLs for query: '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" scholarship registration apply'
+2025-06-30 14:46:54 | INFO     | infortic_scraper | info:99 | URL 'https://luarkampus.id/beasiswa' scored 8
+2025-06-30 14:46:55 | INFO     | infortic_scraper | info:99 | URL 'https://www.instagram.com/p/CH-A4F3H1P1/' scored 0
+2025-06-30 14:46:57 | INFO     | infortic_scraper | info:99 | URL 'https://luarkampus.id/' scored 10
+2025-06-30 14:46:58 | INFO     | infortic_scraper | info:99 | URL 'https://www.instagram.com/beasiswa.usk/?hl=en' scored 0
+2025-06-30 14:46:58 | INFO     | infortic_scraper | info:99 | Selected best URL: 'https://luarkampus.id/' with score 10
+2025-06-30 14:46:58 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)
+2025-06-30 14:46:58 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)
+2025-06-30 14:46:58 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" logo OR icon' (asking for 3 results)
+2025-06-30 14:46:58 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" logo OR icon'
+2025-06-30 14:46:58 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://luarkampus.id/storage/course/nDcgWV6HiMEQccyfLiWFcPlTbeF0PC-metaQlUucG5n-.png
+2025-06-30 14:46:58 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" scholarship registration apply' (asking for 5 results)
+2025-06-30 14:46:58 | INFO     | infortic_scraper | info:99 | Found 2 URLs for query: '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" scholarship registration apply'
+2025-06-30 14:46:59 | INFO     | infortic_scraper | info:99 | URL 'https://luarkampus.id/beasiswa' scored 10
+2025-06-30 14:47:02 | INFO     | infortic_scraper | info:99 | URL 'https://luarkampus.id/' scored 12
+2025-06-30 14:47:02 | INFO     | infortic_scraper | info:99 | Selected best URL: 'https://luarkampus.id/' with score 12
+2025-06-30 14:47:02 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)
+2025-06-30 14:47:02 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Hyundai JUMP School Indonesia Batch 2
+2025-06-30 14:47:02 | INFO     | infortic_scraper | info:99 | Searching Google for '"Hyundai JUMP School Indonesia Batch 2" logo OR icon' (asking for 3 results)
+2025-06-30 14:47:02 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Hyundai JUMP School Indonesia Batch 2" logo OR icon'
+2025-06-30 14:47:03 | WARNING  | infortic_scraper | warning:104 | og:image not found on https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3664644410899686243. Returning original URL as fallback.
+2025-06-30 14:47:03 | INFO     | infortic_scraper | info:99 | Searching Google for '"Hyundai JUMP School Indonesia Batch 2" scholarship registration apply' (asking for 5 results)
+2025-06-30 14:47:03 | INFO     | infortic_scraper | info:99 | Found 5 URLs for query: '"Hyundai JUMP School Indonesia Batch 2" scholarship registration apply'
+2025-06-30 14:47:04 | INFO     | infortic_scraper | info:99 | URL 'https://luarkampus.id/beasiswa' scored 5
+2025-06-30 14:47:04 | INFO     | infortic_scraper | info:99 | URL 'https://www.instagram.com/p/DAUo6sgS9mQ/' scored 0
+2025-06-30 14:47:07 | INFO     | infortic_scraper | info:99 | URL 'https://luarkampus.id/' scored 7
+2025-06-30 14:47:08 | INFO     | infortic_scraper | info:99 | URL 'https://www.instagram.com/p/C6wFZLny5Cw/' scored 0
+2025-06-30 14:47:08 | INFO     | infortic_scraper | info:99 | URL 'https://www.instagram.com/adkesma.bemffui/?hl=en' scored 0
+2025-06-30 14:47:08 | INFO     | infortic_scraper | info:99 | Selected best URL: 'https://luarkampus.id/' with score 7
+2025-06-30 14:47:08 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Hyundai JUMP School Indonesia Batch 2
+2025-06-30 14:47:08 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship: 'Beasiswa S3 DESY Hamburg PhD Scholarship 2025' (Deadline: 2025-06-30)
+2025-06-30 14:47:08 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa S3 MSCA Europe PhD Scholarships 2025
+2025-06-30 14:47:08 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" logo OR icon' (asking for 3 results)
+2025-06-30 14:47:09 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" logo OR icon'
+2025-06-30 14:47:09 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://luarkampus.id/storage/course/nDcgWV6HiMEQccyfLiWFcPlTbeF0PC-metaQlUucG5n-.png
+2025-06-30 14:47:09 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" scholarship registration apply' (asking for 5 results)
+2025-06-30 14:47:09 | INFO     | infortic_scraper | info:99 | Found 2 URLs for query: '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" scholarship registration apply'
+2025-06-30 14:47:09 | INFO     | infortic_scraper | info:99 | URL 'https://luarkampus.id/beasiswa' scored 5
+2025-06-30 14:47:12 | INFO     | infortic_scraper | info:99 | URL 'https://luarkampus.id/' scored 7
+2025-06-30 14:47:12 | INFO     | infortic_scraper | info:99 | Selected best URL: 'https://luarkampus.id/' with score 7
+2025-06-30 14:47:12 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa S3 MSCA Europe PhD Scholarships 2025
+2025-06-30 14:47:12 | INFO     | infortic_scraper | info:99 | Scraping finished. Total scholarships scraped: 9
+2025-06-30 14:48:38 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 14:48:38 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 14:48:38 | INFO     | infortic_scraper | info:99 | LuarKampusBeasiswaScraper initialized.
+2025-06-30 14:48:38 | INFO     | infortic_scraper | info:99 | Google Custom Search service initialized.
+2025-06-30 14:48:38 | INFO     | infortic_scraper | info:99 | Starting scrape for LuarKampusBeasiswaScraper at https://luarkampus.id/beasiswa
+2025-06-30 14:48:38 | INFO     | infortic_scraper | info:99 | Found 10 scholarship cards.
+2025-06-30 14:48:38 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Sinarmas - ITSB 2025
+2025-06-30 14:48:38 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Sinarmas - ITSB 2025" logo OR icon' (asking for 3 results)
+2025-06-30 14:48:39 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Beasiswa Sinarmas - ITSB 2025" logo OR icon'
+2025-06-30 14:48:39 | WARNING  | infortic_scraper | warning:104 | Skipping known bad image URL: https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3516292685311755754
+2025-06-30 14:48:39 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Sinarmas - ITSB 2025" scholarship registration apply' (asking for 5 results)
+2025-06-30 14:48:39 | INFO     | infortic_scraper | info:99 | Found 4 URLs for query: '"Beasiswa Sinarmas - ITSB 2025" scholarship registration apply'
+2025-06-30 14:48:41 | INFO     | infortic_scraper | info:99 | URL 'https://www.instagram.com/p/DJbcz9vBvy4/' scored 0
+2025-06-30 14:48:41 | INFO     | infortic_scraper | info:99 | URL 'https://luarkampus.id/beasiswa' scored -15
+2025-06-30 14:48:41 | INFO     | infortic_scraper | info:99 | URL 'https://www.tiktok.com/tag/beasiswakampus' scored 0
+2025-06-30 14:48:42 | INFO     | infortic_scraper | info:99 | URL 'https://www.tiktok.com/discover/biasiswa-yayasan-terengganu' scored 0
+2025-06-30 14:48:42 | WARNING  | infortic_scraper | warning:104 | No suitable registration URL found from candidates for 'Beasiswa Sinarmas - ITSB 2025' (max score: 0)
+2025-06-30 14:48:42 | WARNING  | infortic_scraper | warning:104 | Skipping 'Beasiswa Sinarmas - ITSB 2025' due to missing image or registration URL.
+2025-06-30 14:48:42 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 14:48:42 | INFO     | infortic_scraper | info:99 | Searching Google for '"Yale Emerging Climate Leaders Fellowship 2026" logo OR icon' (asking for 3 results)
+2025-06-30 14:48:42 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Yale Emerging Climate Leaders Fellowship 2026" logo OR icon'
+2025-06-30 14:48:42 | WARNING  | infortic_scraper | warning:104 | Skipping known bad image URL: https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1730162594550170
+2025-06-30 14:48:42 | INFO     | infortic_scraper | info:99 | Searching Google for '"Yale Emerging Climate Leaders Fellowship 2026" scholarship registration apply' (asking for 5 results)
+2025-06-30 14:48:42 | INFO     | infortic_scraper | info:99 | Found 5 URLs for query: '"Yale Emerging Climate Leaders Fellowship 2026" scholarship registration apply'
+2025-06-30 14:48:43 | INFO     | infortic_scraper | info:99 | URL 'https://opportunitiescorners.com/yale-emerging-climate-leaders-fellowship-2026/' scored 40
+2025-06-30 14:48:44 | INFO     | infortic_scraper | info:99 | URL 'https://www.opportunitiescircle.com/yale-emerging-climate-leaders-fellowship/' scored 40
+2025-06-30 14:48:44 | WARNING  | infortic_scraper | warning:104 | Could not analyze candidate URL 'https://www.facebook.com/groups/742415256445565/posts/yale-emerging-climate-leaders-fellowship-2026-in-usa-france-fully-fundedapply-ht/1615035695850179/': 400 Client Error: Bad Request for url: https://www.facebook.com/groups/742415256445565/posts/yale-emerging-climate-leaders-fellowship-2026-in-usa-france-fully-fundedapply-ht/1615035695850179/
+2025-06-30 14:48:45 | INFO     | infortic_scraper | info:99 | URL 'https://www.linkedin.com/pulse/applications-open-yale-emerging-climate-8spve' scored 40
+2025-06-30 14:48:45 | WARNING  | infortic_scraper | warning:104 | Could not analyze candidate URL 'https://www.facebook.com/oppradar/posts/yale-emerging-climate-leaders-fellowship-2026-in-europe-usa-fully-fundedvisit-ht/122178165140296244/': 400 Client Error: Bad Request for url: https://www.facebook.com/oppradar/posts/yale-emerging-climate-leaders-fellowship-2026-in-europe-usa-fully-fundedvisit-ht/122178165140296244/
+2025-06-30 14:48:45 | INFO     | infortic_scraper | info:99 | Selected best URL: 'https://opportunitiescorners.com/yale-emerging-climate-leaders-fellowship-2026/' with score 40
+2025-06-30 14:48:45 | WARNING  | infortic_scraper | warning:104 | Skipping 'Yale Emerging Climate Leaders Fellowship 2026' due to missing image or registration URL.
+2025-06-30 14:48:45 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Singapore South-East Asia Fellowship (SASEAF) 2025
+2025-06-30 14:48:45 | INFO     | infortic_scraper | info:99 | Searching Google for '"Singapore South-East Asia Fellowship (SASEAF) 2025" logo OR icon' (asking for 3 results)
+2025-06-30 14:48:46 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Singapore South-East Asia Fellowship (SASEAF) 2025" logo OR icon'
+2025-06-30 14:48:46 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://luarkampus.id/storage/course/01JYZR6WWM5XW7YHJE9QDHRPN4.png
+2025-06-30 14:48:46 | INFO     | infortic_scraper | info:99 | Searching Google for '"Singapore South-East Asia Fellowship (SASEAF) 2025" scholarship registration apply' (asking for 5 results)
+2025-06-30 14:48:46 | INFO     | infortic_scraper | info:99 | Found 1 URLs for query: '"Singapore South-East Asia Fellowship (SASEAF) 2025" scholarship registration apply'
+2025-06-30 14:48:46 | INFO     | infortic_scraper | info:99 | URL 'https://luarkampus.id/beasiswa' scored -25
+2025-06-30 14:48:46 | WARNING  | infortic_scraper | warning:104 | No suitable registration URL found from candidates for 'Singapore South-East Asia Fellowship (SASEAF) 2025' (max score: -1)
+2025-06-30 14:48:46 | WARNING  | infortic_scraper | warning:104 | Skipping 'Singapore South-East Asia Fellowship (SASEAF) 2025' due to missing image or registration URL.
+2025-06-30 14:48:46 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 14:48:46 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Cahaya Pintar Mahasiswa 2025" logo OR icon' (asking for 3 results)
+2025-06-30 14:48:46 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Beasiswa Cahaya Pintar Mahasiswa 2025" logo OR icon'
+2025-06-30 14:48:46 | WARNING  | infortic_scraper | warning:104 | Skipping known bad image URL: https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3544359161208733517
+2025-06-30 14:48:46 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Cahaya Pintar Mahasiswa 2025" scholarship registration apply' (asking for 5 results)
+2025-06-30 14:48:46 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Beasiswa Cahaya Pintar Mahasiswa 2025" scholarship registration apply': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+Cahaya+Pintar+Mahasiswa+2025%22+scholarship+registration+apply&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+Cahaya+Pintar+Mahasiswa+2025%22+scholarship+registration+apply&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:48:46 | WARNING  | infortic_scraper | warning:104 | Skipping 'Beasiswa Cahaya Pintar Mahasiswa 2025' due to missing image or registration URL.
+2025-06-30 14:48:46 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Excellent Brains Austria Neuroscience PhD Fellowships 2025
+2025-06-30 14:48:46 | INFO     | infortic_scraper | info:99 | Searching Google for '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" logo OR icon' (asking for 3 results)
+2025-06-30 14:48:47 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" logo OR icon': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Excellent+Brains+Austria+Neuroscience+PhD+Fellowships+2025%22+logo+OR+icon&cx=956371419c266477b&searchType=image&num=3&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Excellent+Brains+Austria+Neuroscience+PhD+Fellowships+2025%22+logo+OR+icon&cx=956371419c266477b&searchType=image&num=3&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:48:47 | INFO     | infortic_scraper | info:99 | Searching Google for '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" scholarship registration apply' (asking for 5 results)
+2025-06-30 14:48:47 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" scholarship registration apply': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Excellent+Brains+Austria+Neuroscience+PhD+Fellowships+2025%22+scholarship+registration+apply&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Excellent+Brains+Austria+Neuroscience+PhD+Fellowships+2025%22+scholarship+registration+apply&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:48:47 | WARNING  | infortic_scraper | warning:104 | Skipping 'Excellent Brains Austria Neuroscience PhD Fellowships 2025' due to missing image or registration URL.
+2025-06-30 14:48:47 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)
+2025-06-30 14:48:47 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" logo OR icon' (asking for 3 results)
+2025-06-30 14:48:47 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" logo OR icon'
+2025-06-30 14:48:47 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://rumahamal.usk.ac.id/api/wp-content/uploads/2025/06/BPRA-UKT-5-1024x576.jpg
+2025-06-30 14:48:47 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" scholarship registration apply' (asking for 5 results)
+2025-06-30 14:48:47 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" scholarship registration apply': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+Pendidikan+Rumah+Amal+Uang+Kuliah+Tunggal+%28BPRA-UKT%29%22+scholarship+registration+apply&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+Pendidikan+Rumah+Amal+Uang+Kuliah+Tunggal+%28BPRA-UKT%29%22+scholarship+registration+apply&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:48:47 | WARNING  | infortic_scraper | warning:104 | Skipping 'Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)' due to missing image or registration URL.
+2025-06-30 14:48:47 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)
+2025-06-30 14:48:47 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" logo OR icon' (asking for 3 results)
+2025-06-30 14:48:47 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" logo OR icon'
+2025-06-30 14:48:47 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://luarkampus.id/storage/course/nDcgWV6HiMEQccyfLiWFcPlTbeF0PC-metaQlUucG5n-.png
+2025-06-30 14:48:47 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" scholarship registration apply' (asking for 5 results)
+2025-06-30 14:48:47 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" scholarship registration apply': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+Kerja+Sama+LPDP+%E2%80%93+King%E2%80%99s+College+London+Singhasari+%28KCL+Singhasari%29%22+scholarship+registration+apply&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+Kerja+Sama+LPDP+%E2%80%93+King%E2%80%99s+College+London+Singhasari+%28KCL+Singhasari%29%22+scholarship+registration+apply&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:48:47 | WARNING  | infortic_scraper | warning:104 | Skipping 'Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)' due to missing image or registration URL.
+2025-06-30 14:48:47 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Hyundai JUMP School Indonesia Batch 2
+2025-06-30 14:48:47 | INFO     | infortic_scraper | info:99 | Searching Google for '"Hyundai JUMP School Indonesia Batch 2" logo OR icon' (asking for 3 results)
+2025-06-30 14:48:47 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Hyundai JUMP School Indonesia Batch 2" logo OR icon'
+2025-06-30 14:48:47 | WARNING  | infortic_scraper | warning:104 | Skipping known bad image URL: https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3664644410899686243
+2025-06-30 14:48:47 | INFO     | infortic_scraper | info:99 | Searching Google for '"Hyundai JUMP School Indonesia Batch 2" scholarship registration apply' (asking for 5 results)
+2025-06-30 14:48:47 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Hyundai JUMP School Indonesia Batch 2" scholarship registration apply': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Hyundai+JUMP+School+Indonesia+Batch+2%22+scholarship+registration+apply&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Hyundai+JUMP+School+Indonesia+Batch+2%22+scholarship+registration+apply&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:48:47 | WARNING  | infortic_scraper | warning:104 | Skipping 'Hyundai JUMP School Indonesia Batch 2' due to missing image or registration URL.
+2025-06-30 14:48:47 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship: 'Beasiswa S3 DESY Hamburg PhD Scholarship 2025' (Deadline: 2025-06-30)
+2025-06-30 14:48:47 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa S3 MSCA Europe PhD Scholarships 2025
+2025-06-30 14:48:47 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" logo OR icon' (asking for 3 results)
+2025-06-30 14:48:48 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" logo OR icon'
+2025-06-30 14:48:48 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://luarkampus.id/storage/course/nDcgWV6HiMEQccyfLiWFcPlTbeF0PC-metaQlUucG5n-.png
+2025-06-30 14:48:48 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" scholarship registration apply' (asking for 5 results)
+2025-06-30 14:48:48 | INFO     | infortic_scraper | info:99 | Found 2 URLs for query: '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" scholarship registration apply'
+2025-06-30 14:48:48 | INFO     | infortic_scraper | info:99 | URL 'https://luarkampus.id/beasiswa' scored -15
+2025-06-30 14:48:51 | INFO     | infortic_scraper | info:99 | URL 'https://luarkampus.id/' scored -10
+2025-06-30 14:48:51 | WARNING  | infortic_scraper | warning:104 | No suitable registration URL found from candidates for 'Beasiswa S3 MSCA Europe PhD Scholarships 2025' (max score: -1)
+2025-06-30 14:48:51 | WARNING  | infortic_scraper | warning:104 | Skipping 'Beasiswa S3 MSCA Europe PhD Scholarships 2025' due to missing image or registration URL.
+2025-06-30 14:48:51 | INFO     | infortic_scraper | info:99 | Scraping finished. Total scholarships scraped: 0
+2025-06-30 14:50:36 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 14:50:36 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 14:50:36 | INFO     | infortic_scraper | info:99 | LuarKampusBeasiswaScraper initialized.
+2025-06-30 14:50:36 | INFO     | infortic_scraper | info:99 | Google Custom Search service initialized.
+2025-06-30 14:50:36 | INFO     | infortic_scraper | info:99 | Starting scrape for LuarKampusBeasiswaScraper at https://luarkampus.id/beasiswa
+2025-06-30 14:50:36 | INFO     | infortic_scraper | info:99 | Found 10 scholarship cards.
+2025-06-30 14:50:36 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Sinarmas - ITSB 2025
+2025-06-30 14:50:36 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Sinarmas - ITSB 2025" registration link' (asking for 3 results)
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Beasiswa Sinarmas - ITSB 2025" registration link'
+2025-06-30 14:50:37 | WARNING  | infortic_scraper | warning:104 | Skipping known bad image URL: https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3516292685311755754
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Sinarmas - ITSB 2025" registration link' (asking for 5 results)
+2025-06-30 14:50:37 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Beasiswa Sinarmas - ITSB 2025" registration link': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+Sinarmas+-+ITSB+2025%22+registration+link&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+Sinarmas+-+ITSB+2025%22+registration+link&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:50:37 | WARNING  | infortic_scraper | warning:104 | Skipping 'Beasiswa Sinarmas - ITSB 2025' due to missing image or registration URL.
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Searching Google for '"Yale Emerging Climate Leaders Fellowship 2026" registration link' (asking for 3 results)
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Yale Emerging Climate Leaders Fellowship 2026" registration link'
+2025-06-30 14:50:37 | WARNING  | infortic_scraper | warning:104 | Skipping known bad image URL: https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3660586448453778128
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Searching Google for '"Yale Emerging Climate Leaders Fellowship 2026" registration link' (asking for 5 results)
+2025-06-30 14:50:37 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Yale Emerging Climate Leaders Fellowship 2026" registration link': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Yale+Emerging+Climate+Leaders+Fellowship+2026%22+registration+link&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Yale+Emerging+Climate+Leaders+Fellowship+2026%22+registration+link&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:50:37 | WARNING  | infortic_scraper | warning:104 | Skipping 'Yale Emerging Climate Leaders Fellowship 2026' due to missing image or registration URL.
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Singapore South-East Asia Fellowship (SASEAF) 2025
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Searching Google for '"Singapore South-East Asia Fellowship (SASEAF) 2025" registration link' (asking for 3 results)
+2025-06-30 14:50:37 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Singapore South-East Asia Fellowship (SASEAF) 2025" registration link': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Singapore+South-East+Asia+Fellowship+%28SASEAF%29+2025%22+registration+link&cx=956371419c266477b&searchType=image&num=3&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Singapore+South-East+Asia+Fellowship+%28SASEAF%29+2025%22+registration+link&cx=956371419c266477b&searchType=image&num=3&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Searching Google for '"Singapore South-East Asia Fellowship (SASEAF) 2025" registration link' (asking for 5 results)
+2025-06-30 14:50:37 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Singapore South-East Asia Fellowship (SASEAF) 2025" registration link': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Singapore+South-East+Asia+Fellowship+%28SASEAF%29+2025%22+registration+link&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Singapore+South-East+Asia+Fellowship+%28SASEAF%29+2025%22+registration+link&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:50:37 | WARNING  | infortic_scraper | warning:104 | Skipping 'Singapore South-East Asia Fellowship (SASEAF) 2025' due to missing image or registration URL.
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Cahaya Pintar Mahasiswa 2025" registration link' (asking for 3 results)
+2025-06-30 14:50:37 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Beasiswa Cahaya Pintar Mahasiswa 2025" registration link': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+Cahaya+Pintar+Mahasiswa+2025%22+registration+link&cx=956371419c266477b&searchType=image&num=3&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+Cahaya+Pintar+Mahasiswa+2025%22+registration+link&cx=956371419c266477b&searchType=image&num=3&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Cahaya Pintar Mahasiswa 2025" registration link' (asking for 5 results)
+2025-06-30 14:50:37 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Beasiswa Cahaya Pintar Mahasiswa 2025" registration link': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+Cahaya+Pintar+Mahasiswa+2025%22+registration+link&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+Cahaya+Pintar+Mahasiswa+2025%22+registration+link&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:50:37 | WARNING  | infortic_scraper | warning:104 | Skipping 'Beasiswa Cahaya Pintar Mahasiswa 2025' due to missing image or registration URL.
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Excellent Brains Austria Neuroscience PhD Fellowships 2025
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Searching Google for '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" registration link' (asking for 3 results)
+2025-06-30 14:50:37 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" registration link': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Excellent+Brains+Austria+Neuroscience+PhD+Fellowships+2025%22+registration+link&cx=956371419c266477b&searchType=image&num=3&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Excellent+Brains+Austria+Neuroscience+PhD+Fellowships+2025%22+registration+link&cx=956371419c266477b&searchType=image&num=3&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Searching Google for '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" registration link' (asking for 5 results)
+2025-06-30 14:50:37 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" registration link': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Excellent+Brains+Austria+Neuroscience+PhD+Fellowships+2025%22+registration+link&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Excellent+Brains+Austria+Neuroscience+PhD+Fellowships+2025%22+registration+link&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:50:37 | WARNING  | infortic_scraper | warning:104 | Skipping 'Excellent Brains Austria Neuroscience PhD Fellowships 2025' due to missing image or registration URL.
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" registration link' (asking for 3 results)
+2025-06-30 14:50:37 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" registration link': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+Pendidikan+Rumah+Amal+Uang+Kuliah+Tunggal+%28BPRA-UKT%29%22+registration+link&cx=956371419c266477b&searchType=image&num=3&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+Pendidikan+Rumah+Amal+Uang+Kuliah+Tunggal+%28BPRA-UKT%29%22+registration+link&cx=956371419c266477b&searchType=image&num=3&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" registration link' (asking for 5 results)
+2025-06-30 14:50:37 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" registration link': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+Pendidikan+Rumah+Amal+Uang+Kuliah+Tunggal+%28BPRA-UKT%29%22+registration+link&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+Pendidikan+Rumah+Amal+Uang+Kuliah+Tunggal+%28BPRA-UKT%29%22+registration+link&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:50:37 | WARNING  | infortic_scraper | warning:104 | Skipping 'Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)' due to missing image or registration URL.
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)
+2025-06-30 14:50:37 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" registration link' (asking for 3 results)
+2025-06-30 14:50:38 | INFO     | infortic_scraper | info:99 | Found 3 URLs for query: '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" registration link'
+2025-06-30 14:50:38 | INFO     | infortic_scraper | info:99 | URL is a direct image link: https://luarkampus.id/storage/course/01JYZR6WWM5XW7YHJE9QDHRPN4.png
+2025-06-30 14:50:38 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" registration link' (asking for 5 results)
+2025-06-30 14:50:38 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" registration link': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+Kerja+Sama+LPDP+%E2%80%93+King%E2%80%99s+College+London+Singhasari+%28KCL+Singhasari%29%22+registration+link&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+Kerja+Sama+LPDP+%E2%80%93+King%E2%80%99s+College+London+Singhasari+%28KCL+Singhasari%29%22+registration+link&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:50:38 | WARNING  | infortic_scraper | warning:104 | Skipping 'Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)' due to missing image or registration URL.
+2025-06-30 14:50:38 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Hyundai JUMP School Indonesia Batch 2
+2025-06-30 14:50:38 | INFO     | infortic_scraper | info:99 | Searching Google for '"Hyundai JUMP School Indonesia Batch 2" registration link' (asking for 3 results)
+2025-06-30 14:50:38 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Hyundai JUMP School Indonesia Batch 2" registration link': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Hyundai+JUMP+School+Indonesia+Batch+2%22+registration+link&cx=956371419c266477b&searchType=image&num=3&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Hyundai+JUMP+School+Indonesia+Batch+2%22+registration+link&cx=956371419c266477b&searchType=image&num=3&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:50:38 | INFO     | infortic_scraper | info:99 | Searching Google for '"Hyundai JUMP School Indonesia Batch 2" registration link' (asking for 5 results)
+2025-06-30 14:50:38 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Hyundai JUMP School Indonesia Batch 2" registration link': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Hyundai+JUMP+School+Indonesia+Batch+2%22+registration+link&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Hyundai+JUMP+School+Indonesia+Batch+2%22+registration+link&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:50:38 | WARNING  | infortic_scraper | warning:104 | Skipping 'Hyundai JUMP School Indonesia Batch 2' due to missing image or registration URL.
+2025-06-30 14:50:38 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship: 'Beasiswa S3 DESY Hamburg PhD Scholarship 2025' (Deadline: 2025-06-30)
+2025-06-30 14:50:38 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa S3 MSCA Europe PhD Scholarships 2025
+2025-06-30 14:50:38 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" registration link' (asking for 3 results)
+2025-06-30 14:50:38 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" registration link': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+S3+MSCA+Europe+PhD+Scholarships+2025%22+registration+link&cx=956371419c266477b&searchType=image&num=3&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+S3+MSCA+Europe+PhD+Scholarships+2025%22+registration+link&cx=956371419c266477b&searchType=image&num=3&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:50:38 | INFO     | infortic_scraper | info:99 | Searching Google for '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" registration link' (asking for 5 results)
+2025-06-30 14:50:38 | ERROR    | infortic_scraper | error:109 | An error occurred during Google search for '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" registration link': <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+S3+MSCA+Europe+PhD+Scholarships+2025%22+registration+link&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 212, in _search_google
+    result = self.search_service.cse().list(**request_params).execute()
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\googleapiclient\http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://customsearch.googleapis.com/customsearch/v1?q=%22Beasiswa+S3+MSCA+Europe+PhD+Scholarships+2025%22+registration+link&cx=956371419c266477b&num=5&key=AIzaSyCJy0BSQ2KPznFLQ1r_JqdgsjjBrrgroXA&alt=json returned "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.". Details: "[{'message': "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'customsearch.googleapis.com' for consumer 'project_number:934569080764'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2025-06-30 14:50:38 | WARNING  | infortic_scraper | warning:104 | Skipping 'Beasiswa S3 MSCA Europe PhD Scholarships 2025' due to missing image or registration URL.
+2025-06-30 14:50:38 | INFO     | infortic_scraper | info:99 | Scraping finished. Total scholarships scraped: 0
