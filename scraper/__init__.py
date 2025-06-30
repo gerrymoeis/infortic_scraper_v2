@@ -12,7 +12,7 @@ To add a new scraper, simply subclass BaseScraper and implement the scrape() met
 
 from .core.base_scraper import BaseScraper
 from .core.logger import Logger
-from .core.db import DBClient
+from .core.db import SupabaseDBClient
 
 __version__ = "1.0.0"
-__all__ = ["BaseScraper", "Logger", "DBClient"]
+__all__ = ["BaseScraper", "Logger", "SupabaseDBClient"]

@@ -79,7 +79,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 from .logger import Logger
-from .db import DBClient
+from .db import SupabaseDBClient
 
 
 class BaseScraper(ABC):
@@ -103,7 +103,7 @@ class BaseScraper(ABC):
         self.driver: Optional[webdriver.Chrome] = None
         self.session: Optional[aiohttp.ClientSession] = None
         self.logger = Logger()
-        self.db = DBClient()
+        self.db = SupabaseDBClient()
         
     def __enter__(self):
         """Context manager entry - initialize browser driver."""

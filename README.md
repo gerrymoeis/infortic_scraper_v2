@@ -199,6 +199,16 @@ results = scraper.scrape()
 print(f"Scraped {len(results['competitions'])} competitions")
 ```
 
+## Data Cleaning Behavior
+
+The cleaning routine for the `lomba` table in the database ensures that stale data is not processed, maintaining the integrity of new data inserted. Key improvements include:
+
+- **Validated Deletion**: Ensures all records are removed safely using checks for non-null IDs.
+- **Comprehensive Logging**: Captures detailed information about the cleaning process for auditability.
+- **Robust Error Handling**: Halts the scraping process if cleaning errors occur, preventing further operations with stale data.
+- **Improved Exception Management**: Provides clear messaging and prevents data insertion if cleaning fails.
+- **Optional Cleaning Control**: The method `insert_lomba_rows()` can skip cleaning if needed by passing `clean_first=False`.
+
 ## 🐛 Troubleshooting
 
 ### Common Issues

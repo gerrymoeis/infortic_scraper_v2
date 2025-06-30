@@ -9,6 +9,6 @@ Contains the base interfaces that all scrapers should use:
 
 from .base_scraper import BaseScraper
 from .logger import Logger
-from .db import DBClient
+from .db import SupabaseDBClient
 
-__all__ = ["BaseScraper", "Logger", "DBClient"]
+__all__ = ["BaseScraper", "Logger", "SupabaseDBClient"]

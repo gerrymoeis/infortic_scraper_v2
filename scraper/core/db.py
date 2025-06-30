@@ -1,110 +1,322 @@
-"""
-Database client interface for handling database operations such as insertions.
-Provides a standardized way to interact with the database.
-"""
-
-from typing import List, Optional
-from abc import ABC, abstractmethod
-import psycopg2
-import psycopg2.extras
-from psycopg2 import sql
 import os
+import time
+import logging
+from typing import List, Optional
+from supabase import create_client, Client
+from retrying import retry
 
-from .logger import Logger
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
-
-class DBClient:
+class SupabaseDBClient:
     """
-    Database client for handling PostgreSQL database operations.
+    Supabase database client with retry/backoff logic and bulk insert capabilities.
     
-    Provides methods for inserting data into a database.
-    Handles connection management and error handling.
+    This client provides methods for upserting data to Supabase tables with
+    automatic retry logic and error handling.
     """
     
-    def __init__(self, connection_string: Optional[str] = None):
-        self.logger = Logger()
-        self.connection_string = connection_string or self._get_connection_string()
-        self._connection: Optional[psycopg2.connection] = None
-        
-    def _get_connection_string(self) -> str:
+    def __init__(self, batch_size: int = 1000):
         """
-        Get database connection string from environment variables.
-        
-        Returns:
-            PostgreSQL connection string
-        """
-        host = os.getenv('DB_HOST', 'localhost')
-        port = os.getenv('DB_PORT', '5432')
-        database = os.getenv('DB_NAME', 'infortic')
-        user = os.getenv('DB_USER', 'postgres')
-        password = os.getenv('DB_PASSWORD', '')
-        
-        return f"host={host} port={port} dbname={database} user={user} password={password}"
-        
-    def connect(self):
-        """
-        Establish a database connection.
-        
-        Returns:
-            psycopg2 connection object
-        """
-        try:
-            if self._connection is None or self._connection.closed:
-                self._connection = psycopg2.connect(self.connection_string)
-                self.logger.info("Database connection established")
-            return self._connection
-        except Exception as e:
-            self.logger.error(f"Failed to connect to database: {str(e)}")
-            raise
-      
-    def close(self):
-        """
-        Close the database connection.
-        """
-        if self._connection and not self._connection.closed:
-            self._connection.close()
-            self.logger.info("Database connection closed")
-      
-    def insert_many(self, data: List[dict], table_name: str):
-        """
-        Insert multiple records into a database table.
+        Initialize the Supabase client.
         
         Args:
-            data: List of dictionaries representing records to insert
-            table_name: Name of the database table
+            batch_size: Maximum number of rows to process in a single batch
+        """
+        url = os.getenv('SUPABASE_URL')
+        anon_key = os.getenv('SUPABASE_ANON_KEY')
         
+        if not url or not anon_key:
+            raise ValueError("SUPABASE_URL and SUPABASE_ANON_KEY must be set in environment variables")
+        
+        self.client: Client = create_client(url, anon_key)
+        self.batch_size = batch_size
+        logger.info(f"Supabase client initialized with batch size: {batch_size}")
+    
+    def _exponential_backoff(self, attempt: int) -> int:
+        """
+        Calculate exponential backoff delay.
+        
+        Args:
+            attempt: The current attempt number (0-indexed)
+            
+        Returns:
+            Delay in milliseconds
+        """
+        base_delay = 1000  # 1 second
+        return min(base_delay * (2 ** attempt), 30000)  # Max 30 seconds
+    
+    @retry(
+        stop_max_attempt_number=3,
+        wait_func=lambda attempt, delay: max(1000, min(30000, 1000 * (2 ** attempt)))
+    )
+    def _insert_batch(self, rows: List[dict]) -> int:
+        """
+        Insert a batch of rows to the lomba table.
+        
+        Args:
+            rows: List of dictionaries representing lomba records
+            
+        Returns:
+            Number of rows processed
+            
         Raises:
-            Exception: If the insertion fails
+            Exception: If the insert operation fails after all retries
         """
         try:
-            self.logger.info(f"Preparing to insert data into {table_name}")
-            conn = self.connect()
-            cur = conn.cursor()
+            logger.info(f"Attempting to insert {len(rows)} rows to lomba table")
             
-            # Create a list of column names and their corresponding data values
-            columns = data[0].keys()
+            # Perform the insert operation
+            response = self.client.table('lomba').insert(rows).execute()
             
-            # Construct the insert statement dynamically based on columns
-            query = sql.SQL("INSERT INTO {table} ({fields}) VALUES %s").format(
-                table=sql.Identifier(table_name),
-                fields=sql.SQL(', ').join(map(sql.Identifier, columns))
-            )
+            # Check for errors in the response
+            if hasattr(response, 'error') and response.error:
+                raise Exception(f"Supabase error: {response.error}")
             
-            # Transform data into a tuple of tuples (suitable for psycopg2.extras.execute_values)
-            values = [tuple(item[col] for col in columns) for item in data]
+            # Count successful operations
+            processed_count = len(response.data) if hasattr(response, 'data') and response.data else len(rows)
+            logger.info(f"Successfully inserted {processed_count} rows")
             
-            # Use execute_values() to perform bulk insert
-            psycopg2.extras.execute_values(cur, query, values)
-            conn.commit()
-            self.logger.info(f"Inserted {len(data)} records into {table_name}")
+            return processed_count
             
         except Exception as e:
-            self.logger.error(f"Failed to insert data into {table_name}: {str(e)}")
+            logger.error(f"Failed to insert batch: {str(e)}")
             raise
-        finally:
-            if cur:
-                cur.close()
-            if conn:
-                conn.close()
-                self.logger.info("Database connection closed.")
+    
+    @retry(
+        stop_max_attempt_number=3,
+        wait_func=lambda attempt, delay: max(1000, min(30000, 1000 * (2 ** attempt)))
+    )
+    def _upsert_batch(self, rows: List[dict]) -> int:
+        """
+        Upsert a batch of rows to the lomba table.
+        
+        Args:
+            rows: List of dictionaries representing lomba records
+            
+        Returns:
+            Number of rows processed
+            
+        Raises:
+            Exception: If the upsert operation fails after all retries
+        """
+        try:
+            logger.info(f"Attempting to upsert {len(rows)} rows to lomba table")
+            
+            # Perform the upsert operation
+            response = self.client.table('lomba').upsert(
+                rows, 
+                on_conflict='source_url',
+                ignore_duplicates=True
+            ).execute()
+            
+            # Check for errors in the response
+            if hasattr(response, 'error') and response.error:
+                raise Exception(f"Supabase error: {response.error}")
+            
+            # Count successful operations
+            processed_count = len(response.data) if hasattr(response, 'data') and response.data else len(rows)
+            logger.info(f"Successfully upserted {processed_count} rows")
+            
+            return processed_count
+            
+        except Exception as e:
+            logger.error(f"Failed to upsert batch: {str(e)}")
+            raise
+    
+    def clean_lomba_table(self) -> bool:
+        """
+        Clean all existing data from the lomba table using Supabase client.
+        
+        Returns:
+            True if successful, False otherwise
+            
+        Raises:
+            Exception: If cleaning fails and should stop scraper execution
+        """
+        try:
+            logger.info("Cleaning existing data from lomba table using Supabase client")
+            
+            # Use a validated delete call - delete all records where id is not null
+            # This is a safer approach than using a fake UUID
+            response = self.client.table('lomba').delete().not_.is_('id', 'null').execute()
+            
+            # Log detailed response information
+            logger.info(f"Delete response status_code: {getattr(response, 'status_code', 'N/A')}")
+            logger.info(f"Delete response data: {getattr(response, 'data', 'N/A')}")
+            
+            # Check for errors in the response
+            if hasattr(response, 'error') and response.error:
+                logger.error(f"Delete response error: {response.error}")
+                raise Exception(f"Supabase delete error: {response.error}")
+            
+            # Verify the operation was successful
+            if hasattr(response, 'status_code') and response.status_code >= 400:
+                logger.error(f"Delete operation failed with status code: {response.status_code}")
+                raise Exception(f"Delete operation failed with status code: {response.status_code}")
+            
+            logger.info("Successfully cleaned lomba table using Supabase client")
+            return True
+            
+        except Exception as e:
+            logger.error(f"Failed to clean lomba table: {str(e)}")
+            # Re-raise the exception to stop scraper execution with stale data
+            raise Exception(f"Critical error during table cleaning: {str(e)}. Scraper cannot continue with stale data.")
+    
+    def clean_lomba_table_with_function(self) -> bool:
+        """
+        Clean all existing data from the lomba table using PostgreSQL function.
+        
+        This method calls the clean_lomba_table() PostgreSQL function that was
+        created via migration. This is more efficient for large datasets.
+        
+        Returns:
+            True if successful, False otherwise
+            
+        Raises:
+            Exception: If cleaning fails and should stop scraper execution
+        """
+        try:
+            logger.info("Cleaning existing data from lomba table using PostgreSQL function")
+            
+            # Call the PostgreSQL cleaning function (using simple version that works)
+            response = self.client.rpc('clean_lomba_simple').execute()
+            
+            # Log detailed response information
+            logger.info(f"Function response status_code: {getattr(response, 'status_code', 'N/A')}")
+            logger.info(f"Function response data: {getattr(response, 'data', 'N/A')}")
+            
+            # Check for errors in the response
+            if hasattr(response, 'error') and response.error:
+                logger.error(f"Function response error: {response.error}")
+                raise Exception(f"PostgreSQL function error: {response.error}")
+            
+            # Verify the operation was successful
+            if hasattr(response, 'status_code') and response.status_code >= 400:
+                logger.error(f"Function call failed with status code: {response.status_code}")
+                raise Exception(f"Function call failed with status code: {response.status_code}")
+            
+            logger.info("Successfully cleaned lomba table using PostgreSQL function")
+            return True
+            
+        except Exception as e:
+            logger.error(f"Failed to clean lomba table with function: {str(e)}")
+            # Re-raise the exception to stop scraper execution with stale data
+            raise Exception(f"Critical error during table cleaning with function: {str(e)}. Scraper cannot continue with stale data.")
+    
+    def get_lomba_count(self) -> int:
+        """
+        Get the current count of rows in the lomba table.
+        
+        Returns:
+            Number of rows in the lomba table
+            
+        Raises:
+            Exception: If count query fails
+        """
+        try:
+            logger.info("Getting lomba table row count")
+            
+            response = self.client.table('lomba').select('*', count='exact').execute()
+            
+            if hasattr(response, 'error') and response.error:
+                logger.error(f"Count query error: {response.error}")
+                raise Exception(f"Count query error: {response.error}")
+            
+            count = response.count if hasattr(response, 'count') else 0
+            logger.info(f"Lomba table contains {count} rows")
+            
+            return count
+            
+        except Exception as e:
+            logger.error(f"Failed to get lomba count: {str(e)}")
+            raise
+    
 
+    def insert_lomba_rows(self, rows: List[dict], clean_first: bool = True) -> int:
+        """
+        Insert lomba rows with cleaning and deduplication.
+        
+        This method:
+        1. Optionally cleans existing data
+        2. Deduplicates the input rows
+        3. Inserts rows in batches using simple insert operations
+        
+        Args:
+            rows: List of dictionaries representing lomba records
+            clean_first: Whether to clean the table before insertion
+        
+        Returns:
+            Total number of rows processed
+            
+        Raises:
+            ValueError: If rows list is empty or invalid
+            Exception: If the operation fails after all retries
+        """
+        if not rows:
+            logger.warning("No rows provided for insertion")
+            return 0
+        
+        if not isinstance(rows, list):
+            raise ValueError("Rows must be a list of dictionaries")
+        
+        # Validate that all rows are dictionaries
+        for i, row in enumerate(rows):
+            if not isinstance(row, dict):
+                raise ValueError(f"Row {i} is not a dictionary")
+        
+        # Clean the table if requested
+        if clean_first:
+            try:
+                self.clean_lomba_table()
+            except Exception as e:
+                logger.error(f"Table cleaning failed: {str(e)}")
+                # Re-raise the exception to prevent scraper from continuing with stale data
+                raise Exception(f"Cannot proceed with data insertion due to cleaning failure: {str(e)}")
+        
+        total_processed = 0
+        total_rows = len(rows)
+        
+        logger.info(f"Starting bulk insert operation for {total_rows} rows")
+        
+        try:
+            # Process rows in batches
+            for i in range(0, total_rows, self.batch_size):
+                batch = rows[i:i + self.batch_size]
+                batch_num = (i // self.batch_size) + 1
+                total_batches = (total_rows + self.batch_size - 1) // self.batch_size
+                
+                logger.info(f"Processing batch {batch_num}/{total_batches} ({len(batch)} rows)")
+                
+                # Process the batch with retry logic
+                processed = self._insert_batch(batch)
+                total_processed += processed
+                
+                # Small delay between batches to avoid overwhelming the server
+                if i + self.batch_size < total_rows:
+                    time.sleep(0.1)
+            
+            logger.info(f"Bulk insert completed successfully. Total rows processed: {total_processed}")
+            return total_processed
+            
+        except Exception as e:
+            logger.error(f"Bulk insert operation failed: {str(e)}")
+            logger.info(f"Rows processed before failure: {total_processed}")
+            raise
+    
+    def test_connection(self) -> bool:
+        """
+        Test the connection to Supabase.
+        
+        Returns:
+            True if connection is successful, False otherwise
+        """
+        try:
+            # Simple query to test connection
+            response = self.client.table('lomba').select('*').limit(1).execute()
+            logger.info("Supabase connection test successful")
+            return True
+        except Exception as e:
+            logger.error(f"Supabase connection test failed: {str(e)}")
+            return False
