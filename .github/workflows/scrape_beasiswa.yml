@@ -25,7 +25,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r infortic/requirements.txt
+          pip install -r requirements.txt
       
       - name: Install Playwright browsers
         run: playwright install --with-deps
@@ -36,4 +36,12 @@ jobs:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           LUAR_KAMPUS_GMAIL: ${{ secrets.LUAR_KAMPUS_GMAIL }}
           LUAR_KAMPUS_PASSWORD: ${{ secrets.LUAR_KAMPUS_PASSWORD }}
-        run: python infortic/run.py beasiswa --run-with-cleaning
+        run: python run.py beasiswa --run-with-cleaning
+
+      - name: Upload screenshot on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failure-screenshot
+          path: login_failure_screenshot.png
+          retention-days: 5

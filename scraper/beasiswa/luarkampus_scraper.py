@@ -38,20 +38,26 @@ class LuarKampusBeasiswaScraper(BaseScraper):
         self.logger.info(f"Navigating to login page: {self.LOGIN_URL}")
         page.goto(self.LOGIN_URL, wait_until='domcontentloaded', timeout=60000)
         
-        self.logger.info("Waiting for login form to be visible...")
-        email_input_selector = 'input[name="email"]'
-        page.wait_for_selector(email_input_selector, state='visible', timeout=30000)
-        
-        self.logger.info("Filling login credentials.")
-        page.fill(email_input_selector, self.luar_kampus_gmail)
-        page.fill('input[name="password"]', self.luar_kampus_password)
-        
-        self.logger.info("Submitting login form.")
-        page.click('button[type="submit"]')
-        
-        self.logger.info("Waiting for login request to complete...")
-        page.wait_for_load_state('networkidle', timeout=30000)
-        self.logger.info("Login form submitted. Assuming login is successful.")
+        try:
+            self.logger.info("Waiting for login form to be visible...")
+            email_input_selector = 'input[name="email"]'
+            page.wait_for_selector(email_input_selector, state='visible', timeout=30000)
+            
+            self.logger.info("Filling login credentials.")
+            page.fill(email_input_selector, self.luar_kampus_gmail)
+            page.fill('input[name="password"]', self.luar_kampus_password)
+            
+            self.logger.info("Submitting login form.")
+            page.click('button[type="submit"]')
+            
+            self.logger.info("Waiting for login request to complete...")
+            page.wait_for_load_state('networkidle', timeout=30000)
+            self.logger.info("Login form submitted. Assuming login is successful.")
+        except PlaywrightTimeoutError as e:
+            screenshot_path = "login_failure_screenshot.png"
+            page.screenshot(path=screenshot_path)
+            self.logger.error(f"Timeout during login. A screenshot has been saved to '{screenshot_path}'. This might be due to a CAPTCHA.")
+            raise e
 
     def scrape(self) -> List[Dict[str, Any]]:
         """Main scraping method orchestrating login, list scraping, and detail scraping."""

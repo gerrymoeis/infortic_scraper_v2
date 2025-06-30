@@ -9416,3 +9416,57 @@ Call log:
 2025-06-30 19:42:50 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1818
 2025-06-30 19:42:50 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Singapore South-East Asia Fellowship (SASEAF) 2025
 2025-06-30 19:42:57 | INFO     | infortic_scraper | info:99 | Closing browser.
+2025-06-30 19:51:42 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 19:51:42 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 19:51:42 | INFO     | infortic_scraper | info:99 | LuarKampusBeasiswaScraper initialized for authenticated scraping.
+2025-06-30 19:51:42 | INFO     | infortic_scraper | info:99 | Starting scrape for LuarKampusBeasiswaScraper
+2025-06-30 19:51:43 | INFO     | infortic_scraper | info:99 | Navigating to login page: https://luarkampus.id/login/email
+2025-06-30 19:51:44 | INFO     | infortic_scraper | info:99 | Waiting for login form to be visible...
+2025-06-30 19:51:44 | INFO     | infortic_scraper | info:99 | Filling login credentials.
+2025-06-30 19:51:44 | INFO     | infortic_scraper | info:99 | Submitting login form.
+2025-06-30 19:51:47 | INFO     | infortic_scraper | info:99 | Waiting for login request to complete...
+2025-06-30 19:51:50 | INFO     | infortic_scraper | info:99 | Login form submitted. Assuming login is successful.
+2025-06-30 19:51:50 | INFO     | infortic_scraper | info:99 | Navigating to initial scholarship list: https://luarkampus.id/beasiswa
+2025-06-30 19:51:50 | INFO     | infortic_scraper | info:99 | Scraping page 1...
+2025-06-30 19:51:50 | INFO     | infortic_scraper | info:99 | Found 10 scholarships on page 1.
+2025-06-30 19:51:50 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1751
+2025-06-30 19:51:51 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Sinarmas - ITSB 2025
+2025-06-30 19:51:55 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://sumateraekspres.bacakoran.co/upload/61e27f7b1477466f545336659f11f0cd.jpg
+2025-06-30 19:51:55 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Sinarmas - ITSB 2025
+2025-06-30 19:51:55 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1819
+2025-06-30 19:51:55 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 19:52:01 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://jackson.yale.edu/wp-content/uploads/2024/01/CA026436_ClimateFellows_annouce.Jan2024.jpg
+2025-06-30 19:52:01 | INFO     | infortic_scraper | info:99 | Successfully scraped: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 19:52:01 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1818
+2025-06-30 19:52:02 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Singapore South-East Asia Fellowship (SASEAF) 2025
+2025-06-30 19:52:08 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://variety.com/wp-content/uploads/2025/06/Arts-Centre.jpg?w=1000&h=563&crop=1
+2025-06-30 19:52:08 | INFO     | infortic_scraper | info:99 | Successfully scraped: Singapore South-East Asia Fellowship (SASEAF) 2025
+2025-06-30 19:52:08 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1817
+2025-06-30 19:52:09 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 19:52:15 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://www.scholarsofficial.com/wp-content/uploads/2023/06/Beasiswa-Cahaya-Pintar-2023-untuk-Mahasiswa-D3-dan-S1-Palembang.jpg
+2025-06-30 19:52:15 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 19:52:15 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1816
+2025-06-30 19:52:16 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Excellent Brains Austria Neuroscience PhD Fellowships 2025
+2025-06-30 19:52:23 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://blogassets.leverageedu.com/media/uploads/2022/05/04163400/PhD-Neuroscience.png
+2025-06-30 19:52:23 | INFO     | infortic_scraper | info:99 | Successfully scraped: Excellent Brains Austria Neuroscience PhD Fellowships 2025
+2025-06-30 19:52:23 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1815
+2025-06-30 19:52:23 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)
+2025-06-30 19:52:31 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://www.unib.ac.id/wp-content/uploads/2022/03/Pengumuman-UKT.png
+2025-06-30 19:52:31 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)
+2025-06-30 19:52:31 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1814
+2025-06-30 19:52:31 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)
+2025-06-30 19:52:38 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://awsimages.detik.net.id/visual/2024/10/16/kings-college-london_169.jpeg?w=715&q=90
+2025-06-30 19:52:38 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)
+2025-06-30 19:52:38 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1813
+2025-06-30 19:52:39 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Hyundai JUMP School Indonesia Batch 2
+2025-06-30 19:52:46 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://ruangoto.com/wp-content/uploads/2024/09/Foto-2-Upacara-Pembukaan-Hyundai-Jump-School-Indonesia-scaled.jpeg
+2025-06-30 19:52:46 | INFO     | infortic_scraper | info:99 | Successfully scraped: Hyundai JUMP School Indonesia Batch 2
+2025-06-30 19:52:46 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1812
+2025-06-30 19:52:46 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa S3 DESY Hamburg PhD Scholarship 2025' with deadline 2025-06-30.
+2025-06-30 19:52:46 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1811
+2025-06-30 19:52:46 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa S3 MSCA Europe PhD Scholarships 2025
+2025-06-30 19:52:53 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://www.scholarsofficial.com/wp-content/uploads/2025/04/Orange-and-White-Modern-Student-Abroad-Instagram-Post.png
+2025-06-30 19:52:53 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa S3 MSCA Europe PhD Scholarships 2025
+2025-06-30 19:52:53 | INFO     | infortic_scraper | info:99 | No more pages to scrape.
+2025-06-30 19:52:53 | INFO     | infortic_scraper | info:99 | Closing browser.
+2025-06-30 19:52:54 | INFO     | infortic_scraper | info:99 | Scraping finished. Total scholarships scraped: 9
