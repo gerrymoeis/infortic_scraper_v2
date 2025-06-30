@@ -1,0 +1,39 @@
+name: Daily Beasiswa Scraping
+
+on:
+  schedule:
+    # Runs at midnight Western Indonesia Time (WIB), which is 17:00 UTC
+    - cron: '0 17 * * *'
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    if: github.ref == 'refs/heads/beasiswa_scraper'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: beasiswa_scraper
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r infortic/requirements.txt
+      
+      - name: Install Playwright browsers
+        run: playwright install --with-deps
+
+      - name: Run Beasiswa Scraper
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          LUAR_KAMPUS_GMAIL: ${{ secrets.LUAR_KAMPUS_GMAIL }}
+          LUAR_KAMPUS_PASSWORD: ${{ secrets.LUAR_KAMPUS_PASSWORD }}
+        run: python infortic/run.py beasiswa --run-with-cleaning
