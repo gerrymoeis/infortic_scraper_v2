@@ -1,189 +1,250 @@
 # scraper/beasiswa/luarkampus_scraper.py
 
-from ..core.base_scraper import BaseScraper
-from typing import Dict, List, Any, Optional
-import requests
-from urllib.parse import urljoin
-from bs4 import BeautifulSoup
-from datetime import datetime
-import re
 import os
-from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
-from dotenv import load_dotenv
+import re
+from typing import Optional
+from datetime import datetime, date
+from urllib.parse import urlparse, parse_qs, unquote
+from typing import Any, Dict, List
 
-# Load environment variables from .env file
+from bs4 import BeautifulSoup
+from dotenv import load_dotenv
+from playwright.sync_api import Page, sync_playwright, TimeoutError as PlaywrightTimeoutError, Browser
+
+from ..core.base_scraper import BaseScraper
+
 load_dotenv()
 
 class LuarKampusBeasiswaScraper(BaseScraper):
     """
     Scraper for Beasiswa (Scholarship) data from luarkampus.id.
-    
-    This scraper is designed to be lightweight and does not require a browser,
-    as the target page content is static. It uses Playwright to find additional details like image and registration URLs.
+    This scraper logs into the site, scrapes detail pages for comprehensive data,
+    and uses Yandex Image Search to find scholarship images.
     """
-
-    BASE_URL: str = "https://luarkampus.id/beasiswa"
+    BASE_URL = "https://luarkampus.id"
+    LOGIN_URL = f"{BASE_URL}/login/email"
+    BEASISWA_URL = f"{BASE_URL}/beasiswa"
 
     def __init__(self, db_client, headless: bool = True, timeout: int = 30):
         super().__init__(db_client, headless, timeout)
-        self.session = requests.Session()
-        self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-        })
-        self.logger.info("LuarKampusBeasiswaScraper initialized.")
+        self.logger.info("LuarKampusBeasiswaScraper initialized for authenticated scraping.")
+        self.luar_kampus_gmail = os.getenv("LUAR_KAMPUS_GMAIL")
+        self.luar_kampus_password = os.getenv("LUAR_KAMPUS_PASSWORD")
+        if not self.luar_kampus_gmail or not self.luar_kampus_password:
+            raise ValueError("LUAR_KAMPUS_GMAIL and LUAR_KAMPUS_PASSWORD must be set in .env file")
 
-    def _parse_deadline(self, deadline_text: str) -> Optional[str]:
-        """
-        Parses a deadline string (e.g., 'Deadline: 01 Agt 2025') into an ISO 8601 date string.
-        """
-        indonesian_months = {
-            'jan': '01', 'feb': '02', 'mar': '03', 'apr': '04', 'mei': '05', 'jun': '06',
-            'jul': '07', 'agt': '08', 'sep': '09', 'okt': '10', 'nov': '11', 'des': '12'
-        }
-        try:
-            clean_text = deadline_text.lower().replace('deadline:', '').strip()
-            day, month_abbr, year = clean_text.split()
-            month = indonesian_months.get(month_abbr)
-            
-            if month:
-                dt = datetime(int(year), int(month), int(day))
-                return dt.strftime('%Y-%m-%d')
-            
-            self.logger.warning(f"Could not map month abbreviation: '{month_abbr}'")
-            return None
-        except Exception as e:
-            self.logger.error(f"Could not parse deadline: '{deadline_text}'. Error: {e}")
-            return None
-
-    def _get_urls_with_playwright(self, title: str) -> (Optional[str], Optional[str]):
-        """
-        Uses Playwright to perform Google searches for the image and registration URL,
-        mimicking a manual search process.
-        """
-        image_url = None
-        registration_url = None
-        query = f'"{title}" registration link'
-
-        with sync_playwright() as p:
-            try:
-                browser = p.chromium.launch(headless=True)
-                page = browser.new_page()
-
-                # --- Registration Link Search ---
-                self.logger.info(f"Searching for registration link: {query}")
-                page.goto(f"https://www.google.com/search?q={query}", timeout=60000)
-                # Wait for the first search result link to appear
-                first_result_selector = 'div.g a[jsname="UWckNb"]'
-                page.wait_for_selector(first_result_selector, timeout=15000)
-                registration_url = page.locator(first_result_selector).first.get_attribute('href')
-                self.logger.info(f"Found registration link: {registration_url}")
-
-                # --- Image Search ---
-                self.logger.info(f"Searching for image: {query}")
-                # Navigate to Google Images tab
-                page.get_by_role("link", name="Images").click()
-                page.wait_for_load_state('networkidle')
-                
-                # Click the first image thumbnail
-                first_image_selector = 'div.H8Rx8c'
-                page.wait_for_selector(first_image_selector, timeout=15000)
-                page.locator(first_image_selector).first.click()
-
-                # Wait for the preview pane and get the high-res image src
-                preview_image_selector = 'img.sFlh5c.pT0Scc.iPVvYb'
-                page.wait_for_selector(preview_image_selector, timeout=15000)
-                image_url = page.locator(preview_image_selector).get_attribute('src')
-                self.logger.info(f"Found image address: {image_url}")
-                
-                browser.close()
-            except PlaywrightTimeoutError as e:
-                self.logger.error(f"Playwright timed out for query '{query}': {e}")
-                if 'browser' in locals() and browser.is_connected():
-                    browser.close()
-            except Exception as e:
-                self.logger.error(f"An error occurred with Playwright for query '{query}': {e}")
-                if 'browser' in locals() and browser.is_connected():
-                    browser.close()
-
-        return image_url, registration_url
+    def _login(self, page: Page):
+        """Logs into luarkampus.id using credentials from .env file."""
+        self.logger.info(f"Navigating to login page: {self.LOGIN_URL}")
+        page.goto(self.LOGIN_URL, timeout=60000)
+        
+        self.logger.info("Filling login credentials.")
+        page.fill('input[name="email"]', self.luar_kampus_gmail)
+        page.fill('input[name="password"]', self.luar_kampus_password)
+        
+        self.logger.info("Submitting login form.")
+        page.click('button[type="submit"]')
+        
+        self.logger.info("Waiting for login request to complete...")
+        page.wait_for_load_state('networkidle', timeout=30000)
+        self.logger.info("Login form submitted. Assuming login is successful.")
 
     def scrape(self) -> List[Dict[str, Any]]:
+        """Main scraping method orchestrating login, list scraping, and detail scraping."""
+        self.logger.info(f"Starting scrape for {self.__class__.__name__}")
+        scraped_data = []
+
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=self.headless)
+            page = browser.new_page()
+            
+            try:
+                self._login(page)
+
+                self.logger.info(f"Navigating to initial scholarship list: {self.BEASISWA_URL}")
+                page.goto(self.BEASISWA_URL, timeout=60000)
+
+                page_number = 1
+                while True:
+                    self.logger.info(f"Scraping page {page_number}...")
+                    page.wait_for_selector('div.drawer-content', timeout=60000)
+                    soup = BeautifulSoup(page.content(), 'html.parser')
+                    
+                    scholarship_cards = soup.select('div.drawer-content a[href^="https://luarkampus.id/beasiswa/"]')
+                    scholarships_to_scrape = [card.get('href') for card in scholarship_cards if card.get('href') and card.get('href').split('/')[-1].isdigit()]
+                    self.logger.info(f"Found {len(scholarships_to_scrape)} scholarships on page {page_number}.")
+
+                    for detail_url in scholarships_to_scrape:
+                        try:
+                            self.logger.info(f"Scraping detail page: {detail_url}")
+                            page.goto(detail_url, timeout=60000)
+                            page.wait_for_load_state('domcontentloaded')
+                            detail_soup = BeautifulSoup(page.content(), 'html.parser')
+
+                            title_element = detail_soup.select_one('h1.text-2xl.font-bold')
+                            title = title_element.text.strip() if title_element else 'No title found'
+
+                            # Extract deadline
+                            deadline_element = detail_soup.select_one('span:-soup-contains(\"Penutupan Pendaftaran\") + div span.ml-2')
+                            deadline_str = deadline_element.text.strip() if deadline_element else None
+                            
+                            if not deadline_str:
+                                self.logger.warning(f"Skipping scholarship '{title}' due to missing deadline information.")
+                                continue
+
+                            deadline_date = self._parse_indonesian_date(deadline_str)
+                            if not deadline_date:
+                                self.logger.error(f"Could not parse deadline '{deadline_str}' for '{title}'.")
+                                continue
+
+                            # Use current date from a fixed variable for consistent comparison
+                            current_date = datetime.now().date()
+                            if deadline_date <= current_date:
+                                self.logger.info(f"Skipping expired scholarship '{title}' with deadline {deadline_date}.")
+                                continue
+
+                            # Extract organizer
+                            organizer_tag = detail_soup.find('span', string=re.compile(r'Pemberi Beasiswa'))
+                            organizer = organizer_tag.find_next_sibling('div').find('span', class_='ml-2').get_text(strip=True).strip() if organizer_tag else None
+
+                            # Extract requirements to be used as description
+                            requirements_section = detail_soup.find('div', id='requirements')
+                            description = ''
+                            if requirements_section:
+                                prose_divs = requirements_section.find_all('div', class_='min-w-full prose')
+                                description = '\n'.join(str(div) for div in prose_divs).strip()
+
+                            # Extract booklet/registration URL
+                            booklet_section = detail_soup.find(lambda tag: tag.name == 'div' and 'Booklet' in tag.get_text(strip=True) and 'font-bold' in tag.get('class', []))
+                            registration_link = None
+                            if booklet_section:
+                                link_tag = booklet_section.find_next_sibling('div').find('a')
+                                if link_tag and link_tag.has_attr('href'):
+                                    registration_link = link_tag['href']
+                            if not registration_link:
+                                self.logger.warning(f"Skipping scholarship '{title}' due to missing registration/booklet URL.")
+                                continue
+
+                            # Extract education level
+                            education_level_tag = detail_soup.find('span', string=re.compile(r'Jenjang Pendidikan'))
+                            education_level = education_level_tag.find_next_sibling('div').find('span', class_='ml-2').get_text(strip=True) if education_level_tag else None
+
+                            # Extract location (from applicable schools/universities)
+                            location_tag = detail_soup.find('span', string=re.compile(r'Kampus/Sekolah yang Bisa Mendaftar'))
+                            location = location_tag.find_next_sibling('div').find('span', class_='ml-2').get_text(strip=True) if location_tag else None
+
+                            # Scrape image URL from Yandex
+                            image_url = self._get_image_url_from_yandex(browser, f"{title}")
+
+                            # Initialize dictionary to hold scholarship data
+                            scholarship_data = {
+                                'title': title,
+                                'image_url': image_url,
+                                'deadline_date': deadline_date.isoformat(),
+                                'organizer': organizer,
+                                'description': description,
+                                'booklet_url': registration_link,
+                                'source_url': detail_url,
+                                'education_level': education_level,
+                                'location': location
+                            }
+                            scraped_data.append(scholarship_data)
+                            self.logger.info(f"Successfully scraped: {title}")
+
+                        except Exception as e:
+                            self.logger.error(f"Error scraping detail page {detail_url}: {e}")
+                            continue
+
+                    # Check for and navigate to the next page
+                    next_button_selector = 'button[dusk="nextPage.after"]'
+                    next_button = page.query_selector(next_button_selector)
+
+                    if next_button and next_button.is_enabled():
+                        self.logger.info("Navigating to the next page...")
+                        next_button.click()
+                        page.wait_for_load_state('networkidle', timeout=30000)
+                        page_number += 1
+                    else:
+                        self.logger.info("No more pages to scrape.")
+                        break
+            
+            except Exception as e:
+                self.logger.critical(f"A critical error occurred during the scraping process: {e}", exc_info=True)
+
+            finally:
+                self.logger.info("Closing browser.")
+                browser.close()
+
+        self.logger.info(f"Scraping finished. Total scholarships scraped: {len(scraped_data)}")
+        return scraped_data
+
+
+
+    def _get_image_url_from_yandex(self, browser: Browser, query: str) -> Optional[str]:
         """
-        Main scraping method for luarkampus.id scholarships.
+        Searches for an image on Yandex and returns the URL of the first result.
+        Handles errors gracefully by returning None on failure.
         """
-        self.logger.info(f"Starting scrape for {self.__class__.__name__} at {self.BASE_URL}")
+        page = None
+        try:
+            self.logger.info(f"Searching Yandex Images for: {query}")
+            page = browser.new_page()
+            page.goto("https://yandex.com/images/", timeout=60000)
+
+            # Type the search query
+            page.fill('input[name="text"]', query)
+            
+            # Click the search button
+            page.click('button[type="submit"]')
+            
+            # Wait for search results to load
+            first_image_link_selector = 'div.SerpItem a.Link.ImagesContentImage-Cover'
+            page.wait_for_selector(first_image_link_selector, timeout=15000)
+
+            # Get the href from the first search result link
+            href = page.get_attribute(first_image_link_selector, 'href')
+            image_url = None
+            if href:
+                # Parse the URL and extract the 'img_url' parameter
+                parsed_url = urlparse(href)
+                query_params = parse_qs(parsed_url.query)
+                if 'img_url' in query_params:
+                    # URL-decode the image URL
+                    image_url = unquote(query_params['img_url'][0])
+
+            if image_url:
+                self.logger.info(f"Successfully found image URL on Yandex: {image_url}")
+            else:
+                self.logger.warning(f"Could not extract original image_url for '{query}'.")
+            
+            return image_url
+        except PlaywrightTimeoutError:
+            self.logger.warning(f"Timeout occurred during Yandex image search for '{query}'. No image will be used.")
+            return None
+        except Exception as e:
+            self.logger.error(f"An unexpected error occurred during Yandex image search for '{query}': {e}")
+            return None
+        finally:
+            if page:
+                page.close()
+
+    def _parse_indonesian_date(self, date_str: str) -> Optional[date]:
+        """
+        Parses a date string with Indonesian month abbreviations.
+        Example: '01 Agt 2025' -> date(2025, 8, 1)
+        """
+        month_map = {
+            'Jan': 'Jan', 'Feb': 'Feb', 'Mar': 'Mar', 'Apr': 'Apr', 'Mei': 'May',
+            'Jun': 'Jun', 'Jul': 'Jul', 'Agt': 'Aug', 'Sep': 'Sep', 'Okt': 'Oct',
+            'Nov': 'Nov', 'Des': 'Dec'
+        }
         
-        all_scholarships = []
+        for indo_month, eng_month in month_map.items():
+            if indo_month in date_str:
+                date_str = date_str.replace(indo_month, eng_month)
+                break
         
         try:
-            response = self.session.get(self.BASE_URL, timeout=60)
-            response.raise_for_status() 
-            
-            soup = BeautifulSoup(response.content, 'html.parser')
-
-            scholarship_cards = soup.select(r'a.block[wire\:id]')
-            self.logger.info(f"Found {len(scholarship_cards)} scholarship cards.")
-
-            for card in scholarship_cards:
-                try:
-                    href = card.get('href', '')
-                    if not href or not re.search(r'/beasiswa/\d+', href):
-                        continue
-
-                    source_url = urljoin(self.BASE_URL, href)
-                    title_element = card.find('h2', class_='font-bold')
-                    title = title_element.text.strip() if title_element else 'No Title Provided'
-
-                    deadline_str = 'No Deadline Provided'
-                    deadline_mobile = card.select_one('span.text-error')
-                    if deadline_mobile:
-                        deadline_str = deadline_mobile.text.replace('Deadline:', '').strip()
-                    else:
-                        deadline_label = card.find(lambda tag: tag.name == 'span' and 'Deadline:' in tag.text.strip())
-                        if deadline_label:
-                            deadline_value = deadline_label.find_next_sibling('span')
-                            if deadline_value:
-                                deadline_str = deadline_value.text.strip()
-
-                    deadline_date = self._parse_deadline(deadline_str)
-                    if not deadline_date or datetime.strptime(deadline_date, '%Y-%m-%d').date() <= datetime.now().date():
-                        self.logger.info(f"Skipping expired scholarship: '{title}' (Deadline: {deadline_date or 'N/A'})")
-                        continue
-
-                    degree_elements = card.select('span.bg-success')
-                    education_level = ', '.join(sorted([el.text.strip() for el in degree_elements])) or 'Not Specified'
-
-                    location_element = card.select_one('span.text-sm.text-gray-600')
-                    location = location_element.text.strip() if location_element else 'No Location Provided'
-
-                    image_url, registration_url = self._get_urls_with_playwright(title)
-
-                    # Enforce non-null URLs to maintain data quality
-                    if not image_url or not registration_url:
-                        self.logger.warning(f"Skipping '{title}' due to missing image or registration URL.")
-                        continue
-                    
-                    scholarship_data = {
-                        'title': title,
-                        'education_level': education_level,
-                        'location': location,
-                        'deadline_date': deadline_date,
-                        'source_url': source_url,
-                        'image_url': image_url,
-                        'registration_url': registration_url
-                    }
-                    
-                    all_scholarships.append(scholarship_data)
-                    self.logger.info(f"Scraped scholarship: {title}")
-
-                except Exception:
-                    self.logger.error("Error processing a scholarship card", exc_info=True)
-                    continue
-
-        except requests.RequestException as e:
-            self.logger.error(f"Failed to retrieve the main page: {e}")
-        except Exception:
-            self.logger.error("An unexpected error occurred during scraping", exc_info=True)
-        
-        self.logger.info(f"Scraping finished. Total scholarships scraped: {len(all_scholarships)}")
-        return all_scholarships
+            return datetime.strptime(date_str, '%d %b %Y').date()
+        except ValueError:
+            return None
