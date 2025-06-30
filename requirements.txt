@@ -1,32 +1,32 @@
 # Web scraping dependencies
-selenium==4.15.2
-beautifulsoup4==4.12.2
-lxml==4.9.3
-requests==2.31.0
-aiohttp==3.9.1
-playwright==1.40.0
+selenium
+beautifulsoup4
+lxml
+requests
+aiohttp
+playwright
 
 # Database dependencies
-psycopg2-binary==2.9.9
-supabase>=2.8.0,<3.0.0
-retrying==1.3.4
+psycopg2-binary
+supabase
+retrying
 
 # Environment and configuration
-python-dotenv==1.0.0
+python-dotenv
 
 # Chrome WebDriver (if needed, can be managed via webdriver-manager)
-webdriver-manager==4.0.1
+webdriver-manager
 
 # Data processing
-pandas==2.1.4
+pandas
 
 # Async support
-asyncio-throttle==1.0.2
+asyncio-throttle
 
 # Additional utilities
-urllib3==2.1.0
-certifi==2023.11.17
+urllib3
+certifi
 
 # Testing dependencies
-pytest==7.4.3
-pytest-mock==3.12.0
+pytest
+pytest-mock
