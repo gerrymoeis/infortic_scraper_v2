@@ -10,9 +10,12 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
 
+    if: github.ref == 'refs/heads/beasiswa_scraper'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          ref: beasiswa_scraper
 
       - name: Set up Python
         uses: actions/setup-python@v4
