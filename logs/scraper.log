@@ -4294,3 +4294,275 @@
 2025-06-30 09:36:06 | INFO     | infortic_scraper | info:97 | Filtered out expired event: National Research Innovation Fair - Date: 10 Mei - 21 Jun 2025
 2025-06-30 09:36:06 | INFO     | infortic_scraper | info:97 | After filtering expired events: 76/160 events remain
 2025-06-30 09:36:08 | INFO     | infortic_scraper | info:97 | Chrome driver closed
+2025-06-30 10:29:29 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 10:29:29 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 10:29:29 | INFO     | infortic_scraper | info:97 | Starting scrape for InfoLombaScraper
+2025-06-30 10:29:31 | INFO     | infortic_scraper | info:97 | Chrome driver initialized for InfoLombaScraper
+2025-06-30 10:29:31 | INFO     | infortic_scraper | info:97 | Navigating to: https://www.infolomba.id/
+2025-06-30 10:29:38 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 1/15
+2025-06-30 10:29:40 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 2/15
+2025-06-30 10:29:42 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 3/15
+2025-06-30 10:29:44 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 4/15
+2025-06-30 10:29:46 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 5/15
+2025-06-30 10:29:48 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 6/15
+2025-06-30 10:29:50 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 7/15
+2025-06-30 10:29:52 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 8/15
+2025-06-30 10:29:54 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 9/15
+2025-06-30 10:29:56 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 10/15
+2025-06-30 10:29:58 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 11/15
+2025-06-30 10:30:00 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 12/15
+2025-06-30 10:30:02 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 13/15
+2025-06-30 10:30:04 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 14/15
+2025-06-30 10:30:06 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 15/15
+2025-06-30 10:30:09 | INFO     | infortic_scraper | info:97 | Found 160 events.
+2025-06-30 10:30:09 | INFO     | infortic_scraper | info:97 | Successfully scraped: IMSCOBI 2025
+2025-06-30 10:30:10 | INFO     | infortic_scraper | info:97 | Successfully scraped: KIP-K ART FESTIVAL
+2025-06-30 10:30:11 | INFO     | infortic_scraper | info:97 | Successfully scraped: Innovation Paper Competition
+2025-06-30 10:30:12 | INFO     | infortic_scraper | info:97 | Successfully scraped: IASC XII
+2025-06-30 10:30:13 | INFO     | infortic_scraper | info:97 | Successfully scraped: PEARLS (Pediatric Emergency Response and Life-Saving Strategies)
+2025-06-30 10:30:14 | INFO     | infortic_scraper | info:97 | Successfully scraped: Olimpiade Eduventure 2.0
+2025-06-30 10:30:14 | INFO     | infortic_scraper | info:97 | Successfully scraped: FANCY : Festival and Competition on Fortytwo
+2025-06-30 10:30:15 | INFO     | infortic_scraper | info:97 | Successfully scraped: GALAXY 2.0 x HELTRO 2025
+2025-06-30 10:30:16 | INFO     | infortic_scraper | info:97 | Successfully scraped: Injection 2.0
+2025-06-30 10:30:17 | INFO     | infortic_scraper | info:97 | Successfully scraped: YIC (Youth Ideas Competition)
+2025-06-30 10:30:18 | INFO     | infortic_scraper | info:97 | Successfully scraped: Olympus 4.0
+2025-06-30 10:30:18 | INFO     | infortic_scraper | info:97 | Successfully scraped: Komandan Bajay
+2025-06-30 10:30:19 | INFO     | infortic_scraper | info:97 | Successfully scraped: Lomba Karya Tulis Ilmiah Alcofe 19
+2025-06-30 10:30:20 | INFO     | infortic_scraper | info:97 | Successfully scraped: D' LAFEST (THE LANGUAGE FESTIVAL)
+2025-06-30 10:30:21 | INFO     | infortic_scraper | info:97 | Successfully scraped: WORLD COMPUTER HACKER LEAGUE 2025
+2025-06-30 10:30:22 | INFO     | infortic_scraper | info:97 | Successfully scraped: BSC X TIRTA PAKUAN
+2025-06-30 10:30:22 | INFO     | infortic_scraper | info:97 | Successfully scraped: YCE INOFEST 2025
+2025-06-30 10:30:23 | INFO     | infortic_scraper | info:97 | Successfully scraped: C.O.D.E Challenge
+2025-06-30 10:30:24 | INFO     | infortic_scraper | info:97 | Successfully scraped: Cakrawala Invention and Innovation Fair (CIIF) 3.0
+2025-06-30 10:30:25 | INFO     | infortic_scraper | info:97 | Successfully scraped: SAMASTA 2025
+2025-06-30 10:30:26 | INFO     | infortic_scraper | info:97 | Successfully scraped: DEFINE 2025
+2025-06-30 10:30:26 | INFO     | infortic_scraper | info:97 | Successfully scraped: LOMBA ARTIKEL ‼️GRATIS‼️
+2025-06-30 10:30:27 | INFO     | infortic_scraper | info:97 | Successfully scraped: VIBE 2025
+2025-06-30 10:30:28 | INFO     | infortic_scraper | info:97 | Successfully scraped: Software Training Series 2025
+2025-06-30 10:30:29 | INFO     | infortic_scraper | info:97 | Successfully scraped: Festival Ansor Jagakarsa 2025
+2025-06-30 10:30:29 | INFO     | infortic_scraper | info:97 | Successfully scraped: SOSM Championship
+2025-06-30 10:30:30 | INFO     | infortic_scraper | info:97 | Successfully scraped: TEMILNASXXIV x SECOND
+2025-06-30 10:30:31 | INFO     | infortic_scraper | info:97 | Successfully scraped: Pekan Jurnalistik 2025
+2025-06-30 10:30:32 | INFO     | infortic_scraper | info:97 | Successfully scraped: Festivy 2025
+2025-06-30 10:30:33 | INFO     | infortic_scraper | info:97 | Successfully scraped: 16th Dentistry Scientific Competition
+2025-06-30 10:30:33 | INFO     | infortic_scraper | info:97 | Successfully scraped: TURNAMEN VOLLY SMA SE-JAWA TIMUR 2025
+2025-06-30 10:30:34 | INFO     | infortic_scraper | info:97 | Successfully scraped: VETAMUN 2025
+2025-06-30 10:30:35 | INFO     | infortic_scraper | info:97 | Successfully scraped: ISAC Indonesia 2025
+2025-06-30 10:30:36 | INFO     | infortic_scraper | info:97 | Successfully scraped: BHK Cup "Valore"
+2025-06-30 10:30:37 | INFO     | infortic_scraper | info:97 | Successfully scraped: 𝐂𝐇𝐄𝐌𝐈𝐂𝐀𝐋 𝐄𝐍𝐆𝐈𝐍𝐄𝐄𝐑𝐈𝐍𝐆 𝐅𝐀𝐈𝐑 𝐗 𝐂𝐇𝐄𝐌𝐏𝐎𝐒𝐓𝐄𝐑 𝐂𝐎𝐌𝐏𝐄𝐓𝐈𝐓𝐈𝐎𝐍
+2025-06-30 10:30:37 | INFO     | infortic_scraper | info:97 | Successfully scraped: Cita Rasa Kita: Kreativitas di Setiap Gigitan
+2025-06-30 10:30:38 | INFO     | infortic_scraper | info:97 | Successfully scraped: Academic International Competition
+2025-06-30 10:30:39 | INFO     | infortic_scraper | info:97 | Successfully scraped: Accounting Elevation 2025
+2025-06-30 10:30:40 | INFO     | infortic_scraper | info:97 | Successfully scraped: MEDDIPS X ARPO 2025
+2025-06-30 10:30:41 | INFO     | infortic_scraper | info:97 | Successfully scraped: AOTC PART V
+2025-06-30 10:30:41 | INFO     | infortic_scraper | info:97 | Successfully scraped: Smart Economic Business Competition (SEBC) 2025
+2025-06-30 10:30:42 | INFO     | infortic_scraper | info:97 | Successfully scraped: GEMPARA (Grand Event Merah Putih Nusantara)
+2025-06-30 10:30:43 | INFO     | infortic_scraper | info:97 | Successfully scraped: Delphoria Cup 2.0
+2025-06-30 10:30:43 | INFO     | infortic_scraper | info:97 | Successfully scraped: UNISLA PHOTOGRAPHY COMPETITION 2025
+2025-06-30 10:30:44 | INFO     | infortic_scraper | info:97 | Successfully scraped: Cassevas Cup 7th
+2025-06-30 10:30:45 | INFO     | infortic_scraper | info:97 | Successfully scraped: Kompetisi Ilustrasi Fesyen Nasional
+2025-06-30 10:30:46 | INFO     | infortic_scraper | info:97 | Successfully scraped: KREATION (KRISS RESEARCH COMPETITION)
+2025-06-30 10:30:47 | INFO     | infortic_scraper | info:97 | Successfully scraped: PEKAN NARASI (PENA) NASIONAL 2025
+2025-06-30 10:30:47 | INFO     | infortic_scraper | info:97 | Successfully scraped: Dapatkerja Competition
+2025-06-30 10:30:48 | INFO     | infortic_scraper | info:97 | Successfully scraped: SPOTLIGHT FUN AND ACCOUNTING COMPETITION 2025
+2025-06-30 10:30:49 | INFO     | infortic_scraper | info:97 | Successfully scraped: Coloring Competition Festival Jamu Nusantara
+2025-06-30 10:30:50 | INFO     | infortic_scraper | info:97 | Successfully scraped: Esai Mahasiswa Nasional 2025
+2025-06-30 10:30:50 | INFO     | infortic_scraper | info:97 | Successfully scraped: Visdec Season 1
+2025-06-30 10:30:51 | INFO     | infortic_scraper | info:97 | Successfully scraped: INVENTION 2025
+2025-06-30 10:30:52 | INFO     | infortic_scraper | info:97 | Successfully scraped: Lomba Voice Over Communication Events
+2025-06-30 10:30:53 | INFO     | infortic_scraper | info:97 | Successfully scraped: Law Fair LP2DH 2025
+2025-06-30 10:30:53 | INFO     | infortic_scraper | info:97 | Successfully scraped: Teknokrat English Competition (TECOMP) 2025
+2025-06-30 10:30:54 | INFO     | infortic_scraper | info:97 | Successfully scraped: DE'KANDANG FEST
+2025-06-30 10:30:55 | INFO     | infortic_scraper | info:97 | Successfully scraped: Borneo Muharram Festival
+2025-06-30 10:30:56 | INFO     | infortic_scraper | info:97 | Successfully scraped: PORFES 2025
+2025-06-30 10:30:56 | INFO     | infortic_scraper | info:97 | Successfully scraped: Development Economic Competion - Bussines Plan
+2025-06-30 10:30:57 | INFO     | infortic_scraper | info:97 | Successfully scraped: VOKUS ADBIS: Navigating Uncertainty in Business
+2025-06-30 10:30:58 | INFO     | infortic_scraper | info:97 | Successfully scraped: Olympiad Economics (OPEC)
+2025-06-30 10:30:59 | INFO     | infortic_scraper | info:97 | Successfully scraped: Marketing By U, Created By U
+2025-06-30 10:30:59 | INFO     | infortic_scraper | info:97 | Successfully scraped: MBION Champion Quest 2025
+2025-06-30 10:31:00 | INFO     | infortic_scraper | info:97 | Successfully scraped: BUSINESS COMPETITION SEMAR ENTREPRENEUR 2025
+2025-06-30 10:31:01 | INFO     | infortic_scraper | info:97 | Successfully scraped: LeadCompetition Business Case
+2025-06-30 10:31:02 | INFO     | infortic_scraper | info:97 | Successfully scraped: OLIPA (Olimpiade Ilmu Pengetahuan Alam) 2025
+2025-06-30 10:31:02 | INFO     | infortic_scraper | info:97 | Successfully scraped: IFEST Primakara
+2025-06-30 10:31:03 | INFO     | infortic_scraper | info:97 | Successfully scraped: CREACTIONFEST
+2025-06-30 10:31:04 | INFO     | infortic_scraper | info:97 | Successfully scraped: FACTCOUNT INFOGRAPHIC COMPETITION 2025
+2025-06-30 10:31:05 | INFO     | infortic_scraper | info:97 | Successfully scraped: GLORICUP 2025
+2025-06-30 10:31:06 | INFO     | infortic_scraper | info:97 | Successfully scraped: Lomba Poster Designo
+2025-06-30 10:31:07 | INFO     | infortic_scraper | info:97 | Successfully scraped: PEKAN IT COMPETITION
+2025-06-30 10:31:07 | INFO     | infortic_scraper | info:97 | Successfully scraped: ICC (Indonesian Counseling Competition)
+2025-06-30 10:31:08 | INFO     | infortic_scraper | info:97 | Successfully scraped: Lomba Poster Dies Natalis Ke-1
+2025-06-30 10:31:09 | INFO     | infortic_scraper | info:97 | Successfully scraped: Industrial Engineering Competition 2025
+2025-06-30 10:31:10 | INFO     | infortic_scraper | info:97 | Successfully scraped: Festival Bahasa dan Budaya
+2025-06-30 10:31:10 | INFO     | infortic_scraper | info:97 | Successfully scraped: RCOC (Red Cross Online Competition)
+2025-06-30 10:31:11 | INFO     | infortic_scraper | info:97 | Successfully scraped: T-Ball Cup Vol.20
+2025-06-30 10:31:12 | INFO     | infortic_scraper | info:97 | Successfully scraped: IRDO 2025 (International Robot Design Olympiad)
+2025-06-30 10:31:13 | INFO     | infortic_scraper | info:97 | Successfully scraped: Hypothalamus Competition
+2025-06-30 10:31:13 | INFO     | infortic_scraper | info:97 | Successfully scraped: ECODAYS 2025
+2025-06-30 10:31:14 | INFO     | infortic_scraper | info:97 | Successfully scraped: Ruangguru Mathematics and Logic Championship (RMC) 2025
+2025-06-30 10:31:15 | INFO     | infortic_scraper | info:97 | Successfully scraped: Visiont Competition 2025
+2025-06-30 10:31:16 | INFO     | infortic_scraper | info:97 | Successfully scraped: Falcons Cup
+2025-06-30 10:31:17 | INFO     | infortic_scraper | info:97 | Successfully scraped: Business Case Competition
+2025-06-30 10:31:17 | INFO     | infortic_scraper | info:97 | Successfully scraped: AUP CUP 2025
+2025-06-30 10:31:18 | INFO     | infortic_scraper | info:97 | Successfully scraped: The 11th KOIN KIME FEB UNNES
+2025-06-30 10:31:19 | INFO     | infortic_scraper | info:97 | Successfully scraped: DapatKerja Competition
+2025-06-30 10:31:20 | INFO     | infortic_scraper | info:97 | Successfully scraped: PRISMATIC (Prisma Innovation and Paper Competition)
+2025-06-30 10:31:21 | INFO     | infortic_scraper | info:97 | Successfully scraped: TYFOCUP (FOCUST)
+2025-06-30 10:31:21 | INFO     | infortic_scraper | info:97 | Successfully scraped: MEDDIPS X ARPO 2025
+2025-06-30 10:31:22 | INFO     | infortic_scraper | info:97 | Successfully scraped: Lensa Sehat Nusantara
+2025-06-30 10:31:23 | INFO     | infortic_scraper | info:97 | Successfully scraped: Economics Paper Competition & Talkshow (EPACT)
+2025-06-30 10:31:24 | INFO     | infortic_scraper | info:97 | Successfully scraped: WafiFest5.0
+2025-06-30 10:31:24 | INFO     | infortic_scraper | info:97 | Successfully scraped: UPSTRACT 7.0 Competition
+2025-06-30 10:31:25 | INFO     | infortic_scraper | info:97 | Successfully scraped: Unimal Constitutional Week III (UCW III)
+2025-06-30 10:31:26 | INFO     | infortic_scraper | info:97 | Successfully scraped: Lomba Desain Maskot
+2025-06-30 10:31:27 | INFO     | infortic_scraper | info:97 | Successfully scraped: Agriculture Competition
+2025-06-30 10:31:28 | INFO     | infortic_scraper | info:97 | Successfully scraped: AKSANA (Ajang Kreasi Karya Tulis Ilmiah)
+2025-06-30 10:31:28 | INFO     | infortic_scraper | info:97 | Successfully scraped: National Infographic Chemistry Event 2025 (NICE 2025)
+2025-06-30 10:31:29 | INFO     | infortic_scraper | info:97 | Successfully scraped: LKTI FEAB 2025
+2025-06-30 10:31:30 | INFO     | infortic_scraper | info:97 | Successfully scraped: ISTEMCC 2025
+2025-06-30 10:31:31 | INFO     | infortic_scraper | info:97 | Successfully scraped: THRIVE: Business Case Competition 2025
+2025-06-30 10:31:32 | INFO     | infortic_scraper | info:97 | Successfully scraped: ASCEND 2025
+2025-06-30 10:31:32 | INFO     | infortic_scraper | info:97 | Successfully scraped: GEBYAR ISLAMI #2
+2025-06-30 10:31:33 | INFO     | infortic_scraper | info:97 | Successfully scraped: Compas'25 Eduthon
+2025-06-30 10:31:34 | INFO     | infortic_scraper | info:97 | Successfully scraped: PAMER Se-Indonesia
+2025-06-30 10:31:35 | INFO     | infortic_scraper | info:97 | Successfully scraped: Sociology Competition (Socius 25)
+2025-06-30 10:31:35 | INFO     | infortic_scraper | info:97 | Successfully scraped: Acromion 2025
+2025-06-30 10:31:36 | INFO     | infortic_scraper | info:97 | Successfully scraped: Interfaculty of Medicine Scientific Competition Faculty of Medicine (INTERMEDISCO)  2025
+2025-06-30 10:31:37 | INFO     | infortic_scraper | info:97 | Successfully scraped: SCRENIXI 9TH
+2025-06-30 10:31:38 | INFO     | infortic_scraper | info:97 | Successfully scraped: Innovation and Research Poster Competition (IRPOCO) 2025
+2025-06-30 10:31:38 | INFO     | infortic_scraper | info:97 | Successfully scraped: Astranauts 2025
+2025-06-30 10:31:39 | INFO     | infortic_scraper | info:97 | Successfully scraped: LOMBA POSTER DAN VIDIO KREATIF
+2025-06-30 10:31:40 | INFO     | infortic_scraper | info:97 | Successfully scraped: AMB National Essay Competition 2025
+2025-06-30 10:31:41 | INFO     | infortic_scraper | info:97 | Successfully scraped: Pharmacito
+2025-06-30 10:31:41 | INFO     | infortic_scraper | info:97 | Successfully scraped: ArasyWear MC Competition 2K25
+2025-06-30 10:31:42 | INFO     | infortic_scraper | info:97 | Successfully scraped: Bulis International Competition
+2025-06-30 10:31:43 | INFO     | infortic_scraper | info:97 | Successfully scraped: ASEAN-CHINA-INDIA Youth Leadership Summit 2025
+2025-06-30 10:31:44 | INFO     | infortic_scraper | info:97 | Successfully scraped: Business Plan Competition
+2025-06-30 10:31:44 | INFO     | infortic_scraper | info:97 | Successfully scraped: IMPACT 2025
+2025-06-30 10:31:45 | INFO     | infortic_scraper | info:97 | Successfully scraped: TOS LDBI
+2025-06-30 10:31:46 | INFO     | infortic_scraper | info:97 | Successfully scraped: Islamic Contest
+2025-06-30 10:31:47 | INFO     | infortic_scraper | info:97 | Successfully scraped: Diponegoro Science Competition 2025
+2025-06-30 10:31:48 | INFO     | infortic_scraper | info:97 | Successfully scraped: AKASIA 2025 (APRESIASI KARYA SASTRA INDONESIA)
+2025-06-30 10:31:48 | INFO     | infortic_scraper | info:97 | Successfully scraped: LOMBA POSTER TINGKAT NASIONAL
+2025-06-30 10:31:49 | INFO     | infortic_scraper | info:97 | Successfully scraped: EAGLE Competition
+2025-06-30 10:31:50 | INFO     | infortic_scraper | info:97 | Successfully scraped: Kompetisi Kreator Konten Video 2025
+2025-06-30 10:31:51 | INFO     | infortic_scraper | info:97 | Successfully scraped: Lomba Gambar Uni Eropa
+2025-06-30 10:31:51 | INFO     | infortic_scraper | info:97 | Successfully scraped: Nusantara Harmony 25
+2025-06-30 10:31:52 | INFO     | infortic_scraper | info:97 | Successfully scraped: Lomba Business Plan
+2025-06-30 10:31:53 | INFO     | infortic_scraper | info:97 | Successfully scraped: Vokal Solo Competations
+2025-06-30 10:31:54 | INFO     | infortic_scraper | info:97 | Successfully scraped: VETERINARY COMPETITION
+2025-06-30 10:31:54 | INFO     | infortic_scraper | info:97 | Successfully scraped: LOMBA HKPI KPK SEHAT FKM UI 2025
+2025-06-30 10:31:55 | INFO     | infortic_scraper | info:97 | Successfully scraped: Kresikars Exhibition
+2025-06-30 10:31:56 | INFO     | infortic_scraper | info:97 | Successfully scraped: Unofest 2.0 Astralis
+2025-06-30 10:31:57 | INFO     | infortic_scraper | info:97 | Successfully scraped: Advocacy Compass
+2025-06-30 10:31:58 | INFO     | infortic_scraper | info:97 | Successfully scraped: Embriogenesis
+2025-06-30 10:31:58 | INFO     | infortic_scraper | info:97 | Successfully scraped: FOPESCO 2025
+2025-06-30 10:31:59 | INFO     | infortic_scraper | info:97 | Successfully scraped: LKTI FPP UNDIP 2025
+2025-06-30 10:32:00 | INFO     | infortic_scraper | info:97 | Successfully scraped: SELEKSI KARYA TULIS ILMIAH "SAKTI" 2025
+2025-06-30 10:32:01 | INFO     | infortic_scraper | info:97 | Successfully scraped: Business Plan Competition
+2025-06-30 10:32:02 | INFO     | infortic_scraper | info:97 | Successfully scraped: English Event 2025
+2025-06-30 10:32:03 | INFO     | infortic_scraper | info:97 | Successfully scraped: Beasiswa Kampung Inggris
+2025-06-30 10:32:03 | INFO     | infortic_scraper | info:97 | Successfully scraped: IT CLASS (Digital Poster Competition)
+2025-06-30 10:32:04 | INFO     | infortic_scraper | info:97 | Successfully scraped: MANDALAS CUP
+2025-06-30 10:32:05 | INFO     | infortic_scraper | info:97 | Successfully scraped: Ratoh Jaroe Competition
+2025-06-30 10:32:06 | INFO     | infortic_scraper | info:97 | Successfully scraped: Eighty Six Cup
+2025-06-30 10:32:06 | INFO     | infortic_scraper | info:97 | Successfully scraped: Hypothalamus Competition
+2025-06-30 10:32:07 | INFO     | infortic_scraper | info:97 | Successfully scraped: THALASSIC 2025
+2025-06-30 10:32:08 | INFO     | infortic_scraper | info:97 | Successfully scraped: ECOVOLUTION 2025
+2025-06-30 10:32:09 | INFO     | infortic_scraper | info:97 | Successfully scraped: National Essay Competition 2025
+2025-06-30 10:32:10 | INFO     | infortic_scraper | info:97 | Successfully scraped: Aksaraya Lomba Cipta Puisi 2025
+2025-06-30 10:32:10 | INFO     | infortic_scraper | info:97 | Successfully scraped: FINVEST #2
+2025-06-30 10:32:11 | INFO     | infortic_scraper | info:97 | Successfully scraped: FBA (Festival Bahasa Arab) Nasional 2025
+2025-06-30 10:32:12 | INFO     | infortic_scraper | info:97 | Successfully scraped: ASEAN Sparks
+2025-06-30 10:32:13 | INFO     | infortic_scraper | info:97 | Successfully scraped: Lomba Hardiknas 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Successfully scraped: National Research Innovation Fair
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: 16th Dentistry Scientific Competition - Date: 19 - 26 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: UNISLA PHOTOGRAPHY COMPETITION 2025 - Date: 1 - 29 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Cassevas Cup 7th - Date: 6 Mar - 29 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Kompetisi Ilustrasi Fesyen Nasional - Date: 10 - 24 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Coloring Competition Festival Jamu Nusantara - Date: 10 - 22 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Lomba Voice Over Communication Events - Date: 11 - 21 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: DE'KANDANG FEST - Date: 4 - 22 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: PORFES 2025 - Date: 4 - 24 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: VOKUS ADBIS: Navigating Uncertainty in Business - Date: 9 - 20 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Olympiad Economics (OPEC) - Date: 19 Mei - 27 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: MBION Champion Quest 2025 - Date: 17 Mar - 17 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: LeadCompetition Business Case - Date: 20 Mei - 20 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: OLIPA (Olimpiade Ilmu Pengetahuan Alam) 2025 - Date: 26 Mei - 15 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: CREACTIONFEST - Date: 6 - 18 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: FACTCOUNT INFOGRAPHIC COMPETITION 2025 - Date: 13 Mei - 20 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Lomba Poster Designo - Date: 25 Mei - 25 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Industrial Engineering Competition 2025 - Date: 1 - 22 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: RCOC (Red Cross Online Competition) - Date: 2 - 15 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: IRDO 2025 (International Robot Design Olympiad) - Date: 12 Mei - 22 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Hypothalamus Competition - Date: 2 - 14 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Ruangguru Mathematics and Logic Championship (RMC) 2025 - Date: 26 Mei - 26 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Visiont Competition 2025 - Date: 3 - 28 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Falcons Cup - Date: 22 Mei - 10 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Business Case Competition - Date: 1 - 20 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: AUP CUP 2025 - Date: 5 Mei - 12 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: The 11th KOIN KIME FEB UNNES - Date: 31 Mei - 13 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Lensa Sehat Nusantara - Date: 26 Mei - 14 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Economics Paper Competition & Talkshow (EPACT) - Date: 17 Mei - 19 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: UPSTRACT 7.0 Competition - Date: 30 Mar - 18 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Unimal Constitutional Week III (UCW III) - Date: 22 Mei - 27 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Lomba Desain Maskot - Date: 27 Mei - 27 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: AKSANA (Ajang Kreasi Karya Tulis Ilmiah) - Date: 25 Mei - 7 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: National Infographic Chemistry Event 2025 (NICE 2025) - Date: 1 - 27 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: LKTI FEAB 2025 - Date: 24 Mei - 10 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: ISTEMCC 2025 - Date: 6 Mei - 6 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: THRIVE: Business Case Competition 2025 - Date: 19 Apr - 24 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: ASCEND 2025 - Date: 25 Mei - 14 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Compas'25 Eduthon - Date: 27 Mei - 4 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Sociology Competition (Socius 25) - Date: 17 - 22 Mei 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Acromion 2025 - Date: 24 Mei - 24 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Interfaculty of Medicine Scientific Competition Faculty of Medicine (INTERMEDISCO)  2025 - Date: 22 Mei - 11 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Innovation and Research Poster Competition (IRPOCO) 2025 - Date: 27 Mei - 15 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Astranauts 2025 - Date: 7 Mei - 6 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: LOMBA POSTER DAN VIDIO KREATIF - Date: 26 Mei - 6 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Pharmacito - Date: 25 Mei - 7 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Bulis International Competition - Date: 25 Mei - 10 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: ASEAN-CHINA-INDIA Youth Leadership Summit 2025 - Date: 2 Mei - 6 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Business Plan Competition - Date: 15 Apr - 16 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: IMPACT 2025 - Date: 15 Mei - 2 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: TOS LDBI - Date: 8 Mei - 12 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Islamic Contest - Date: 22 Mei - 14 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Diponegoro Science Competition 2025 - Date: 28 Mei - 20 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: AKASIA 2025 (APRESIASI KARYA SASTRA INDONESIA) - Date: 20 Mei - 10 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: LOMBA POSTER TINGKAT NASIONAL - Date: 23 - 31 Mei 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: EAGLE Competition - Date: 20 Mei - 23 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Kompetisi Kreator Konten Video 2025 - Date: 30 Apr - 6 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Lomba Gambar Uni Eropa - Date: 25 Apr - 25 Mei 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Nusantara Harmony 25 - Date: 2 Mei - 6 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Lomba Business Plan - Date: 7 - 31 Mei 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Vokal Solo Competations - Date: 25 - 31 Mei 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: VETERINARY COMPETITION - Date: 5 - 25 Mei 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: LOMBA HKPI KPK SEHAT FKM UI 2025 - Date: 10 Mei - 10 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Advocacy Compass - Date: 3 - 20 Mei 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Embriogenesis - Date: 19 - 30 Mei 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: FOPESCO 2025 - Date: 16 - 31 Mei 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: LKTI FPP UNDIP 2025 - Date: 9 - 31 Mei 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: SELEKSI KARYA TULIS ILMIAH "SAKTI" 2025 - Date: 16 - 22 Mei 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Business Plan Competition - Date: 20 Mei - 2 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: English Event 2025 - Date: 12 - 25 Mei 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Beasiswa Kampung Inggris - Date: 17 Mei - 9 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: IT CLASS (Digital Poster Competition) - Date: 7 - 28 Mei 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: MANDALAS CUP - Date: 15 Mei - 20 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Ratoh Jaroe Competition - Date: 17 Mei - 20 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Eighty Six Cup - Date: 15 Apr - 6 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Hypothalamus Competition - Date: 17 Mei - 1 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: THALASSIC 2025 - Date: 7 Mei - 10 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: ECOVOLUTION 2025 - Date: 13 Mei - 23 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: National Essay Competition 2025 - Date: 11 - 31 Mei 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Aksaraya Lomba Cipta Puisi 2025 - Date: 6 Mei - 6 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: FINVEST #2 - Date: 16 - 30 Mei 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: FBA (Festival Bahasa Arab) Nasional 2025 - Date: 15 - 31 Mei 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: ASEAN Sparks - Date: 30 Apr - 22 Mei 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: Lomba Hardiknas 2025 - Date: 12 - 25 Mei 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | Filtered out expired event: National Research Innovation Fair - Date: 10 Mei - 21 Jun 2025
+2025-06-30 10:32:14 | INFO     | infortic_scraper | info:97 | After filtering expired events: 76/160 events remain
+2025-06-30 10:32:16 | INFO     | infortic_scraper | info:97 | Chrome driver closed
+2025-06-30 10:34:54 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 10:34:54 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 10:34:54 | INFO     | infortic_scraper | info:97 | Starting scrape for InfoLombaScraper
+2025-06-30 10:34:56 | INFO     | infortic_scraper | info:97 | Chrome driver initialized for InfoLombaScraper
+2025-06-30 10:34:56 | INFO     | infortic_scraper | info:97 | Navigating to: https://www.infolomba.id/

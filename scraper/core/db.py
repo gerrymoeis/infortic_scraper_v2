@@ -30,7 +30,12 @@ class SupabaseDBClient:
         if not url or not anon_key:
             raise ValueError("SUPABASE_URL and SUPABASE_ANON_KEY must be set in environment variables")
         
-        self.client: Client = create_client(url, anon_key)
+        try:
+            self.client: Client = create_client(url, anon_key)
+        except Exception as e:
+            logger.error(f"Failed to initialize Supabase client: {str(e)}")
+            logger.error(f"This might be a version compatibility issue. Try updating dependencies.")
+            raise ValueError(f"Failed to initialize Supabase client: {str(e)}")
         self.batch_size = batch_size
         logger.info(f"Supabase client initialized with batch size: {batch_size}")
     
