@@ -4566,3 +4566,31 @@
 2025-06-30 10:34:54 | INFO     | infortic_scraper | info:97 | Starting scrape for InfoLombaScraper
 2025-06-30 10:34:56 | INFO     | infortic_scraper | info:97 | Chrome driver initialized for InfoLombaScraper
 2025-06-30 10:34:56 | INFO     | infortic_scraper | info:97 | Navigating to: https://www.infolomba.id/
+2025-06-30 10:35:02 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 1/15
+2025-06-30 10:35:04 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 2/15
+2025-06-30 10:35:06 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 3/15
+2025-06-30 10:35:08 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 4/15
+2025-06-30 10:35:11 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 5/15
+2025-06-30 10:35:13 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 6/15
+2025-06-30 10:35:15 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 7/15
+2025-06-30 10:35:17 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 8/15
+2025-06-30 10:35:19 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 9/15
+2025-06-30 10:35:21 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 10/15
+2025-06-30 10:35:23 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 11/15
+2025-06-30 10:35:25 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 12/15
+2025-06-30 10:35:27 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 13/15
+2025-06-30 10:35:29 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 14/15
+2025-06-30 10:35:31 | INFO     | infortic_scraper | info:97 | Clicking 'Load more events' button 15/15
+2025-06-30 10:35:33 | INFO     | infortic_scraper | info:97 | Found 160 events.
+2025-06-30 10:35:34 | INFO     | infortic_scraper | info:97 | Successfully scraped: IMSCOBI 2025
+2025-06-30 10:35:35 | INFO     | infortic_scraper | info:97 | Successfully scraped: KIP-K ART FESTIVAL
+2025-06-30 10:35:35 | INFO     | infortic_scraper | info:97 | Successfully scraped: Innovation Paper Competition
+2025-06-30 10:35:36 | INFO     | infortic_scraper | info:97 | Successfully scraped: IASC XII
+2025-06-30 10:35:37 | INFO     | infortic_scraper | info:97 | Successfully scraped: PEARLS (Pediatric Emergency Response and Life-Saving Strategies)
+2025-06-30 10:35:38 | INFO     | infortic_scraper | info:97 | Successfully scraped: Olimpiade Eduventure 2.0
+2025-06-30 10:35:39 | INFO     | infortic_scraper | info:97 | Successfully scraped: FANCY : Festival and Competition on Fortytwo
+2025-06-30 10:35:39 | INFO     | infortic_scraper | info:97 | Successfully scraped: GALAXY 2.0 x HELTRO 2025
+2025-06-30 10:35:40 | INFO     | infortic_scraper | info:97 | Successfully scraped: Injection 2.0
+2025-06-30 10:35:41 | INFO     | infortic_scraper | info:97 | Successfully scraped: YIC (Youth Ideas Competition)
+2025-06-30 10:35:42 | INFO     | infortic_scraper | info:97 | Successfully scraped: Olympus 4.0
+2025-06-30 10:35:43 | INFO     | infortic_scraper | info:97 | Successfully scraped: Komandan Bajay
