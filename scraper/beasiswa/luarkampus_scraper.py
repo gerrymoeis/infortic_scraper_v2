@@ -74,8 +74,17 @@ class LuarKampusBeasiswaScraper(BaseScraper):
                 self.logger.info(f"Navigating to initial scholarship list: {self.BEASISWA_URL}")
                 page.goto(self.BEASISWA_URL, timeout=60000)
 
-                page_number = 1
-                while True:
+                # Determine the total number of pages
+                self.logger.info("Determining the total number of pages...")
+                page_buttons = page.query_selector_all('nav[role="navigation"] button[wire\\:click*="gotoPage"]')
+                page_numbers = [int(btn.inner_text()) for btn in page_buttons if btn.inner_text().strip().isdigit()]
+                total_pages = max(page_numbers) if page_numbers else 1
+                self.logger.info(f"Found {total_pages} pages to scrape.")
+
+                for page_number in range(1, total_pages + 1):
+                    if page_number > 1:
+                        self.logger.info(f"Navigating to page {page_number}...")
+                        page.goto(f"{self.BEASISWA_URL}?page={page_number}", wait_until='domcontentloaded', timeout=60000)
                     self.logger.info(f"Scraping page {page_number}...")
                     page.wait_for_selector('div.drawer-content', timeout=60000)
                     soup = BeautifulSoup(page.content(), 'html.parser')
@@ -165,18 +174,7 @@ class LuarKampusBeasiswaScraper(BaseScraper):
                             self.logger.error(f"Error scraping detail page {detail_url}: {e}")
                             continue
 
-                    # Check for and navigate to the next page
-                    next_button_selector = 'button[dusk="nextPage.after"]'
-                    next_button = page.query_selector(next_button_selector)
-
-                    if next_button and next_button.is_enabled():
-                        self.logger.info("Navigating to the next page...")
-                        next_button.click()
-                        page.wait_for_load_state('networkidle', timeout=30000)
-                        page_number += 1
-                    else:
-                        self.logger.info("No more pages to scrape.")
-                        break
+                self.logger.info("Finished scraping all pages.")
             
             except Exception as e:
                 self.logger.critical(f"A critical error occurred during the scraping process: {e}", exc_info=True)
