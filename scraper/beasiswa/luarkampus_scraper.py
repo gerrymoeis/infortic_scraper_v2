@@ -36,10 +36,14 @@ class LuarKampusBeasiswaScraper(BaseScraper):
     def _login(self, page: Page):
         """Logs into luarkampus.id using credentials from .env file."""
         self.logger.info(f"Navigating to login page: {self.LOGIN_URL}")
-        page.goto(self.LOGIN_URL, timeout=60000)
+        page.goto(self.LOGIN_URL, wait_until='domcontentloaded', timeout=60000)
+        
+        self.logger.info("Waiting for login form to be visible...")
+        email_input_selector = 'input[name="email"]'
+        page.wait_for_selector(email_input_selector, state='visible', timeout=30000)
         
         self.logger.info("Filling login credentials.")
-        page.fill('input[name="email"]', self.luar_kampus_gmail)
+        page.fill(email_input_selector, self.luar_kampus_gmail)
         page.fill('input[name="password"]', self.luar_kampus_password)
         
         self.logger.info("Submitting login form.")
