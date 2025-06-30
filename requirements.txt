@@ -4,6 +4,7 @@ requests
 playwright
 lxml
 aiohttp
+selenium
 
 # Database dependencies
 psycopg2-binary
