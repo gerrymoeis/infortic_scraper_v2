@@ -1,0 +1,82 @@
+name: Scheduled Beasiswa Scraper
+
+on:
+  workflow_dispatch: # Allows manual triggering
+  schedule:
+    # Runs at the top of every hour. You can adjust this as needed.
+    - cron: '0 * * * *'
+
+jobs:
+  clean_database:
+    runs-on: ubuntu-latest
+    
+    if: github.ref == 'refs/heads/beasiswa_scraper'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: beasiswa_scraper
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Clean the Beasiswa Table
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python run.py beasiswa --clean-only
+
+  scrape_in_batches:
+    needs: clean_database
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false # Ensures all jobs run even if one fails
+      matrix:
+        # Defines scraping batches: start page and number of pages to scrape
+        # Total pages ~18, so we create 9 batches of 2 pages each.
+        batch:
+          - { start: 1, max: 2 }
+          - { start: 3, max: 2 }
+          - { start: 5, max: 2 }
+          - { start: 7, max: 2 }
+          - { start: 9, max: 2 }
+          - { start: 11, max: 2 }
+          - { start: 13, max: 2 }
+          - { start: 15, max: 2 }
+          - { start: 17, max: 2 }
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: beasiswa_scraper
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Playwright browsers
+        run: playwright install --with-deps
+
+      - name: Run Beasiswa Scraper Batch
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          LUAR_KAMPUS_GMAIL: ${{ secrets.LUAR_KAMPUS_GMAIL }}
+          LUAR_KAMPUS_PASSWORD: ${{ secrets.LUAR_KAMPUS_PASSWORD }}
+        run: |
+          echo "Running scraper for batch starting at page ${{ matrix.batch.start }}"
+          python run.py beasiswa --start-page ${{ matrix.batch.start }} --max-pages ${{ matrix.batch.max }}

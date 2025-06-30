@@ -1,0 +1,29 @@
+# Web scraping dependencies
+beautifulsoup4
+requests
+playwright
+lxml
+aiohttp
+selenium
+
+# Database dependencies
+psycopg2-binary
+supabase
+retrying
+
+# Environment and configuration
+python-dotenv
+
+# Data processing
+pandas
+
+# Async support
+asyncio-throttle
+
+# Additional utilities
+urllib3
+certifi
+
+# Testing dependencies
+pytest
+pytest-mock
