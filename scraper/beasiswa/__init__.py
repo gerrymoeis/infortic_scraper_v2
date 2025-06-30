@@ -1,0 +1,1 @@
+from .luarkampus_scraper import LuarKampusBeasiswaScraper

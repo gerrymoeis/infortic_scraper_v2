@@ -25,13 +25,13 @@ class SupabaseDBClient:
             batch_size: Maximum number of rows to process in a single batch
         """
         url = os.getenv('SUPABASE_URL')
-        anon_key = os.getenv('SUPABASE_ANON_KEY')
+        service_key = os.getenv('SUPABASE_SERVICE_KEY')
         
-        if not url or not anon_key:
-            raise ValueError("SUPABASE_URL and SUPABASE_ANON_KEY must be set in environment variables")
+        if not url or not service_key:
+            raise ValueError("SUPABASE_URL and SUPABASE_SERVICE_KEY must be set in environment variables")
         
         try:
-            self.client: Client = create_client(url, anon_key)
+            self.client: Client = create_client(url, service_key)
         except Exception as e:
             logger.error(f"Failed to initialize Supabase client: {str(e)}")
             logger.error(f"This might be a version compatibility issue. Try updating dependencies.")
@@ -210,6 +210,23 @@ class SupabaseDBClient:
             # Re-raise the exception to stop scraper execution with stale data
             raise Exception(f"Critical error during table cleaning with function: {str(e)}. Scraper cannot continue with stale data.")
     
+    def clean_beasiswa_table(self) -> bool:
+        """
+        Clean all existing data from the beasiswa table.
+        """
+        try:
+            logger.info("Cleaning existing data from beasiswa table")
+            response = self.client.table('beasiswa').delete().not_.is_('id', 'null').execute()
+            
+            if hasattr(response, 'error') and response.error:
+                raise Exception(f"Supabase delete error: {response.error}")
+
+            logger.info("Successfully cleaned beasiswa table")
+            return True
+        except Exception as e:
+            logger.error(f"Failed to clean beasiswa table: {str(e)}")
+            raise Exception(f"Critical error during beasiswa table cleaning: {str(e)}.")
+
     def get_lomba_count(self) -> int:
         """
         Get the current count of rows in the lomba table.
@@ -308,6 +325,41 @@ class SupabaseDBClient:
         except Exception as e:
             logger.error(f"Bulk insert operation failed: {str(e)}")
             logger.info(f"Rows processed before failure: {total_processed}")
+            raise
+    
+    def insert_beasiswa_rows(self, rows: List[dict], clean_first: bool = True) -> int:
+        """
+        Insert beasiswa rows with cleaning and deduplication.
+        """
+        if not rows:
+            logger.warning("No rows provided for beasiswa insertion")
+            return 0
+        
+        if clean_first:
+            self.clean_beasiswa_table()
+
+        total_processed = 0
+        total_rows = len(rows)
+
+        logger.info(f"Starting bulk insert for {total_rows} beasiswa rows")
+
+        try:
+            for i in range(0, total_rows, self.batch_size):
+                batch = rows[i:i + self.batch_size]
+                logger.info(f"Processing beasiswa batch {i // self.batch_size + 1}")
+                
+                response = self.client.table('beasiswa').insert(batch).execute()
+                
+                if hasattr(response, 'error') and response.error:
+                    raise Exception(f"Supabase error: {response.error}")
+                
+                processed = len(response.data) if hasattr(response, 'data') else 0
+                total_processed += processed
+
+            logger.info(f"Bulk beasiswa insert completed. Total rows: {total_processed}")
+            return total_processed
+        except Exception as e:
+            logger.error(f"Bulk beasiswa insert failed: {str(e)}")
             raise
     
     def test_connection(self) -> bool:

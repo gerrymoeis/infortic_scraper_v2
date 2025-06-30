@@ -90,23 +90,28 @@ class Logger:
     
     def debug(self, message: str, **kwargs):
         """Log debug message."""
-        self._logger.debug(message, extra=kwargs)
+        exc_info = kwargs.pop('exc_info', False)
+        self._logger.debug(message, exc_info=exc_info, extra=kwargs)
     
     def info(self, message: str, **kwargs):
         """Log info message."""
-        self._logger.info(message, extra=kwargs)
+        exc_info = kwargs.pop('exc_info', False)
+        self._logger.info(message, exc_info=exc_info, extra=kwargs)
     
     def warning(self, message: str, **kwargs):
         """Log warning message."""
-        self._logger.warning(message, extra=kwargs)
+        exc_info = kwargs.pop('exc_info', False)
+        self._logger.warning(message, exc_info=exc_info, extra=kwargs)
     
     def error(self, message: str, **kwargs):
         """Log error message."""
-        self._logger.error(message, extra=kwargs)
+        exc_info = kwargs.pop('exc_info', True)
+        self._logger.error(message, exc_info=exc_info, extra=kwargs)
     
     def critical(self, message: str, **kwargs):
         """Log critical message."""
-        self._logger.critical(message, extra=kwargs)
+        exc_info = kwargs.pop('exc_info', True)
+        self._logger.critical(message, exc_info=exc_info, extra=kwargs)
     
     def exception(self, message: str, **kwargs):
         """Log exception with traceback."""

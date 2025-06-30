@@ -24,8 +24,8 @@ class InfoLombaScraper(BaseScraper):
     EVENT_LIST_CONTAINER_SELECTOR: str = 'div.event-list'
     EVENT_LINK_SELECTOR: str = 'h4.event-title a'
 
-    def __init__(self, headless: bool = True, timeout: int = 30):
-        super().__init__(headless, timeout)
+    def __init__(self, db_client, headless: bool = True, timeout: int = 30):
+        super().__init__(db_client, headless, timeout)
 
     def scrape(self) -> List[Dict[str, Any]]:
         """

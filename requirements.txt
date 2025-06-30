@@ -1,6 +1,7 @@
 # Web scraping dependencies
 selenium
-beautifulsoup4
+beautifulsoup4==4.12.3
+google-api-python-client==2.135.0
 lxml
 requests
 aiohttp

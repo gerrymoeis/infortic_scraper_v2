@@ -4828,3 +4828,122 @@
 2025-06-30 10:37:39 | INFO     | infortic_scraper | info:97 | Filtered out expired event: National Research Innovation Fair - Date: 10 Mei - 21 Jun 2025
 2025-06-30 10:37:39 | INFO     | infortic_scraper | info:97 | After filtering expired events: 76/160 events remain
 2025-06-30 10:37:41 | INFO     | infortic_scraper | info:97 | Chrome driver closed
+2025-06-30 13:45:51 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 13:45:51 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 13:45:51 | INFO     | infortic_scraper | info:97 | LuarKampusBeasiswaScraper initialized.
+2025-06-30 13:45:51 | INFO     | infortic_scraper | info:97 | Google Custom Search service initialized.
+2025-06-30 13:45:51 | INFO     | infortic_scraper | info:97 | Starting scrape for LuarKampusBeasiswaScraper at https://luarkampus.id/beasiswa
+2025-06-30 13:45:52 | INFO     | infortic_scraper | info:97 | Found 0 scholarship cards.
+2025-06-30 13:45:52 | INFO     | infortic_scraper | info:97 | Scraping finished. Total scholarships scraped: 0
+2025-06-30 13:47:07 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 13:47:07 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 13:47:08 | INFO     | infortic_scraper | info:97 | LuarKampusBeasiswaScraper initialized.
+2025-06-30 13:47:08 | INFO     | infortic_scraper | info:97 | Google Custom Search service initialized.
+2025-06-30 13:47:08 | INFO     | infortic_scraper | info:97 | Starting scrape for LuarKampusBeasiswaScraper at https://luarkampus.id/beasiswa
+2025-06-30 13:47:08 | INFO     | infortic_scraper | info:97 | Found 0 potential h2 titles.
+2025-06-30 13:47:08 | INFO     | infortic_scraper | info:97 | Scraping finished. Total scholarships scraped: 0
+2025-06-30 13:47:45 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 13:47:45 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 13:47:46 | INFO     | infortic_scraper | info:97 | LuarKampusBeasiswaScraper initialized.
+2025-06-30 13:47:46 | INFO     | infortic_scraper | info:97 | Google Custom Search service initialized.
+2025-06-30 13:47:46 | INFO     | infortic_scraper | info:97 | Starting scrape for LuarKampusBeasiswaScraper at https://luarkampus.id/beasiswa
+2025-06-30 13:47:46 | ERROR    | infortic_scraper | error:105 | An unexpected error occurred during scraping: 'charmap' codec can't encode character '\u2715' in position 11275: character maps to <undefined>
+2025-06-30 13:48:10 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 13:48:10 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 13:48:10 | INFO     | infortic_scraper | info:97 | LuarKampusBeasiswaScraper initialized.
+2025-06-30 13:48:10 | INFO     | infortic_scraper | info:97 | Google Custom Search service initialized.
+2025-06-30 13:48:10 | INFO     | infortic_scraper | info:97 | Starting scrape for LuarKampusBeasiswaScraper at https://luarkampus.id/beasiswa
+2025-06-30 13:48:11 | INFO     | infortic_scraper | info:97 | HTML content saved to debug_output.html
+2025-06-30 13:48:11 | INFO     | infortic_scraper | info:97 | Found 0 potential h2 titles.
+2025-06-30 13:48:11 | INFO     | infortic_scraper | info:97 | Scraping finished. Total scholarships scraped: 0
+2025-06-30 13:50:06 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 13:50:06 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 13:50:06 | INFO     | infortic_scraper | info:97 | LuarKampusBeasiswaScraper initialized.
+2025-06-30 13:50:06 | INFO     | infortic_scraper | info:97 | Google Custom Search service initialized.
+2025-06-30 13:50:06 | INFO     | infortic_scraper | info:97 | Starting scrape for LuarKampusBeasiswaScraper at https://luarkampus.id/beasiswa
+2025-06-30 13:50:07 | INFO     | infortic_scraper | info:97 | Found 10 scholarship cards.
+2025-06-30 13:50:07 | ERROR    | infortic_scraper | error:105 | An unexpected error occurred during scraping: "Attempt to overwrite 'exc_info' in LogRecord"
+2025-06-30 13:51:36 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 13:51:36 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 13:51:37 | INFO     | infortic_scraper | info:97 | LuarKampusBeasiswaScraper initialized.
+2025-06-30 13:51:37 | INFO     | infortic_scraper | info:97 | Google Custom Search service initialized.
+2025-06-30 13:51:37 | INFO     | infortic_scraper | info:97 | Starting scrape for LuarKampusBeasiswaScraper at https://luarkampus.id/beasiswa
+2025-06-30 14:04:27 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 14:04:27 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 14:04:27 | INFO     | infortic_scraper | info:99 | LuarKampusBeasiswaScraper initialized.
+2025-06-30 14:04:27 | INFO     | infortic_scraper | info:99 | Google Custom Search service initialized.
+2025-06-30 14:04:27 | INFO     | infortic_scraper | info:99 | Starting scrape for LuarKampusBeasiswaScraper at https://luarkampus.id/beasiswa
+2025-06-30 14:04:27 | ERROR    | infortic_scraper | error:109 | An unexpected error occurred during scraping
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 125, in scrape
+    response = self.session.get(self.BASE_URL, timeout=60)
+               ^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2025-06-30 14:04:27 | INFO     | infortic_scraper | info:99 | Scraping finished. Total scholarships scraped: 0
+2025-06-30 14:05:11 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 14:05:11 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 14:05:11 | INFO     | infortic_scraper | info:99 | LuarKampusBeasiswaScraper initialized.
+2025-06-30 14:05:11 | INFO     | infortic_scraper | info:99 | Google Custom Search service initialized.
+2025-06-30 14:05:11 | INFO     | infortic_scraper | info:99 | Starting scrape for LuarKampusBeasiswaScraper at https://luarkampus.id/beasiswa
+2025-06-30 14:05:11 | INFO     | infortic_scraper | info:99 | Found 10 scholarship cards.
+2025-06-30 14:05:11 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Sinarmas - ITSB 2025
+2025-06-30 14:05:11 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Sinarmas - ITSB 2025" logo OR icon'
+2025-06-30 14:05:12 | INFO     | infortic_scraper | info:99 | Found URL: https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3516292685311755754
+2025-06-30 14:05:12 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Sinarmas - ITSB 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:05:13 | INFO     | infortic_scraper | info:99 | Found URL: https://fahum.umsu.ac.id/info/cek-pilihan-dan-syaratnya-beasiswa-dalam-negeri-2025-masih-buka-pendaftaran-hingga-juli/
+2025-06-30 14:05:13 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa Sinarmas - ITSB 2025
+2025-06-30 14:05:13 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 14:05:13 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Yale Emerging Climate Leaders Fellowship 2026" logo OR icon'
+2025-06-30 14:05:13 | INFO     | infortic_scraper | info:99 | Found URL: https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1730162594550170
+2025-06-30 14:05:13 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Yale Emerging Climate Leaders Fellowship 2026" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:05:14 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Yale Emerging Climate Leaders Fellowship 2026" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:05:14 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 14:05:14 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Singapore South-East Asia Fellowship (SASEAF) 2025
+2025-06-30 14:05:14 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Singapore South-East Asia Fellowship (SASEAF) 2025" logo OR icon'
+2025-06-30 14:05:14 | INFO     | infortic_scraper | info:99 | Found URL: https://luarkampus.id/assets/brand/opengraph-cover.jpg
+2025-06-30 14:05:14 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Singapore South-East Asia Fellowship (SASEAF) 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:05:15 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Singapore South-East Asia Fellowship (SASEAF) 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:05:15 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Singapore South-East Asia Fellowship (SASEAF) 2025
+2025-06-30 14:05:15 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 14:05:15 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Cahaya Pintar Mahasiswa 2025" logo OR icon'
+2025-06-30 14:05:15 | INFO     | infortic_scraper | info:99 | Found URL: https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3544359161208733517
+2025-06-30 14:05:15 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Cahaya Pintar Mahasiswa 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:05:15 | INFO     | infortic_scraper | info:99 | Found URL: https://ipai.upi.edu/beasiswa-mahasiswa-ipai-raih-beasiswa-rubin/2/
+2025-06-30 14:05:15 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 14:05:15 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Excellent Brains Austria Neuroscience PhD Fellowships 2025
+2025-06-30 14:05:15 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" logo OR icon'
+2025-06-30 14:05:16 | INFO     | infortic_scraper | info:99 | Found URL: https://glorno.com/wp-content/uploads/2024/02/GLORNO-icon-LOGO.png
+2025-06-30 14:05:16 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:05:16 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Excellent Brains Austria Neuroscience PhD Fellowships 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:05:16 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Excellent Brains Austria Neuroscience PhD Fellowships 2025
+2025-06-30 14:05:16 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)
+2025-06-30 14:05:16 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" logo OR icon'
+2025-06-30 14:05:16 | INFO     | infortic_scraper | info:99 | Found URL: https://rumahamal.usk.ac.id/api/wp-content/uploads/2025/06/BPRA-UKT-5-1024x576.jpg
+2025-06-30 14:05:16 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:05:17 | INFO     | infortic_scraper | info:99 | Found URL: https://rumahamal.usk.ac.id/pengumuman/beasiswa-pendidikan-rumah-amal-uang-kuliah-tunggal-bpra-ukt-semester-genap-tahun-2024-2025-rumah-amal-masjid-jamik-universitas-syiah-kuala
+2025-06-30 14:05:17 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)
+2025-06-30 14:05:17 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)
+2025-06-30 14:05:17 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" logo OR icon'
+2025-06-30 14:05:17 | INFO     | infortic_scraper | info:99 | Found URL: https://luarkampus.id/storage/course/nDcgWV6HiMEQccyfLiWFcPlTbeF0PC-metaQlUucG5n-.png
+2025-06-30 14:05:17 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:05:17 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:05:17 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)
+2025-06-30 14:05:17 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Hyundai JUMP School Indonesia Batch 2
+2025-06-30 14:05:17 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Hyundai JUMP School Indonesia Batch 2" logo OR icon'
+2025-06-30 14:05:18 | INFO     | infortic_scraper | info:99 | Found URL: https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3664644410899686243
+2025-06-30 14:05:18 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Hyundai JUMP School Indonesia Batch 2" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:05:18 | INFO     | infortic_scraper | info:99 | Found URL: https://myvolunteer.wahanavisi.org/id/ayo-terlibat/relawan/program/volunteer-kincir-lapangan
+2025-06-30 14:05:18 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Hyundai JUMP School Indonesia Batch 2
+2025-06-30 14:05:18 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa S3 DESY Hamburg PhD Scholarship 2025
+2025-06-30 14:05:18 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa S3 DESY Hamburg PhD Scholarship 2025" logo OR icon'
+2025-06-30 14:05:18 | INFO     | infortic_scraper | info:99 | Found URL: https://luarkampus.id/assets/brand/opengraph-cover.jpg
+2025-06-30 14:05:18 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa S3 DESY Hamburg PhD Scholarship 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:05:18 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Beasiswa S3 DESY Hamburg PhD Scholarship 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:05:18 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa S3 DESY Hamburg PhD Scholarship 2025
+2025-06-30 14:05:18 | INFO     | infortic_scraper | info:99 | Searching for image and registration URL for: Beasiswa S3 MSCA Europe PhD Scholarships 2025
+2025-06-30 14:05:18 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" logo OR icon'
+2025-06-30 14:05:19 | INFO     | infortic_scraper | info:99 | Found URL: https://luarkampus.id/storage/course/nDcgWV6HiMEQccyfLiWFcPlTbeF0PC-metaQlUucG5n-.png
+2025-06-30 14:05:19 | INFO     | infortic_scraper | info:99 | Searching Google for: '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:05:19 | WARNING  | infortic_scraper | warning:104 | No results found for query: '"Beasiswa S3 MSCA Europe PhD Scholarships 2025" pendaftaran OR registrasi site:.ac.id OR site:.edu OR site:.org'
+2025-06-30 14:05:19 | INFO     | infortic_scraper | info:99 | Scraped scholarship: Beasiswa S3 MSCA Europe PhD Scholarships 2025
+2025-06-30 14:05:19 | INFO     | infortic_scraper | info:99 | Scraping finished. Total scholarships scraped: 10

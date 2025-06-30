@@ -10,6 +10,7 @@ import logging
 import argparse
 from dotenv import load_dotenv
 from scraper.lomba.infolomba_scraper import InfoLombaScraper
+from scraper.beasiswa.luarkampus_scraper import LuarKampusBeasiswaScraper
 from scraper.core.db import SupabaseDBClient
 
 # Configure logging
@@ -135,7 +136,7 @@ def run_scraper_with_cleaning():
             logger.warning(f"Table not completely clean - still has {clean_count} rows")
         
         logger.info("=== Starting scraper ===")
-        scraper = InfoLombaScraper(headless=True, timeout=30)
+        scraper = InfoLombaScraper(db_client=db_client, headless=True, timeout=30)
         logger.info("InfoLombaScraper instantiated")
         
         # Scrape data
@@ -166,6 +167,33 @@ def run_scraper_with_cleaning():
         logger.error(f"Error during scraper with cleaning: {str(e)}")
         raise
 
+def run_beasiswa_scraper():
+    """
+    Runs the LuarKampus.id Beasiswa scraper and inserts the data into the database.
+    """
+    logger.info("Running Beasiswa scraper...")
+    
+    try:
+        db_client = SupabaseDBClient()
+        db_client.test_connection()
+
+        logger.info("Starting Beasiswa scraper...")
+        load_dotenv()
+        logger.info("Environment variables loaded")
+        
+        scraper = LuarKampusBeasiswaScraper(db_client=db_client)
+        results = scraper.scrape()
+        logger.info(f"Scraped {len(results)} beasiswa items")
+        
+        if results:
+            db_client.insert_beasiswa_rows(results)
+        else:
+            logger.info("No beasiswa items to insert into database")
+            
+    except Exception as e:
+        logger.error(f"Error during beasiswa scraping: {e}", exc_info=True)
+        sys.exit(1)
+
 def main():
     """
     Main function to run scraper and insert data into Supabase.
@@ -176,7 +204,8 @@ def main():
     
     try:
         # 2. Instantiate InfolombaScraper (InfoLombaScraper)
-        scraper = InfoLombaScraper(headless=True, timeout=30)
+        db_client = SupabaseDBClient()
+        scraper = InfoLombaScraper(db_client=db_client, headless=True, timeout=30)
         logger.info("InfoLombaScraper instantiated")
         
         # 3. Call .scrape() and log count
@@ -185,7 +214,6 @@ def main():
         
         # 4. On non-empty list, call db.insert_lomba_rows() and print affected rows
         if results:
-            db_client = SupabaseDBClient()
             affected_rows = db_client.insert_lomba_rows(results)
             print(f"Affected rows: {affected_rows}")
             logger.info(f"Successfully inserted {affected_rows} rows into database")
@@ -202,6 +230,8 @@ if __name__ == "__main__":
                        help='Test the PostgreSQL cleaning function')
     parser.add_argument('--run-with-cleaning', action='store_true',
                        help='Run scraper with PostgreSQL cleaning function')
+    parser.add_argument('--scrape-beasiswa', action='store_true',
+                        help='Run the Beasiswa scraper for luarkampus.id')
     
     args = parser.parse_args()
     
@@ -212,6 +242,9 @@ if __name__ == "__main__":
     elif args.run_with_cleaning:
         logger.info("Running scraper with cleaning...")
         run_scraper_with_cleaning()
+    elif args.scrape_beasiswa:
+        logger.info("Running Beasiswa scraper...")
+        run_beasiswa_scraper()
     else:
         logger.info("Running standard scraper...")
         main()

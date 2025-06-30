@@ -90,11 +90,12 @@ class BaseScraper(ABC):
     Subclasses only need to implement the scrape() method.
     """
     
-    def __init__(self, headless: bool = True, timeout: int = 30):
+    def __init__(self, db_client: SupabaseDBClient, headless: bool = True, timeout: int = 30):
         """
         Initialize the base scraper.
         
         Args:
+            db_client: An initialized SupabaseDBClient instance
             headless: Whether to run browser in headless mode
             timeout: Default timeout for web operations
         """
@@ -103,7 +104,7 @@ class BaseScraper(ABC):
         self.driver: Optional[webdriver.Chrome] = None
         self.session: Optional[aiohttp.ClientSession] = None
         self.logger = Logger()
-        self.db = SupabaseDBClient()
+        self.db_client = db_client
         
     def __enter__(self):
         """Context manager entry - initialize browser driver."""
