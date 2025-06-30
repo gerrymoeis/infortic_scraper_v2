@@ -34,6 +34,21 @@ cd infortic
 pip install -r requirements.txt
 ```
 
+### Automated Daily Execution
+
+This project includes **GitHub Actions** for automated daily scraping:
+
+- **Schedule**: Runs every day at midnight Indonesia time (WIB/UTC+7)
+- **Command**: Automatically executes `python run.py --run-with-cleaning`
+- **Auto-commit**: Commits and pushes results if there are changes
+- **Manual Trigger**: Can be triggered manually from GitHub Actions tab
+
+**Setup Steps for GitHub Repository:**
+1. Create a new GitHub repository
+2. Push this code to the repository
+3. The workflow will automatically be available in the Actions tab
+4. No additional configuration needed - it uses the built-in `GITHUB_TOKEN`
+
 ### 2. Configuration
 
 Edit the `.env` file with your database credentials:
