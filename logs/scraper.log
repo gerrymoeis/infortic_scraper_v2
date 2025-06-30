@@ -24129,3 +24129,802 @@ Call log:
 2025-06-30 20:33:22 | INFO     | infortic_scraper | info:99 | Found 10 URLs on page 4833. Total URLs collected: 48330.
 2025-06-30 20:33:22 | INFO     | infortic_scraper | info:99 | Navigating to the next page...
 2025-06-30 20:33:22 | INFO     | infortic_scraper | info:99 | Collecting URLs from page 4834...
+2025-06-30 21:17:42 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 21:17:42 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 21:17:42 | INFO     | infortic_scraper | info:99 | LuarKampusBeasiswaScraper initialized for authenticated scraping.
+2025-06-30 21:17:42 | INFO     | infortic_scraper | info:99 | Starting scrape for LuarKampusBeasiswaScraper
+2025-06-30 21:17:48 | INFO     | infortic_scraper | info:99 | Navigating to login page: https://luarkampus.id/login/email
+2025-06-30 21:17:50 | INFO     | infortic_scraper | info:99 | Waiting for login form to be visible...
+2025-06-30 21:17:50 | INFO     | infortic_scraper | info:99 | Filling login credentials.
+2025-06-30 21:17:50 | INFO     | infortic_scraper | info:99 | Submitting login form.
+2025-06-30 21:17:55 | INFO     | infortic_scraper | info:99 | Waiting for login request to complete...
+2025-06-30 21:18:25 | ERROR    | infortic_scraper | error:109 | Timeout during login. A screenshot has been saved to 'login_failure_screenshot.png'. This might be due to a CAPTCHA.
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 54, in _login
+    page.wait_for_load_state('networkidle', timeout=30000)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 9122, in wait_for_load_state
+    self._sync(self._impl_obj.wait_for_load_state(state=state, timeout=timeout))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_page.py", line 568, in wait_for_load_state
+    return await self._main_frame.wait_for_load_state(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_frame.py", line 243, in wait_for_load_state
+    return await self._wait_for_load_state_impl(state, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_frame.py", line 271, in _wait_for_load_state_impl
+    await waiter.result()
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"domcontentloaded" event fired
+============================================================
+2025-06-30 21:18:25 | CRITICAL | infortic_scraper | critical:114 | A critical error occurred during the scraping process: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"domcontentloaded" event fired
+============================================================
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 72, in scrape
+    self._login(page)
+    ~~~~~~~~~~~^^^^^^
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 60, in _login
+    raise e
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 54, in _login
+    page.wait_for_load_state('networkidle', timeout=30000)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 9122, in wait_for_load_state
+    self._sync(self._impl_obj.wait_for_load_state(state=state, timeout=timeout))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_page.py", line 568, in wait_for_load_state
+    return await self._main_frame.wait_for_load_state(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_frame.py", line 243, in wait_for_load_state
+    return await self._wait_for_load_state_impl(state, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_frame.py", line 271, in _wait_for_load_state_impl
+    await waiter.result()
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"domcontentloaded" event fired
+============================================================
+2025-06-30 21:18:25 | INFO     | infortic_scraper | info:99 | Closing browser.
+2025-06-30 21:18:25 | INFO     | infortic_scraper | info:99 | Scraping finished. Total scholarships scraped: 0
+2025-06-30 21:18:51 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 21:18:51 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 21:18:51 | INFO     | infortic_scraper | info:99 | LuarKampusBeasiswaScraper initialized for authenticated scraping.
+2025-06-30 21:18:51 | INFO     | infortic_scraper | info:99 | Starting scrape for LuarKampusBeasiswaScraper
+2025-06-30 21:18:51 | INFO     | infortic_scraper | info:99 | Navigating to login page: https://luarkampus.id/login/email
+2025-06-30 21:18:52 | INFO     | infortic_scraper | info:99 | Waiting for login form to be visible...
+2025-06-30 21:18:52 | INFO     | infortic_scraper | info:99 | Filling login credentials.
+2025-06-30 21:18:52 | INFO     | infortic_scraper | info:99 | Submitting login form.
+2025-06-30 21:18:55 | INFO     | infortic_scraper | info:99 | Waiting for login request to complete...
+2025-06-30 21:18:58 | INFO     | infortic_scraper | info:99 | Login form submitted. Assuming login is successful.
+2025-06-30 21:18:58 | INFO     | infortic_scraper | info:99 | Navigating to initial scholarship list: https://luarkampus.id/beasiswa
+2025-06-30 21:18:59 | INFO     | infortic_scraper | info:99 | Determining the total number of pages...
+2025-06-30 21:18:59 | INFO     | infortic_scraper | info:99 | Found 18 pages to scrape.
+2025-06-30 21:18:59 | INFO     | infortic_scraper | info:99 | Scraping page 1...
+2025-06-30 21:18:59 | INFO     | infortic_scraper | info:99 | Found 10 scholarships on page 1.
+2025-06-30 21:18:59 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1751
+2025-06-30 21:18:59 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Sinarmas - ITSB 2025
+2025-06-30 21:19:05 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://sumateraekspres.bacakoran.co/upload/61e27f7b1477466f545336659f11f0cd.jpg
+2025-06-30 21:19:05 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Sinarmas - ITSB 2025
+2025-06-30 21:19:05 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1819
+2025-06-30 21:19:06 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 21:19:13 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://jackson.yale.edu/wp-content/uploads/2017/03/WF-mark-v3_outline.jpg
+2025-06-30 21:19:13 | INFO     | infortic_scraper | info:99 | Successfully scraped: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 21:19:13 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1818
+2025-06-30 21:19:13 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Singapore South-East Asia Fellowship (SASEAF) 2025
+2025-06-30 21:19:20 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://www.scholarsofficial.com/wp-content/uploads/2025/03/Simple-Elegant-Minimalist-Visit-South-Korea-Traveling-Agent-Flyer.png
+2025-06-30 21:19:20 | INFO     | infortic_scraper | info:99 | Successfully scraped: Singapore South-East Asia Fellowship (SASEAF) 2025
+2025-06-30 21:19:20 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1817
+2025-06-30 21:19:21 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 21:19:26 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://www.scholarsofficial.com/wp-content/uploads/2023/06/Beasiswa-Cahaya-Pintar-2023-untuk-Mahasiswa-D3-dan-S1-Palembang.jpg
+2025-06-30 21:19:26 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 21:19:26 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1816
+2025-06-30 21:19:27 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Excellent Brains Austria Neuroscience PhD Fellowships 2025
+2025-06-30 21:19:34 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://blogassets.leverageedu.com/media/uploads/2022/05/04163400/PhD-Neuroscience.png
+2025-06-30 21:19:34 | INFO     | infortic_scraper | info:99 | Successfully scraped: Excellent Brains Austria Neuroscience PhD Fellowships 2025
+2025-06-30 21:19:34 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1815
+2025-06-30 21:19:34 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)
+2025-06-30 21:19:41 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://1.bp.blogspot.com/-38_Qz1vdSaM/WWpqqLHh0yI/AAAAAAAAG3k/hGTgwBWpqyYxF4bnk4L6OEn56_nmCJiIwCLcBGAs/s1600/uang-kuliah-tunggal-diserahkan-ke-kampus-gp9.jpg
+2025-06-30 21:19:41 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)
+2025-06-30 21:19:41 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1814
+2025-06-30 21:19:42 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)
+2025-06-30 21:19:48 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://awsimages.detik.net.id/visual/2024/10/16/kings-college-london_169.jpeg?w=715&q=90
+2025-06-30 21:19:48 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)
+2025-06-30 21:19:48 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1813
+2025-06-30 21:19:49 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Hyundai JUMP School Indonesia Batch 2
+2025-06-30 21:20:25 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'Hyundai JUMP School Indonesia Batch 2'. No image will be used.
+2025-06-30 21:20:25 | INFO     | infortic_scraper | info:99 | Successfully scraped: Hyundai JUMP School Indonesia Batch 2
+2025-06-30 21:20:25 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1812
+2025-06-30 21:20:26 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa S3 DESY Hamburg PhD Scholarship 2025' with deadline 2025-06-30.
+2025-06-30 21:20:26 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1811
+2025-06-30 21:20:26 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa S3 MSCA Europe PhD Scholarships 2025
+2025-06-30 21:20:32 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://www.scholarsofficial.com/wp-content/uploads/2025/01/Beasiswa-Sinar-Mas-Agribusiness-and-Food-Scholarship-2025-untuk-Kuliah-Dalam-Negeri.jpg
+2025-06-30 21:20:32 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa S3 MSCA Europe PhD Scholarships 2025
+2025-06-30 21:20:33 | INFO     | infortic_scraper | info:99 | Navigating to page 2...
+2025-06-30 21:20:33 | INFO     | infortic_scraper | info:99 | Scraping page 2...
+2025-06-30 21:20:33 | INFO     | infortic_scraper | info:99 | Found 10 scholarships on page 2.
+2025-06-30 21:20:33 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1810
+2025-06-30 21:20:33 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa S3 Bioproduction and Purification of Siderophores' with deadline 2025-06-30.
+2025-06-30 21:20:33 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1809
+2025-06-30 21:20:33 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa KIP Kuliah – Universitas PGRI Madiun (UNIPMA)
+2025-06-30 21:20:39 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCciFBtIasenMsyFBVxv8R8lFAkCmb0bPVBmUDcnsllVCF2HFGf1XmBCzRxiG6A977AkdqsRdf2Bxvx0Z4zajx6PKSZzvM_r4eiketPYfVrTDuQaGDHxNkBNo1BT8jyRfnUbpGyicQuQxUCB62Cr4D9HUuHK84PT62xUc157sRydg0w1sD3-WM0W1aBgIR/s3937/Pendaftaran KIP Kuliah Universitas Trisakti.jpg
+2025-06-30 21:20:39 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa KIP Kuliah – Universitas PGRI Madiun (UNIPMA)
+2025-06-30 21:20:39 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1808
+2025-06-30 21:20:39 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa SmartPath 2025' with deadline 2025-06-30.
+2025-06-30 21:20:39 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1807
+2025-06-30 21:20:40 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Bidik Anak Negeri 2025 – PPI Hiroshima
+2025-06-30 21:20:46 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://indbeasiswa.com/wp-content/uploads/2019/07/Beasiswa-SD-MI-Sederajat-Bidik-Anak-Negeri.jpg
+2025-06-30 21:20:46 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Bidik Anak Negeri 2025 – PPI Hiroshima
+2025-06-30 21:20:46 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1805
+2025-06-30 21:20:47 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Fulbright Graduate Scholarship 2026–2027 – Bahrain' with deadline 2025-06-30.
+2025-06-30 21:20:47 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1804
+2025-06-30 21:20:47 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: KWI International Fellowship 2026
+2025-06-30 21:20:55 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://pbs.twimg.com/media/E7T0-xAWYA8XPgg.jpg
+2025-06-30 21:20:55 | INFO     | infortic_scraper | info:99 | Successfully scraped: KWI International Fellowship 2026
+2025-06-30 21:20:55 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1803
+2025-06-30 21:20:56 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Apple Developer Academy Indonesia – Batch 2 (2026)
+2025-06-30 21:21:02 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://awsimages.detik.net.id/community/media/visual/2024/12/08/apple-developer-academy-2024-2_169.jpeg?w=650
+2025-06-30 21:21:02 | INFO     | infortic_scraper | info:99 | Successfully scraped: Apple Developer Academy Indonesia – Batch 2 (2026)
+2025-06-30 21:21:02 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1802
+2025-06-30 21:21:02 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Program Pendampingan & Persiapan Seleksi Beasiswa Kuliah Kampus China' with deadline 2025-06-30.
+2025-06-30 21:21:02 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1801
+2025-06-30 21:21:03 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Kutai Timur Tuntas – Stimulant 2025
+2025-06-30 21:21:09 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://kaltimtoday.co/wp-content/uploads/2019/11/photo_2019-11-25_19-25-49-1024x682.jpg
+2025-06-30 21:21:09 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Kutai Timur Tuntas – Stimulant 2025
+2025-06-30 21:21:09 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1800
+2025-06-30 21:21:09 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Zakat Indonesia 2025
+2025-06-30 21:21:17 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://beasiswa.unpad.ac.id/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-06-at-10.49.06_6c9b503d-240x300.jpg
+2025-06-30 21:21:17 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Zakat Indonesia 2025
+2025-06-30 21:21:17 | INFO     | infortic_scraper | info:99 | Navigating to page 3...
+2025-06-30 21:21:17 | INFO     | infortic_scraper | info:99 | Scraping page 3...
+2025-06-30 21:21:17 | INFO     | infortic_scraper | info:99 | Found 10 scholarships on page 3.
+2025-06-30 21:21:17 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1799
+2025-06-30 21:21:17 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Wakaf Produktif Batch 6 Tahun 2025
+2025-06-30 21:21:25 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://luarkampus.id/storage/course/5T0yVIB0IFJDBz6uCMu9922AJ6OEJZ-metaQmltYmluZ2FuIFByb2dyYW0gQmVhc2lzd2EgVHVuamFuZ2FuIFdha2FmIFByb2R1a3RpZi5wbmc=-.png
+2025-06-30 21:21:25 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Wakaf Produktif Batch 6 Tahun 2025
+2025-06-30 21:21:25 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1798
+2025-06-30 21:21:25 | WARNING  | infortic_scraper | warning:104 | Skipping scholarship 'Adaradhika Scholarship 2025' due to missing registration/booklet URL.
+2025-06-30 21:21:25 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1797
+2025-06-30 21:21:26 | WARNING  | infortic_scraper | warning:104 | Skipping scholarship 'KIP Kuliah UNISMA 2025' due to missing registration/booklet URL.
+2025-06-30 21:21:26 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1796
+2025-06-30 21:21:26 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Duke University Karsh International Scholarship 2025
+2025-06-30 21:21:36 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://www.opportunitiescircle.com/wp-content/uploads/2023/09/Karsh-International-Scholarship-by-Duke-University-2024.png
+2025-06-30 21:21:36 | INFO     | infortic_scraper | info:99 | Successfully scraped: Duke University Karsh International Scholarship 2025
+2025-06-30 21:21:36 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1795
+2025-06-30 21:21:36 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa Mentari Lazismu UMY 2025' with deadline 2025-06-26.
+2025-06-30 21:21:36 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1794
+2025-06-30 21:21:37 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Japan Society for the Promotion of Science Fellowship 2026
+2025-06-30 21:21:48 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://banner2.cleanpng.com/20181108/acp/kisspng-japan-society-for-the-promotion-of-science-postdoc-about-symposium-on-action-anticipation-5be43738bff326.8592560915416830007862.jpg
+2025-06-30 21:21:48 | INFO     | infortic_scraper | info:99 | Successfully scraped: Japan Society for the Promotion of Science Fellowship 2026
+2025-06-30 21:21:48 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1793
+2025-06-30 21:21:49 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa LAF Fellowship 2026
+2025-06-30 21:21:56 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://media.suara.com/pictures/970x544/2023/02/01/34477-bri.jpg
+2025-06-30 21:21:56 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa LAF Fellowship 2026
+2025-06-30 21:21:56 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1792
+2025-06-30 21:21:56 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: YSEALI Academic Fellows Program 2026
+2025-06-30 21:22:03 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://3.bp.blogspot.com/-4UE6CTUHTME/WdQt3G06BJI/AAAAAAAAEvo/TFgujPCzbUkjL3ITnQGfU48y_Ih-X4pegCLcBGAs/w1200-h630-p-k-no-nu/123.jpg
+2025-06-30 21:22:03 | INFO     | infortic_scraper | info:99 | Successfully scraped: YSEALI Academic Fellows Program 2026
+2025-06-30 21:22:03 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1791
+2025-06-30 21:22:03 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa S3 King Fahd University of Petroleum and Minerals (KFUPM) 2025
+2025-06-30 21:22:10 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://i.ytimg.com/vi/EYwrJuB43aU/maxresdefault.jpg
+2025-06-30 21:22:10 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa S3 King Fahd University of Petroleum and Minerals (KFUPM) 2025
+2025-06-30 21:22:10 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1790
+2025-06-30 21:22:11 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa LPDP - Georgetown SFS Asia-Pacific Program Master 2025' with deadline 2025-06-26.
+2025-06-30 21:22:11 | INFO     | infortic_scraper | info:99 | Navigating to page 4...
+2025-06-30 21:22:11 | INFO     | infortic_scraper | info:99 | Scraping page 4...
+2025-06-30 21:22:11 | INFO     | infortic_scraper | info:99 | Found 10 scholarships on page 4.
+2025-06-30 21:22:11 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1789
+2025-06-30 21:22:11 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa S2 Metalurgi, Ekonomi, Transportasi LPDP – Central South University (CSU)
+2025-06-30 21:22:32 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'Beasiswa S2 Metalurgi, Ekonomi, Transportasi LPDP – Central South University (CSU)'. No image will be used.
+2025-06-30 21:22:32 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa S2 Metalurgi, Ekonomi, Transportasi LPDP – Central South University (CSU)
+2025-06-30 21:22:32 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1788
+2025-06-30 21:22:32 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Student Community Partner (Amartha Internship Program)' with deadline 2025-06-27.
+2025-06-30 21:22:32 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1787
+2025-06-30 21:22:32 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Program Garuda ACE 2.0' with deadline 2025-06-30.
+2025-06-30 21:22:32 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1786
+2025-06-30 21:22:33 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa S1 Maroko Jalur Muhammadiyah – Institut Darul Hadist Al Hassania' with deadline 2025-06-27.
+2025-06-30 21:22:33 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1785
+2025-06-30 21:22:33 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Inovasi Muda Scholarship (IMS) 2025
+2025-06-30 21:23:10 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'Inovasi Muda Scholarship (IMS) 2025'. No image will be used.
+2025-06-30 21:23:10 | INFO     | infortic_scraper | info:99 | Successfully scraped: Inovasi Muda Scholarship (IMS) 2025
+2025-06-30 21:23:10 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1784
+2025-06-30 21:23:11 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Australian RMIT University Scholarship 2026
+2025-06-30 21:23:47 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'Australian RMIT University Scholarship 2026'. No image will be used.
+2025-06-30 21:23:47 | INFO     | infortic_scraper | info:99 | Successfully scraped: Australian RMIT University Scholarship 2026
+2025-06-30 21:23:47 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1783
+2025-06-30 21:23:48 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa HelloMotion High School Malang' with deadline 2025-06-30.
+2025-06-30 21:23:48 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1782
+2025-06-30 21:23:48 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: GIB Scholarship – Garuda Hacks 6.0
+2025-06-30 21:24:24 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'GIB Scholarship – Garuda Hacks 6.0'. No image will be used.
+2025-06-30 21:24:24 | INFO     | infortic_scraper | info:99 | Successfully scraped: GIB Scholarship – Garuda Hacks 6.0
+2025-06-30 21:24:24 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1781
+2025-06-30 21:24:26 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Open Call for Research Proposal Tahun 2025
+2025-06-30 21:25:01 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'Open Call for Research Proposal Tahun 2025'. No image will be used.
+2025-06-30 21:25:01 | INFO     | infortic_scraper | info:99 | Successfully scraped: Open Call for Research Proposal Tahun 2025
+2025-06-30 21:25:01 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1780
+2025-06-30 21:25:02 | WARNING  | infortic_scraper | warning:104 | Skipping scholarship 'Beasiswa Bupati Jember “Cinta Bergema” 2025' due to missing registration/booklet URL.
+2025-06-30 21:25:02 | INFO     | infortic_scraper | info:99 | Navigating to page 5...
+2025-06-30 21:25:02 | INFO     | infortic_scraper | info:99 | Scraping page 5...
+2025-06-30 21:25:02 | INFO     | infortic_scraper | info:99 | Found 10 scholarships on page 5.
+2025-06-30 21:25:02 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1779
+2025-06-30 21:25:02 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa S2 Banach NAWA Polandia 2025' with deadline 2025-06-27.
+2025-06-30 21:25:02 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1777
+2025-06-30 21:25:03 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'JASSO Scholarship Program 2025' with deadline 2025-06-20.
+2025-06-30 21:25:03 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1776
+2025-06-30 21:25:03 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'NAMA Fund Indonesia Batch VII Gelombang 2' with deadline 2025-06-24.
+2025-06-30 21:25:03 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1775
+2025-06-30 21:25:03 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Talent Class Batch 18' with deadline 2025-06-25.
+2025-06-30 21:25:03 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1774
+2025-06-30 21:25:04 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: KatipAta Turkish Language and Culture Program 2025 Turkey
+2025-06-30 21:25:41 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'KatipAta Turkish Language and Culture Program 2025 Turkey'. No image will be used.
+2025-06-30 21:25:41 | INFO     | infortic_scraper | info:99 | Successfully scraped: KatipAta Turkish Language and Culture Program 2025 Turkey
+2025-06-30 21:25:41 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1773
+2025-06-30 21:25:42 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Ruhr University DAAD EPOS Scholarship 2026
+2025-06-30 21:26:18 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'Ruhr University DAAD EPOS Scholarship 2026'. No image will be used.
+2025-06-30 21:26:18 | INFO     | infortic_scraper | info:99 | Successfully scraped: Ruhr University DAAD EPOS Scholarship 2026
+2025-06-30 21:26:18 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1772
+2025-06-30 21:26:19 | WARNING  | infortic_scraper | warning:104 | Skipping scholarship 'UN Ocean Fellowship 2025 Portugal' due to missing registration/booklet URL.
+2025-06-30 21:26:19 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1771
+2025-06-30 21:26:19 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa S2 M.Sc. by Research di University of Malta (2025)
+2025-06-30 21:26:56 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'Beasiswa S2 M.Sc. by Research di University of Malta (2025)'. No image will be used.
+2025-06-30 21:26:56 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa S2 M.Sc. by Research di University of Malta (2025)
+2025-06-30 21:26:56 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1770
+2025-06-30 21:26:57 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa S3 Jagiellonian University COFUND MAP-ID 2025' with deadline 2025-06-30.
+2025-06-30 21:26:57 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1769
+2025-06-30 21:26:57 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa KIP Kuliah Telkom University 2025
+2025-06-30 21:27:33 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'Beasiswa KIP Kuliah Telkom University 2025'. No image will be used.
+2025-06-30 21:27:33 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa KIP Kuliah Telkom University 2025
+2025-06-30 21:27:33 | INFO     | infortic_scraper | info:99 | Navigating to page 6...
+2025-06-30 21:27:33 | INFO     | infortic_scraper | info:99 | Scraping page 6...
+2025-06-30 21:27:34 | INFO     | infortic_scraper | info:99 | Found 10 scholarships on page 6.
+2025-06-30 21:27:34 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1768
+2025-06-30 21:27:34 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa KIP-Kuliah LeMondial Business School (LBS) 2025' with deadline 2025-06-11.
+2025-06-30 21:27:34 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1767
+2025-06-30 21:27:34 | WARNING  | infortic_scraper | warning:104 | Skipping scholarship 'Girls Fund Scholarship 2025 – Beasiswa Bisnis & Manajemen S1 (Plan Indonesia x IPMI)' due to missing registration/booklet URL.
+2025-06-30 21:27:34 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1766
+2025-06-30 21:27:34 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa Tahfidz BAZNAS Kota Tangerang Selatan 2025' with deadline 2025-06-15.
+2025-06-30 21:27:34 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1765
+2025-06-30 21:27:35 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa KIP Kuliah UNIS 2025' with deadline 2025-06-30.
+2025-06-30 21:27:35 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1764
+2025-06-30 21:27:35 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Mahaghora Batch 15 2025
+2025-06-30 21:28:11 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'Beasiswa Mahaghora Batch 15 2025'. No image will be used.
+2025-06-30 21:28:11 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Mahaghora Batch 15 2025
+2025-06-30 21:28:11 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1763
+2025-06-30 21:28:12 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: ISTA Postdoctoral Fellowship in Austria 2025
+2025-06-30 21:28:49 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'ISTA Postdoctoral Fellowship in Austria 2025'. No image will be used.
+2025-06-30 21:28:49 | INFO     | infortic_scraper | info:99 | Successfully scraped: ISTA Postdoctoral Fellowship in Austria 2025
+2025-06-30 21:28:49 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1762
+2025-06-30 21:28:50 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa UTBK-SNBT Calvin Institute of Technology (CIT)' with deadline 2025-06-30.
+2025-06-30 21:28:50 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1761
+2025-06-30 21:28:50 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa TOP SCORElarship Jakarta Business School' with deadline 2025-06-27.
+2025-06-30 21:28:50 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1760
+2025-06-30 21:28:50 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa Keluarga Kalla 2025' with deadline 2025-06-22.
+2025-06-30 21:28:50 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1759
+2025-06-30 21:28:51 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa OYW Hauwa Ojeifo Scholarship 2025' with deadline 2025-06-29.
+2025-06-30 21:28:51 | INFO     | infortic_scraper | info:99 | Navigating to page 7...
+2025-06-30 21:28:51 | INFO     | infortic_scraper | info:99 | Scraping page 7...
+2025-06-30 21:28:51 | INFO     | infortic_scraper | info:99 | Found 10 scholarships on page 7.
+2025-06-30 21:28:51 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1758
+2025-06-30 21:28:51 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Taipei Tech Southbound Elite Training Program 2025
+2025-06-30 21:29:28 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'Taipei Tech Southbound Elite Training Program 2025'. No image will be used.
+2025-06-30 21:29:28 | INFO     | infortic_scraper | info:99 | Successfully scraped: Taipei Tech Southbound Elite Training Program 2025
+2025-06-30 21:29:28 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1757
+2025-06-30 21:29:29 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Chandra Asri Group Scholarship 2025/2026 - ITS' with deadline 2025-06-15.
+2025-06-30 21:29:29 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1756
+2025-06-30 21:29:30 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Malaysian International Scholarship (MIS)' with deadline 2025-06-30.
+2025-06-30 21:29:30 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1755
+2025-06-30 21:29:30 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Hubert H. Humphrey Fellowship Program for Mid-Career Professionals
+2025-06-30 21:30:07 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'Hubert H. Humphrey Fellowship Program for Mid-Career Professionals'. No image will be used.
+2025-06-30 21:30:07 | INFO     | infortic_scraper | info:99 | Successfully scraped: Hubert H. Humphrey Fellowship Program for Mid-Career Professionals
+2025-06-30 21:30:07 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1754
+2025-06-30 21:30:07 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'UNIMORE PhD Scholarships 2025' with deadline 2025-06-30.
+2025-06-30 21:30:07 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1753
+2025-06-30 21:30:08 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa Pendidikan Indonesia (BPI) 2025' with deadline 2025-06-14.
+2025-06-30 21:30:08 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1752
+2025-06-30 21:30:08 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa Pendidikan BAZNAS Kabupaten Hulu Sungai Selatan (HSS) Tahun 2025' with deadline 2025-06-19.
+2025-06-30 21:30:08 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1750
+2025-06-30 21:30:08 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Stanford University Knight-Hennessy Scholars (KHS) 2026
+2025-06-30 21:30:46 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'Stanford University Knight-Hennessy Scholars (KHS) 2026'. No image will be used.
+2025-06-30 21:30:46 | INFO     | infortic_scraper | info:99 | Successfully scraped: Stanford University Knight-Hennessy Scholars (KHS) 2026
+2025-06-30 21:30:46 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1749
+2025-06-30 21:30:46 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa SKSS BAZNAS Tulungagung 2025
+2025-06-30 21:31:23 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'Beasiswa SKSS BAZNAS Tulungagung 2025'. No image will be used.
+2025-06-30 21:31:23 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa SKSS BAZNAS Tulungagung 2025
+2025-06-30 21:31:23 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1748
+2025-06-30 21:31:23 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa Sahabat Terang PLN Batam' with deadline 2025-06-22.
+2025-06-30 21:31:23 | INFO     | infortic_scraper | info:99 | Navigating to page 8...
+2025-06-30 21:31:23 | INFO     | infortic_scraper | info:99 | Scraping page 8...
+2025-06-30 21:31:23 | INFO     | infortic_scraper | info:99 | Found 10 scholarships on page 8.
+2025-06-30 21:31:23 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1747
+2025-06-30 21:31:24 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa APERTI BUMN Tahun 2025' with deadline 2025-06-16.
+2025-06-30 21:31:24 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1746
+2025-06-30 21:31:24 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa Skin Game - Batch 7' with deadline 2025-06-17.
+2025-06-30 21:31:24 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1745
+2025-06-30 21:31:24 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa LPPD (Lembaga Pengembangan Pesantren & Diniyah) 2025/2026
+2025-06-30 21:32:00 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'Beasiswa LPPD (Lembaga Pengembangan Pesantren & Diniyah) 2025/2026'. No image will be used.
+2025-06-30 21:32:00 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa LPPD (Lembaga Pengembangan Pesantren & Diniyah) 2025/2026
+2025-06-30 21:32:00 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1744
+2025-06-30 21:32:01 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'BSI Scholarship Prestasi Unggulan 2025' with deadline 2025-06-29.
+2025-06-30 21:32:01 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1743
+2025-06-30 21:32:01 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'OPEN MOOC: English for Career Development & English for Business and Entrepreneurship' with deadline 2025-06-23.
+2025-06-30 21:32:01 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1742
+2025-06-30 21:32:01 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa Kewirausahaan dan Perencanaan Karir - Pesantren Wirausaha Kalasuba Indonesia' with deadline 2025-06-30.
+2025-06-30 21:32:01 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1741
+2025-06-30 21:32:02 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Riaya Young Adult Stewardship Program' with deadline 2025-06-22.
+2025-06-30 21:32:02 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1740
+2025-06-30 21:32:02 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship '7th ASEAN Youth Fellowship (AYF) 2025' with deadline 2025-06-10.
+2025-06-30 21:32:02 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1739
+2025-06-30 21:32:02 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Program Pengembangan Pascasarjana KAPSARC 2025 di Arab Saudi' with deadline 2025-06-30.
+2025-06-30 21:32:02 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1738
+2025-06-30 21:32:03 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Academies South-East Asia Fellowship Postdoctoral
+2025-06-30 21:32:39 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'Beasiswa Academies South-East Asia Fellowship Postdoctoral'. No image will be used.
+2025-06-30 21:32:39 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Academies South-East Asia Fellowship Postdoctoral
+2025-06-30 21:32:39 | INFO     | infortic_scraper | info:99 | Navigating to page 9...
+2025-06-30 21:32:39 | INFO     | infortic_scraper | info:99 | Scraping page 9...
+2025-06-30 21:32:39 | INFO     | infortic_scraper | info:99 | Found 10 scholarships on page 9.
+2025-06-30 21:32:39 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1737
+2025-06-30 21:32:40 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Program Duta Belajar Bahasa Indonesia (ILLA) 2025' with deadline 2025-06-11.
+2025-06-30 21:32:40 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1736
+2025-06-30 21:32:40 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Aspire Leaders Program 2025
+2025-06-30 21:33:17 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'Aspire Leaders Program 2025'. No image will be used.
+2025-06-30 21:33:17 | INFO     | infortic_scraper | info:99 | Successfully scraped: Aspire Leaders Program 2025
+2025-06-30 21:33:17 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1735
+2025-06-30 21:33:18 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Young Leader for Indonesia (YLI) 2025' with deadline 2025-06-20.
+2025-06-30 21:33:18 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1734
+2025-06-30 21:33:18 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa APERTI BUMN 2025 di Universitas Pertamina (UPER)' with deadline 2025-06-16.
+2025-06-30 21:33:18 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1733
+2025-06-30 21:33:18 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa APERTI BUMN 2025 di Telkom University' with deadline 2025-06-16.
+2025-06-30 21:33:18 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1732
+2025-06-30 21:33:18 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa APERTI BUMN 2025 di Universitas Internasional Semen Indonesia (UISI)' with deadline 2025-06-16.
+2025-06-30 21:33:18 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1731
+2025-06-30 21:33:19 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa APERTI BUMN 2025 di Politeknik Semen Indonesia (Poltek SI)' with deadline 2025-06-16.
+2025-06-30 21:33:19 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1730
+2025-06-30 21:33:19 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa APERTI BUMN 2025 di Institut Teknologi PLN (ITPLN)' with deadline 2025-06-16.
+2025-06-30 21:33:19 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1729
+2025-06-30 21:33:19 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa APERTI BUMN 2025 di Universitas Logistik dan Bisnis Internasional (ULBI) 2025' with deadline 2025-06-16.
+2025-06-30 21:33:19 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1728
+2025-06-30 21:33:19 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa Banyuwangi Cerdas 2025' with deadline 2025-06-30.
+2025-06-30 21:33:19 | INFO     | infortic_scraper | info:99 | Navigating to page 10...
+2025-06-30 21:33:20 | INFO     | infortic_scraper | info:99 | Scraping page 10...
+2025-06-30 21:33:20 | INFO     | infortic_scraper | info:99 | Found 10 scholarships on page 10.
+2025-06-30 21:33:20 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1727
+2025-06-30 21:33:20 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa S3 Studi Islam UIN Maulana Malik Ibrahim Malang
+2025-06-30 21:33:40 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'Beasiswa S3 Studi Islam UIN Maulana Malik Ibrahim Malang'. No image will be used.
+2025-06-30 21:33:40 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa S3 Studi Islam UIN Maulana Malik Ibrahim Malang
+2025-06-30 21:33:40 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1726
+2025-06-30 21:33:41 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa S2 Stefan Banach 2025' with deadline 2025-06-21.
+2025-06-30 21:33:41 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1725
+2025-06-30 21:33:41 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa University of Trieste Scholarship 2025' with deadline 2025-06-06.
+2025-06-30 21:33:41 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1724
+2025-06-30 21:33:42 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa ASTAR CIS (ACIS) Scholarship 2025
+2025-06-30 21:34:18 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'Beasiswa ASTAR CIS (ACIS) Scholarship 2025'. No image will be used.
+2025-06-30 21:34:18 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa ASTAR CIS (ACIS) Scholarship 2025
+2025-06-30 21:34:18 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1723
+2025-06-30 21:34:19 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: University of Miami Bachelor’s Stamps Scholarship 2025–2026
+2025-06-30 21:34:56 | WARNING  | infortic_scraper | warning:104 | Timeout occurred during Yandex image search for 'University of Miami Bachelor’s Stamps Scholarship 2025–2026'. No image will be used.
+2025-06-30 21:34:56 | INFO     | infortic_scraper | info:99 | Successfully scraped: University of Miami Bachelor’s Stamps Scholarship 2025–2026
+2025-06-30 21:34:56 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1722
+2025-06-30 21:34:56 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa S2 UGM 2025/2026
+2025-06-30 21:35:07 | INFO     | infortic_scraper | info:99 | Closing browser.
+2025-06-30 21:35:36 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 21:35:36 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 21:35:36 | INFO     | infortic_scraper | info:99 | LuarKampusBeasiswaScraper initialized for authenticated scraping.
+2025-06-30 21:35:36 | INFO     | infortic_scraper | info:99 | Starting scrape for LuarKampusBeasiswaScraper
+2025-06-30 21:35:37 | INFO     | infortic_scraper | info:99 | Navigating to login page: https://luarkampus.id/login/email
+2025-06-30 21:35:38 | INFO     | infortic_scraper | info:99 | Waiting for login form to be visible...
+2025-06-30 21:35:38 | INFO     | infortic_scraper | info:99 | Filling login credentials.
+2025-06-30 21:35:38 | INFO     | infortic_scraper | info:99 | Submitting login form.
+2025-06-30 21:35:41 | INFO     | infortic_scraper | info:99 | Waiting for login request to complete...
+2025-06-30 21:35:43 | INFO     | infortic_scraper | info:99 | Login form submitted. Assuming login is successful.
+2025-06-30 21:35:43 | INFO     | infortic_scraper | info:99 | Navigating to initial scholarship list: https://luarkampus.id/beasiswa
+2025-06-30 21:35:43 | INFO     | infortic_scraper | info:99 | Determining the total number of pages...
+2025-06-30 21:35:44 | INFO     | infortic_scraper | info:99 | Found 18 pages to scrape.
+2025-06-30 21:35:44 | INFO     | infortic_scraper | info:99 | Scraping page 1...
+2025-06-30 21:35:44 | INFO     | infortic_scraper | info:99 | Found 10 scholarships on page 1.
+2025-06-30 21:35:44 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1751
+2025-06-30 21:35:44 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Sinarmas - ITSB 2025
+2025-06-30 21:36:12 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://sumateraekspres.bacakoran.co/upload/61e27f7b1477466f545336659f11f0cd.jpg
+2025-06-30 21:36:12 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Sinarmas - ITSB 2025
+2025-06-30 21:36:12 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1819
+2025-06-30 21:36:12 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 21:36:23 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://jackson.yale.edu/wp-content/uploads/2017/03/WF-mark-v3_outline.jpg
+2025-06-30 21:36:23 | INFO     | infortic_scraper | info:99 | Successfully scraped: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 21:36:23 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1818
+2025-06-30 21:36:23 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Singapore South-East Asia Fellowship (SASEAF) 2025
+2025-06-30 21:36:40 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://www.scholarsofficial.com/wp-content/uploads/2025/03/Simple-Elegant-Minimalist-Visit-South-Korea-Traveling-Agent-Flyer.png
+2025-06-30 21:36:40 | INFO     | infortic_scraper | info:99 | Successfully scraped: Singapore South-East Asia Fellowship (SASEAF) 2025
+2025-06-30 21:36:40 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1817
+2025-06-30 21:36:41 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 21:36:57 | ERROR    | infortic_scraper | error:109 | An unexpected error occurred during Yandex image search for 'Beasiswa Cahaya Pintar Mahasiswa 2025': Page.fill: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("input[name=\"text\"]")
+    - waiting for" https://yandex.com/showcaptcha?cc=1&form-fb-hint=7.4&mt=2E553A1E0185DF6602FD3255D50FBADFE755B36EF6C21B64CF584C9633434AB84FAFE2D987803D8A73E7FC61E79ADCFEE873CBB89A1B13BEF57E70F33E827AD81FE17F59A38984A…" navigation to finish...
+    - navigated to "https://yandex.com/showcaptcha?cc=1&form-fb-hint=7.4&mt=2E553A1E0185DF6602FD3255D50FBADFE755B36EF6C21B64CF584C9633434AB84FAFE2D987803D8A73E7FC61E79ADCFEE873CBB89A1B13BEF57E70F33E827AD81FE17F59A38984A…"
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 203, in _get_image_url_from_yandex
+    page.fill('input[name="text"]', query)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 10147, in fill
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.fill(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_page.py", line 872, in fill
+    return await self._main_frame.fill(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_frame.py", line 527, in fill
+    await self._channel.send("fill", locals_to_params(locals()))
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.fill: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("input[name=\"text\"]")
+    - waiting for" https://yandex.com/showcaptcha?cc=1&form-fb-hint=7.4&mt=2E553A1E0185DF6602FD3255D50FBADFE755B36EF6C21B64CF584C9633434AB84FAFE2D987803D8A73E7FC61E79ADCFEE873CBB89A1B13BEF57E70F33E827AD81FE17F59A38984A…" navigation to finish...
+    - navigated to "https://yandex.com/showcaptcha?cc=1&form-fb-hint=7.4&mt=2E553A1E0185DF6602FD3255D50FBADFE755B36EF6C21B64CF584C9633434AB84FAFE2D987803D8A73E7FC61E79ADCFEE873CBB89A1B13BEF57E70F33E827AD81FE17F59A38984A…"
+
+2025-06-30 21:36:57 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 21:36:57 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1816
+2025-06-30 21:36:57 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Excellent Brains Austria Neuroscience PhD Fellowships 2025
+2025-06-30 21:36:57 | ERROR    | infortic_scraper | error:109 | An unexpected error occurred during Yandex image search for 'Excellent Brains Austria Neuroscience PhD Fellowships 2025': Page.goto: net::ERR_ABORTED; maybe frame was detached?
+Call log:
+  - navigating to "https://yandex.com/images/", waiting until "load"
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 200, in _get_image_url_from_yandex
+    page.goto("https://yandex.com/images/", timeout=60000)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 9024, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+            url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_frame.py", line 145, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: net::ERR_ABORTED; maybe frame was detached?
+Call log:
+  - navigating to "https://yandex.com/images/", waiting until "load"
+
+2025-06-30 21:36:57 | INFO     | infortic_scraper | info:99 | Successfully scraped: Excellent Brains Austria Neuroscience PhD Fellowships 2025
+2025-06-30 21:36:57 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1815
+2025-06-30 21:36:58 | ERROR    | infortic_scraper | error:109 | Error scraping detail page https://luarkampus.id/beasiswa/1815: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://luarkampus.id/beasiswa/1815", waiting until "load"
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 99, in scrape
+    page.goto(detail_url, timeout=60000)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 9024, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+            url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_frame.py", line 145, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://luarkampus.id/beasiswa/1815", waiting until "load"
+
+2025-06-30 21:36:58 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1814
+2025-06-30 21:36:58 | ERROR    | infortic_scraper | error:109 | Error scraping detail page https://luarkampus.id/beasiswa/1814: Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 99, in scrape
+    page.goto(detail_url, timeout=60000)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 9024, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+            url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_frame.py", line 145, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-06-30 21:36:58 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1813
+2025-06-30 21:36:58 | ERROR    | infortic_scraper | error:109 | Error scraping detail page https://luarkampus.id/beasiswa/1813: Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 99, in scrape
+    page.goto(detail_url, timeout=60000)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 9024, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+            url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_frame.py", line 145, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-06-30 21:36:58 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1812
+2025-06-30 21:36:58 | ERROR    | infortic_scraper | error:109 | Error scraping detail page https://luarkampus.id/beasiswa/1812: Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 99, in scrape
+    page.goto(detail_url, timeout=60000)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 9024, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+            url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_frame.py", line 145, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-06-30 21:36:58 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1811
+2025-06-30 21:36:58 | ERROR    | infortic_scraper | error:109 | Error scraping detail page https://luarkampus.id/beasiswa/1811: Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 99, in scrape
+    page.goto(detail_url, timeout=60000)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 9024, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+            url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_frame.py", line 145, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-06-30 21:36:58 | INFO     | infortic_scraper | info:99 | Navigating to page 2...
+2025-06-30 21:36:58 | CRITICAL | infortic_scraper | critical:114 | A critical error occurred during the scraping process: Page.goto: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\scraper\beasiswa\luarkampus_scraper.py", line 87, in scrape
+    page.goto(f"{self.BEASISWA_URL}?page={page_number}", wait_until='domcontentloaded', timeout=60000)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 9024, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+            url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_frame.py", line 145, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\Gallan\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-06-30 21:36:58 | INFO     | infortic_scraper | info:99 | Closing browser.
+2025-06-30 21:36:58 | INFO     | infortic_scraper | info:99 | Scraping finished. Total scholarships scraped: 5
+2025-06-30 22:05:47 | INFO     | infortic_scraper | _initialize_logger:88 | Logger initialized successfully
+2025-06-30 22:05:47 | INFO     | infortic_scraper | _initialize_logger:89 | Log file location: D:\Gerry\Programmer\Best Terbaik(2025)\Project\Infortic Scraper\infortic_scraper_v2\infortic\logs\scraper.log
+2025-06-30 22:05:47 | INFO     | infortic_scraper | info:99 | LuarKampusBeasiswaScraper initialized to start on page 1 and scrape a max of 2 pages.
+2025-06-30 22:05:47 | INFO     | infortic_scraper | info:99 | Starting scrape for LuarKampusBeasiswaScraper
+2025-06-30 22:05:48 | INFO     | infortic_scraper | info:99 | Navigating to login page: https://luarkampus.id/login/email
+2025-06-30 22:05:48 | INFO     | infortic_scraper | info:99 | Waiting for login form to be visible...
+2025-06-30 22:05:48 | INFO     | infortic_scraper | info:99 | Filling login credentials.
+2025-06-30 22:05:49 | INFO     | infortic_scraper | info:99 | Submitting login form.
+2025-06-30 22:05:52 | INFO     | infortic_scraper | info:99 | Waiting for login request to complete...
+2025-06-30 22:05:54 | INFO     | infortic_scraper | info:99 | Login form submitted. Assuming login is successful.
+2025-06-30 22:05:54 | INFO     | infortic_scraper | info:99 | Navigating to initial scholarship list: https://luarkampus.id/beasiswa
+2025-06-30 22:05:54 | INFO     | infortic_scraper | info:99 | Determining the total number of pages...
+2025-06-30 22:05:54 | INFO     | infortic_scraper | info:99 | Found 18 pages to scrape.
+2025-06-30 22:05:54 | INFO     | infortic_scraper | info:99 | This run will scrape from page 1 to 2.
+2025-06-30 22:05:54 | INFO     | infortic_scraper | info:99 | Scraping page 1...
+2025-06-30 22:05:54 | INFO     | infortic_scraper | info:99 | Found 10 scholarships on page 1.
+2025-06-30 22:05:54 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1751
+2025-06-30 22:05:55 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Sinarmas - ITSB 2025
+2025-06-30 22:06:02 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://sumateraekspres.bacakoran.co/upload/61e27f7b1477466f545336659f11f0cd.jpg
+2025-06-30 22:06:02 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Sinarmas - ITSB 2025
+2025-06-30 22:06:02 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1819
+2025-06-30 22:06:03 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 22:06:09 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://jackson.yale.edu/wp-content/uploads/2024/01/CA026436_ClimateFellows_annouce.Jan2024.jpg
+2025-06-30 22:06:09 | INFO     | infortic_scraper | info:99 | Successfully scraped: Yale Emerging Climate Leaders Fellowship 2026
+2025-06-30 22:06:09 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1818
+2025-06-30 22:06:10 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Singapore South-East Asia Fellowship (SASEAF) 2025
+2025-06-30 22:06:16 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://variety.com/wp-content/uploads/2025/06/Arts-Centre.jpg?w=1000&h=563&crop=1
+2025-06-30 22:06:16 | INFO     | infortic_scraper | info:99 | Successfully scraped: Singapore South-East Asia Fellowship (SASEAF) 2025
+2025-06-30 22:06:16 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1817
+2025-06-30 22:06:16 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 22:06:22 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://www.scholarsofficial.com/wp-content/uploads/2023/06/Beasiswa-Cahaya-Pintar-2023-untuk-Mahasiswa-D3-dan-S1-Palembang.jpg
+2025-06-30 22:06:22 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Cahaya Pintar Mahasiswa 2025
+2025-06-30 22:06:22 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1816
+2025-06-30 22:06:23 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Excellent Brains Austria Neuroscience PhD Fellowships 2025
+2025-06-30 22:06:31 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://blogassets.leverageedu.com/media/uploads/2022/05/04163400/PhD-Neuroscience.png
+2025-06-30 22:06:31 | INFO     | infortic_scraper | info:99 | Successfully scraped: Excellent Brains Austria Neuroscience PhD Fellowships 2025
+2025-06-30 22:06:31 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1815
+2025-06-30 22:06:31 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)
+2025-06-30 22:06:38 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://1.bp.blogspot.com/-38_Qz1vdSaM/WWpqqLHh0yI/AAAAAAAAG3k/hGTgwBWpqyYxF4bnk4L6OEn56_nmCJiIwCLcBGAs/s1600/uang-kuliah-tunggal-diserahkan-ke-kampus-gp9.jpg
+2025-06-30 22:06:38 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Pendidikan Rumah Amal Uang Kuliah Tunggal (BPRA-UKT)
+2025-06-30 22:06:38 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1814
+2025-06-30 22:06:38 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)
+2025-06-30 22:06:46 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://awsimages.detik.net.id/visual/2024/10/16/kings-college-london_169.jpeg?w=715&q=90
+2025-06-30 22:06:46 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Kerja Sama LPDP – King’s College London Singhasari (KCL Singhasari)
+2025-06-30 22:06:46 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1813
+2025-06-30 22:06:46 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Hyundai JUMP School Indonesia Batch 2
+2025-06-30 22:06:55 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://ruangoto.com/wp-content/uploads/2024/09/Foto-2-Upacara-Pembukaan-Hyundai-Jump-School-Indonesia-scaled.jpeg
+2025-06-30 22:06:55 | INFO     | infortic_scraper | info:99 | Successfully scraped: Hyundai JUMP School Indonesia Batch 2
+2025-06-30 22:06:55 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1812
+2025-06-30 22:06:56 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa S3 DESY Hamburg PhD Scholarship 2025' with deadline 2025-06-30.
+2025-06-30 22:06:56 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1811
+2025-06-30 22:06:56 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa S3 MSCA Europe PhD Scholarships 2025
+2025-06-30 22:07:04 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://www.scholarsofficial.com/wp-content/uploads/2025/01/Beasiswa-Sinar-Mas-Agribusiness-and-Food-Scholarship-2025-untuk-Kuliah-Dalam-Negeri.jpg
+2025-06-30 22:07:04 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa S3 MSCA Europe PhD Scholarships 2025
+2025-06-30 22:07:04 | INFO     | infortic_scraper | info:99 | Navigating to page 2...
+2025-06-30 22:07:04 | INFO     | infortic_scraper | info:99 | Scraping page 2...
+2025-06-30 22:07:04 | INFO     | infortic_scraper | info:99 | Found 10 scholarships on page 2.
+2025-06-30 22:07:04 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1810
+2025-06-30 22:07:04 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa S3 Bioproduction and Purification of Siderophores' with deadline 2025-06-30.
+2025-06-30 22:07:04 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1809
+2025-06-30 22:07:05 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa KIP Kuliah – Universitas PGRI Madiun (UNIPMA)
+2025-06-30 22:07:11 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://kemahasiswaan.unilak.ac.id/assets/images/8919715c9cdc24977a35ffd349cfb869.png
+2025-06-30 22:07:11 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa KIP Kuliah – Universitas PGRI Madiun (UNIPMA)
+2025-06-30 22:07:11 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1808
+2025-06-30 22:07:11 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Beasiswa SmartPath 2025' with deadline 2025-06-30.
+2025-06-30 22:07:11 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1807
+2025-06-30 22:07:11 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Bidik Anak Negeri 2025 – PPI Hiroshima
+2025-06-30 22:07:17 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://indbeasiswa.com/wp-content/uploads/2019/07/Beasiswa-SD-MI-Sederajat-Bidik-Anak-Negeri.jpg
+2025-06-30 22:07:17 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Bidik Anak Negeri 2025 – PPI Hiroshima
+2025-06-30 22:07:17 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1805
+2025-06-30 22:07:18 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Fulbright Graduate Scholarship 2026–2027 – Bahrain' with deadline 2025-06-30.
+2025-06-30 22:07:18 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1804
+2025-06-30 22:07:18 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: KWI International Fellowship 2026
+2025-06-30 22:07:25 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://pbs.twimg.com/media/E7T0-xAWYA8XPgg.jpg
+2025-06-30 22:07:25 | INFO     | infortic_scraper | info:99 | Successfully scraped: KWI International Fellowship 2026
+2025-06-30 22:07:25 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1803
+2025-06-30 22:07:26 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Apple Developer Academy Indonesia – Batch 2 (2026)
+2025-06-30 22:07:32 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://awsimages.detik.net.id/api/wm/2024/12/08/apple-developer-academy-2024-2_169.jpeg?wid=60&w=650&v=1&t=jpeg
+2025-06-30 22:07:32 | INFO     | infortic_scraper | info:99 | Successfully scraped: Apple Developer Academy Indonesia – Batch 2 (2026)
+2025-06-30 22:07:32 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1802
+2025-06-30 22:07:32 | INFO     | infortic_scraper | info:99 | Skipping expired scholarship 'Program Pendampingan & Persiapan Seleksi Beasiswa Kuliah Kampus China' with deadline 2025-06-30.
+2025-06-30 22:07:32 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1801
+2025-06-30 22:07:33 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Kutai Timur Tuntas – Stimulant 2025
+2025-06-30 22:07:40 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://kaltimtoday.co/wp-content/uploads/2019/11/photo_2019-11-25_19-25-49-1024x682.jpg
+2025-06-30 22:07:40 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Kutai Timur Tuntas – Stimulant 2025
+2025-06-30 22:07:40 | INFO     | infortic_scraper | info:99 | Scraping detail page: https://luarkampus.id/beasiswa/1800
+2025-06-30 22:07:41 | INFO     | infortic_scraper | info:99 | Searching Yandex Images for: Beasiswa Zakat Indonesia 2025
+2025-06-30 22:07:49 | INFO     | infortic_scraper | info:99 | Successfully found image URL on Yandex: https://beasiswa.unpad.ac.id/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-06-at-10.49.06_6c9b503d-240x300.jpg
+2025-06-30 22:07:49 | INFO     | infortic_scraper | info:99 | Successfully scraped: Beasiswa Zakat Indonesia 2025
+2025-06-30 22:07:49 | INFO     | infortic_scraper | info:99 | Finished scraping all pages.
+2025-06-30 22:07:49 | INFO     | infortic_scraper | info:99 | Closing browser.
+2025-06-30 22:07:49 | INFO     | infortic_scraper | info:99 | Scraping finished. Total scholarships scraped: 15

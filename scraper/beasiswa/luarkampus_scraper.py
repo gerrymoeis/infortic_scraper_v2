@@ -25,9 +25,11 @@ class LuarKampusBeasiswaScraper(BaseScraper):
     LOGIN_URL = f"{BASE_URL}/login/email"
     BEASISWA_URL = f"{BASE_URL}/beasiswa"
 
-    def __init__(self, db_client, headless: bool = True, timeout: int = 30):
+    def __init__(self, db_client, headless: bool = False, timeout: int = 30, start_page: int = 1, max_pages: int = 999):
         super().__init__(db_client, headless, timeout)
-        self.logger.info("LuarKampusBeasiswaScraper initialized for authenticated scraping.")
+        self.start_page = start_page
+        self.max_pages = max_pages
+        self.logger.info(f"LuarKampusBeasiswaScraper initialized to start on page {start_page} and scrape a max of {max_pages} pages.")
         self.luar_kampus_gmail = os.getenv("LUAR_KAMPUS_GMAIL")
         self.luar_kampus_password = os.getenv("LUAR_KAMPUS_PASSWORD")
         if not self.luar_kampus_gmail or not self.luar_kampus_password:
@@ -81,7 +83,11 @@ class LuarKampusBeasiswaScraper(BaseScraper):
                 total_pages = max(page_numbers) if page_numbers else 1
                 self.logger.info(f"Found {total_pages} pages to scrape.")
 
-                for page_number in range(1, total_pages + 1):
+                # Calculate the actual range of pages to scrape for this run
+                end_page = min(self.start_page + self.max_pages - 1, total_pages)
+                self.logger.info(f"This run will scrape from page {self.start_page} to {end_page}.")
+
+                for page_number in range(self.start_page, end_page + 1):
                     if page_number > 1:
                         self.logger.info(f"Navigating to page {page_number}...")
                         page.goto(f"{self.BEASISWA_URL}?page={page_number}", wait_until='domcontentloaded', timeout=60000)

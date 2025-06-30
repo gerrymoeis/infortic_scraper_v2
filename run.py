@@ -32,7 +32,87 @@ SCRAPER_CONFIG = {
     }
 }
 
-def run_scraper(scraper_name: str, clean_first: bool):
+def main():
+    """Main function to parse arguments and run the scraper."""
+    parser = argparse.ArgumentParser(description="Run a specified scraper and insert data into Supabase.")
+    parser.add_argument('scraper_name', choices=SCRAPER_CONFIG.keys(), help="The name of the scraper to run.")
+    parser.add_argument('--run-with-cleaning', action='store_true', help="Clean the table before inserting new data.")
+    parser.add_argument('--start-page', type=int, default=1, help="The page number to start scraping from.")
+    parser.add_argument('--max-pages', type=int, default=999, help="The maximum number of pages to scrape in this run.")
+    parser.add_argument('--clean-only', action='store_true', help="Only run the cleaning process for the specified scraper.")
+
+    args = parser.parse_args()
+
+    if args.clean_only:
+        clean_database(args.scraper_name)
+    else:
+        run_scraper(scraper_name=args.scraper_name, 
+                    clean_first=args.run_with_cleaning, 
+                    start_page=args.start_page, 
+                    max_pages=args.max_pages)
+
+def clean_database(scraper_name: str):
+    """Runs only the cleaning process for a specified scraper's table."""
+    if scraper_name not in SCRAPER_CONFIG:
+        logger.error(f"Invalid scraper name: '{scraper_name}'. Valid options are: {list(SCRAPER_CONFIG.keys())}")
+        sys.exit(1)
+
+    logger.info(f"Starting database cleaning for '{scraper_name}' table.")
+    try:
+        load_dotenv()
+        db_client = SupabaseDBClient()
+        config = SCRAPER_CONFIG[scraper_name]
+        clean_method = getattr(db_client, config['clean_method'])
+        
+        logger.info(f"Executing cleaning method: {config['clean_method']}")
+        clean_method()
+        logger.info(f"Successfully cleaned the '{scraper_name}' table.")
+
+    except Exception as e:
+        logger.critical(f"An error occurred during the database cleaning process: {e}", exc_info=True)
+        sys.exit(1)
+
+def main():
+    """Main function to parse arguments and run the scraper."""
+    parser = argparse.ArgumentParser(description="Run a specified scraper and insert data into Supabase.")
+    parser.add_argument('scraper_name', choices=SCRAPER_CONFIG.keys(), help="The name of the scraper to run.")
+    parser.add_argument('--run-with-cleaning', action='store_true', help="Clean the table before inserting new data.")
+    parser.add_argument('--start-page', type=int, default=1, help="The page number to start scraping from.")
+    parser.add_argument('--max-pages', type=int, default=999, help="The maximum number of pages to scrape in this run.")
+    parser.add_argument('--clean-only', action='store_true', help="Only run the cleaning process for the specified scraper.")
+
+    args = parser.parse_args()
+
+    if args.clean_only:
+        clean_database(args.scraper_name)
+    else:
+        run_scraper(scraper_name=args.scraper_name, 
+                    clean_first=args.run_with_cleaning, 
+                    start_page=args.start_page, 
+                    max_pages=args.max_pages)
+
+def clean_database(scraper_name: str):
+    """Runs only the cleaning process for a specified scraper's table."""
+    if scraper_name not in SCRAPER_CONFIG:
+        logger.error(f"Invalid scraper name: '{scraper_name}'. Valid options are: {list(SCRAPER_CONFIG.keys())}")
+        sys.exit(1)
+
+    logger.info(f"Starting database cleaning for '{scraper_name}' table.")
+    try:
+        load_dotenv()
+        db_client = SupabaseDBClient()
+        config = SCRAPER_CONFIG[scraper_name]
+        clean_method = getattr(db_client, config['clean_method'])
+        
+        logger.info(f"Executing cleaning method: {config['clean_method']}")
+        clean_method()
+        logger.info(f"Successfully cleaned the '{scraper_name}' table.")
+
+    except Exception as e:
+        logger.critical(f"An error occurred during the database cleaning process: {e}", exc_info=True)
+        sys.exit(1)
+
+def run_scraper(scraper_name: str, clean_first: bool, start_page: int, max_pages: int):
     """
     Runs a specified scraper and inserts the data into the database.
 
@@ -79,7 +159,7 @@ def run_scraper(scraper_name: str, clean_first: bool):
                 logger.warning(f"Table not completely clean - still has {clean_count} rows")
 
         logger.info(f"Instantiating '{scraper_class.__name__}'...")
-        scraper = scraper_class(db_client=db_client)
+        scraper = scraper_class(db_client=db_client, start_page=start_page, max_pages=max_pages)
         
         results = scraper.scrape()
         logger.info(f"Scraped {len(results)} items from '{scraper_name}'")
@@ -107,27 +187,6 @@ def run_scraper(scraper_name: str, clean_first: bool):
     except Exception as e:
         logger.error(f"An error occurred during the '{scraper_name}' scraper run: {e}", exc_info=True)
         sys.exit(1)
-
-def main():
-    """
-    Main function to parse arguments and run the selected scraper.
-    """
-    parser = argparse.ArgumentParser(description='Infortic Scraper Runner')
-    parser.add_argument(
-        'scraper_name', 
-        type=str, 
-        choices=list(SCRAPER_CONFIG.keys()),
-        help='The name of the scraper to run.'
-    )
-    parser.add_argument(
-        '--run-with-cleaning', 
-        action='store_true',
-        help='Clean the table before running the scraper.'
-    )
-    
-    args = parser.parse_args()
-    
-    run_scraper(args.scraper_name, args.run_with_cleaning)
 
 if __name__ == "__main__":
     main()
