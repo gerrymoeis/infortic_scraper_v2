@@ -32,11 +32,16 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         
+    - name: Install Playwright browsers
+      run: playwright install chromium
+        
     - name: Run scraper with cleaning
       run: python run.py --run-with-cleaning
       env:
         # Add any environment variables your scraper needs
         TZ: Asia/Jakarta
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
         
     - name: Commit and push if changes
       run: |
