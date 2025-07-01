@@ -73,7 +73,7 @@ class SupabaseDBClient:
             logger.info(f"Attempting to insert {len(rows)} rows to lomba table")
             
             # Perform the insert operation
-            response = self.client.table('lomba').insert(rows).execute()
+            response = self.client.table('lomba').upsert(rows).execute()
             
             # Check for errors in the response
             if hasattr(response, 'error') and response.error:
