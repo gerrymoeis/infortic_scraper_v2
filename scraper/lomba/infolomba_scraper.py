@@ -24,8 +24,8 @@ class InfoLombaScraper(BaseScraper):
     EVENT_LIST_CONTAINER_SELECTOR: str = 'div.event-list'
     EVENT_LINK_SELECTOR: str = 'h4.event-title a'
 
-    def __init__(self, headless: bool = True, timeout: int = 30):
-        super().__init__(headless, timeout)
+    def __init__(self, db_client, headless: bool = True, timeout: int = 30):
+        super().__init__(db_client, headless, timeout)
 
     def scrape(self) -> List[Dict[str, Any]]:
         """
@@ -116,8 +116,36 @@ class InfoLombaScraper(BaseScraper):
                     self.logger.info(f"Filtered out expired event: {event.get('title', 'Unknown')} - Date: {event['date_text']}")
             
             self.logger.info(f"After filtering expired events: {len(filtered_events)}/{len(scraped_events)} events remain")
-            return filtered_events
+            
+            # Final deduplication check (just to be extra safe)
+            final_events = self._final_deduplication(filtered_events)
 
+            return final_events
+
+    def _final_deduplication(self, events: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """
+        Final deduplication check to ensure no duplicate registration URLs.
+        """
+        seen_registration_urls = set()
+        deduplicated_events = []
+        duplicates_removed = 0
+        
+        for event in events:
+            registration_url = event.get('registration_url')
+            if registration_url and registration_url in seen_registration_urls:
+                duplicates_removed += 1
+                self.logger.warning(f"Final dedup: Removing duplicate registration URL: {registration_url}")
+                continue
+            
+            if registration_url:
+                seen_registration_urls.add(registration_url)
+            deduplicated_events.append(event)
+        
+        if duplicates_removed > 0:
+            self.logger.info(f"Final deduplication removed {duplicates_removed} duplicate events")
+        
+        return deduplicated_events
+    
     def _deep_scrape(self, detail_url: str) -> Optional[Dict[str, Any]]:
         """
         Scrape detailed information from a single event page.
