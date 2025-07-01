@@ -43,7 +43,7 @@ jobs:
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
         
     - name: Run scraper with cleaning
-      run: python run.py --run-with-cleaning
+      run: python run.py lomba --run-with-cleaning
       env:
         # Add any environment variables your scraper needs
         TZ: Asia/Jakarta
